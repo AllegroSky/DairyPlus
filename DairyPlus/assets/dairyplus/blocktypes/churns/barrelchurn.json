@@ -1,0 +1,27 @@
+{
+  "code": "barrelchurn",
+  "creativeinventory": { "general": [ "*" ], "dairyplus": [ "*" ] 
+  },
+	"shape": { "base": "dairyplus:block/barrelchurn" },
+	"drawtype": "json",
+  "texture": {
+		"base": "dairyplus:block/churn/BarrelChurn"
+	},
+	
+	"collisionSelectionBox": 
+	{ "x1": 0, "y1": 0, "z1": 0, "x2": 1, "y2": 1.875, "z2": 1 
+	},
+
+	
+	"sidesolid": { "all": false },
+	"sideopaque": { "all": false },
+	"blockmaterial": "Wood",
+	"resistance": 2.0,
+	"sounds": {
+		"place": "block/planks",
+		"walk": "walk/wood",
+		"hit": "block/planks",
+		"break": "block/planks"
+	},
+		"maxStackSize": 1,
+}

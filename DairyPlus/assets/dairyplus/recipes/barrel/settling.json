@@ -1,0 +1,16 @@
+{
+  "code": "settling",
+  "sealHours": 24,
+  "ingredients": [
+    {
+      "type": "item",
+      "code": "game:milkportion",
+      "litres": 50,
+    },
+  ],
+  "output": {
+    "type": "item",
+    "code": "dairyplus:separatingmilk",
+    "litres": 50
+  }
+}

@@ -1,0 +1,95 @@
+{
+	"code": "soybeans",
+	"variantgroups": [
+		{ "code": "type", "states": [ "shelled", "soaked" ] }
+	],
+
+	"creativeinventory": { "general": [ "*" ], "dairyplus": [ "*" ], "items": [ "*" ] },
+	"maxStackSize": 32,
+	"materialDensity": 900,
+
+	"shape": { "base": "dairyplus:item/shelledsoy" },
+	"textures": {
+		"base" : { "base": "dairyplus:item/soy/{type}" }
+	},
+
+
+	"grindingPropsByType": {
+		"*-soaked": {
+		"groundStack": {
+			"type": "item",
+			"code": "soypaste"
+			}
+		}
+	},
+
+	"transitionablePropsByType": {
+		"*-shelled": [{
+			"type": "Perish",
+			"freshHours": { "avg": 8760 },
+			"transitionHours": { "avg": 876 },
+			"transitionedStack": { "type": "item", "code": "game:rot" },
+			"transitionRatio": 0.33
+		}],
+		"*-soaked": [{
+			"type": "Perish",
+			"freshHours": { "avg": 168 },
+			"transitionHours": { "avg": 72 },
+			"transitionedStack": {	"type": "item",	"code": "game:rot" },
+			"transitionRatio": 0.33
+		}]
+	},
+
+
+	"behaviors": [{
+		"name": "GroundStorable",
+		"properties": {
+			"layout": 'Quadrants',
+			"collisionBox": { 
+				"x1": 0, "y1": 0, "z1": 0,
+				"x2": 1, "y2": 0.125, "z2": 1,
+				"scale" : 0.25
+			}
+		}
+	}],
+
+	"guiTransform": {
+		"rotation": { "x": -40, "y": 0, "z": 0
+		},
+		"origin": { "x": 0.5,"y": 0.4, "z": 0
+		},
+		"scale": 1.7
+	},
+
+	"tpHandTransform": {
+		"translation": { "x": -0.04, "y": -0.6, "z": -0.8 },
+		"rotation": { "x": 119, "y": -14, "z": -76 },
+		"origin": { "x": -0.1, "y": 0.11, "z": 0.41 },
+		"scale": 0.25
+	},
+	"groundTransform": {
+		"translation": { "x": 0, "y": 0, "z": 0 },
+		"rotation": { "x": 3, "y": 1, "z": 0 },
+		"origin": { "x": 0.5, "y": 0, "z": 0.5 },
+		"scale": 2
+	},
+	
+	"attributes": {
+		"displaycaseable": true,
+		"shelvable": true,
+		"onshelfTransform": {
+			"origin": { "x": 0.5, "y": 0, "z": 0.5 },
+			"scale": 0.51},
+		"groundStorageTransform": {
+			"origin": { "x": 0.5, "y": 0, "z": 0.5 },
+			"scale": 0.5 }
+	},
+	
+	
+	"heldRightReadyAnimationByType": {
+		"*": "holdbothhands"
+	},
+	"heldTpIdleAnimationByType": {
+		"*": "holdbothhands"
+    }
+}

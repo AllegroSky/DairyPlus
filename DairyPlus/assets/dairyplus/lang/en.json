@@ -1,0 +1,33 @@
+{
+    "game:tabname-dairyplus": "Dairy Plus",
+
+    "dairyplus:block-barrelchurn": "Butter Churning Barrel",
+    "dairyplus:block-plungerchurn": "Butter Churn",
+
+    "dairyplus:block-creamscoop": "Cream Scoop",
+
+    "dairyplus:item-butter-unsalted": "Unsalted Butter",
+    "dairyplus:item-butter-salted": "Salted Butter",
+    "dairyplus:item-butter-twicesalted": "Twice-Salted Butter",
+    "dairyplus:item-butter-veggie": "Plant Butter",
+    "dairyplus:item-butter-saltedveggie": "Salted Plant Butter",
+
+    "dairyplus:item-soybeans-shelled": "Shelled Soybeans",
+    "dairyplus:item-soybeans-soaked": "Soaked Soybeans",
+    "dairyplus:item-soypaste": "Soybean Paste",
+
+    "dairyplus:liquid-cream": "Cream",
+    "dairyplus:liquid-skimmilk": "Skim Milk",
+    "dairyplus:liquid-condensedmilk": "Condensed Milk",
+    "dairyplus:liquid-soymilk": "Soy Milk",
+
+    "dairyplus:incontainer-item-cream": "Cream",
+    "dairyplus:incontainer-item-skimmilk": "Skim Milk",
+    "dairyplus:incontainer-item-condensedmilk": "Condensed Milk",
+    "dairyplus:incontainer-item-soymilk": "Soy Milk",
+
+    "dairyplus:item-cream": "Cream",
+    "dairyplus:item-skimmilk": "Skim Milk",
+    "dairyplus:item-condensedmilk": "Condensed Milk",
+    "dairyplus:item-soymilk": "Soy Milk"
+}

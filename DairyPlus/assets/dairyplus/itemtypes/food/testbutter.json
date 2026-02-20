@@ -1,0 +1,17 @@
+{
+	"code": "testbutter",
+
+
+	"creativeinventory": {
+		"general": [ "*" ],
+		"dairyplus": [ "*" ],
+		"items": [ "*" ]
+	},
+	"maxStackSize": 32,
+	"materialDensity": 900
+
+
+
+
+
+}

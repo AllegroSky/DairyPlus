@@ -1,0 +1,13 @@
+{
+  "type": "recipe",
+  "ingredientPattern": "K,S",
+	"width": 1,
+	"height": 2,
+  "shapeless": false,
+  
+  "ingredients": {
+    "S": { "type": "item", "code": "game:food/*-soybean" },
+	"K": { "type": "item", "code": "game:knife-*", "isTool": true }
+  },
+  "output": { "type": "item", "code": "soybeans-shelled" }
+}

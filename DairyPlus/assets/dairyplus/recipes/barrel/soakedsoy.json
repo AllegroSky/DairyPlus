@@ -1,0 +1,10 @@
+{
+	"code": "soybeans-soaked",
+	"sealHours": 24,
+	
+	"ingredients": [
+    { "type": "item", "code": "dairyplus:soybeans-shelled", "quantity": 1 },
+	{ "type": "item", "code": "game:waterportion", "litres": 2, "consumeLitres": 2}
+	],
+	"output": { "type": "item", "code": "dairyplus:soybeans-soaked", "quantity": 1 }
+}

@@ -1,0 +1,24 @@
+{
+	"editor": {
+		"allAngles": false,
+		"entityTextureMode": true
+	},
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {
+		"oak": [16,16]
+	},
+	"textures": {
+	},
+	"elements": [
+		{
+			"name": "liquid",
+			"from": [ 11.0, 0.0, 11.0 ],
+			"to": [ 15.0, 1.0, 15.0 ],
+			"uv": [ 5.0, 2.0 ],
+			"rotationOrigin": [ 11.5, 0.0, 11.0 ],
+			"faces": {
+				"up": { "texture": "#null", "uv": [ 5.0, 2.0, 9.0, 6.0 ] }
+			}
+		}
+	]}
