@@ -4,6 +4,7 @@ using Vintagestory.API.Config;
 using Vintagestory.API.Common;
 using DairyPlus.Blocks;
 using DairyPlus.BlockEntity;
+using DairyPlus.Items;
 
 namespace DairyPlus;
 
@@ -15,6 +16,7 @@ public class DairyPlusModSystem : ModSystem
     public override void Start(ICoreAPI api)
     {
 
+        api.RegisterBlockClass(Mod.Info.ModID + ".creamscoop", typeof(BlockCreamScoop));
 
         api.RegisterBlockClass(Mod.Info.ModID + ".churn", typeof(BlockChurn)); 
         api.RegisterBlockEntityClass(Mod.Info.ModID + ".bechurn", typeof(BlockEntityChurn));

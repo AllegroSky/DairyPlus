@@ -16,9 +16,13 @@ namespace DairyPlus.BlockEntity
 {
     public class BlockEntityChurn : BlockEntityOpenableContainer
     {
-       
+        public int CapacityLitres { get; set; } = 6;
+        public float CreamLitres;
+
+
+
         protected InventoryChurn inventory;
-        // For how long the current ore has been grinding
+        // For how long the current churn has been oreing
         public float inputGrindTime;
         public float prevInputGrindTime;
         protected int nowOutputFace;
@@ -67,7 +71,7 @@ namespace DairyPlus.BlockEntity
 
         public virtual string DialogTitle
         {
-            get { return Lang.Get("Churn"); }
+            get { return Lang.Get("Butter Churn"); }
         }
 
         public override InventoryBase Inventory
@@ -88,34 +92,13 @@ namespace DairyPlus.BlockEntity
         {
             base.Initialize(api);
 
-            inventory.LateInitialize("churn" + Pos.X + "/" + Pos.Y + "/" + Pos.Z, api);
+            inventory.LateInitialize("churn-" + Pos.X + "/" + Pos.Y + "/" + Pos.Z, api);
 
             RegisterGameTickListener(Every100ms, 100);
             RegisterGameTickListener(Every500ms, 500);       
             
         }
        
-/*
-        public override void CreateBehaviors(Block block, IWorldAccessor worldForResolve)
-        {
-            base.CreateBehaviors(block, worldForResolve);
-
-            mpc = GetBehavior<BEBehaviorMPConsumer>();
-            if (mpc != null)
-            {
-                mpc.OnConnected = () => {
-                    automated = true;
-                    quantityPlayersGrinding = 0;  
-                };
-
-                mpc.OnDisconnected = () => {
-                    automated = false;
-                    
-                };
-            }
-        }
-*/
-
         public void IsGrinding(IPlayer byPlayer)
         {
             SetPlayerGrinding(byPlayer, true);
@@ -128,7 +111,6 @@ namespace DairyPlus.BlockEntity
             if (Api.Side == EnumAppSide.Client)
             {
                 prevSpeed = float.NaN;
-
                 return;
             }
 
@@ -137,6 +119,8 @@ namespace DairyPlus.BlockEntity
             if (CanChurn() && grindSpeed > 0)
             {
                 inputGrindTime += dt * grindSpeed;
+
+                clientDialog?.Update(inputGrindTime, maxGrindingTime());
 
                 if (inputGrindTime >= maxGrindingTime())
                 {
@@ -150,9 +134,9 @@ namespace DairyPlus.BlockEntity
 
         protected void grindInput()
         {
-              ItemStack butterStack = new ItemStack(
-               Api.World.GetItem(new AssetLocation("dairyplus:butter-unsalted")),
-                  1 );
+            ItemStack butterStack = new ItemStack(
+             Api.World.GetItem(new AssetLocation("dairyplus:butter-unsalted")),
+                1);
 
             if (OutputSlot.Itemstack == null)
             {
@@ -166,21 +150,29 @@ namespace DairyPlus.BlockEntity
                 {
                     OutputSlot.Itemstack.StackSize += butterStack.StackSize;
                 }
-                /*
-                else
-                {
-                    BlockFacing face = BlockFacing.HORIZONTALS[nowOutputFace];
-                    nowOutputFace = (nowOutputFace + 1) % 4;
-                    Block block = Api.World.BlockAccessor.GetBlock(Pos.AddCopy(face));
-                    if (block.Replaceable < 6000) return;
-                    var position = Pos.ToVec3d().Add(0.5 + face.Normalf.X * 0.7, 0.75, 0.5 + face.Normalf.Z * 0.7);
-                    Api.World.SpawnItemEntity(butterStack, position, new Vec3d(face.Normalf.X * 0.02f, 0, face.Normalf.Z * 0.02f));
-                }*/
             }
 
-            InputSlot.TakeOut(1);
+            ItemStack buttermilkStack = new ItemStack(
+            Api.World.GetItem(new AssetLocation("dairyplus:skimmilk")),
+                100);
+            if (OutputSlot2.Itemstack == null)
+            {
+                OutputSlot2.Itemstack = buttermilkStack;
+            }
+            else
+            {
+                int mergableQuantity = OutputSlot2.Itemstack.Collectible.GetMergableQuantity(OutputSlot2.Itemstack, buttermilkStack, EnumMergePriority.AutoMerge);
+
+                if (mergableQuantity > 0)
+                {
+                    OutputSlot2.Itemstack.StackSize += buttermilkStack.StackSize;
+                }
+            }
+
+            InputSlot.TakeOut(200);
             InputSlot.MarkDirty();
             OutputSlot.MarkDirty();
+            OutputSlot2.MarkDirty();
         }
 
 
@@ -263,17 +255,6 @@ namespace DairyPlus.BlockEntity
                 }
             }
         }
-
-        /*
-        public bool CanGrind()
-        {
-            GrindingProperties grindProps = InputGrindProps;
-            if (grindProps == null) return false;
-            return true;
-        }
-        */
-
-
 
         #region Events
 
@@ -415,6 +396,11 @@ namespace DairyPlus.BlockEntity
             get { return inventory[1]; }
         }
 
+        public ItemSlot OutputSlot2
+        {
+            get { return inventory[2]; }
+        }
+
         public ItemStack InputStack
         {
             get { return inventory[0].Itemstack; }
@@ -427,17 +413,12 @@ namespace DairyPlus.BlockEntity
             set { inventory[1].Itemstack = value; inventory[1].MarkDirty(); }
         }
 
-        /*
-        public GrindingProperties InputGrindProps
+        public ItemStack OutputStack2
         {
-            get
-            {
-                ItemSlot slot = inventory[0];
-                if (slot.Itemstack == null) return null;
-                return slot.Itemstack.Collectible.GetGrindingProperties(Api.World, slot.Itemstack);
-            }
+            get { return inventory[1].Itemstack; }
+            set { inventory[1].Itemstack = value; inventory[1].MarkDirty(); }
         }
-        */
+
 
         public bool CanChurn()
         {
@@ -480,8 +461,6 @@ namespace DairyPlus.BlockEntity
                 slot.Itemstack?.Collectible.OnLoadCollectibleMappings(worldForResolve, slot, oldBlockIdMapping, oldItemIdMapping, resolveImports);
             }
         }
-
-
     }
 }
 

@@ -2,37 +2,38 @@
 using Vintagestory.API.Common;
 using Vintagestory.API.Datastructures;
 using Vintagestory.API.MathTools;
+using Vintagestory.GameContent;
 
 namespace DairyPlus.Inventory
 {
     public class InventoryChurn : InventoryBase, ISlotProvider
     {
+        // inventory with one input and two outputs
+
         ItemSlot[] slots;
-        public ItemSlot[] Slots { get { return slots; } }
+        public ItemSlot[] Slots => slots;
 
 
         public InventoryChurn(string inventoryID, ICoreAPI api) : base(inventoryID, api)
         {
             // slot 0 = input
-            // slot 1 = output
-            slots = GenEmptySlots(2);
+            // slot 1 = output butter
+            // slot 2 = output buttermilk
+            slots = GenEmptySlots(3);
         }
 
         public InventoryChurn(string className, string instanceID, ICoreAPI api) : base(className, instanceID, api)
         {
-            slots = GenEmptySlots(2);
+            slots = GenEmptySlots(3);
         }
 
-        public override int Count
-        {
-            get { return 2; }
-        }
+        public override int Count => 3;
 
         public override ItemSlot this[int slotId]
         {
             get
             {
-                if (slotId < 0 || slotId >= Count) return null;
+                if (slotId < 0 || slotId >= Count) throw new ArgumentOutOfRangeException(nameof(slotId));
                 return slots[slotId];
             }
             set
@@ -55,19 +56,25 @@ namespace DairyPlus.Inventory
         //slot type
         protected override ItemSlot NewSlot(int i)
         {
-            return new ItemSlotSurvival(this);
+            if (i == 0) return new ItemSlotWatertight(this);
+            if (i == 1) return new ItemSlotOutput(this);
+            if (i == 2) return new ItemSlotOutput(this);
+            throw new ArgumentOutOfRangeException(nameof(i), "Invalid");
         }
 
         // Add cream to inputslot restriction, quern reference below
 
-        //  public override float GetSuitability(ItemSlot sourceSlot, ItemSlot targetSlot, bool isMerge)
-        //  {
-        //     GrindingProperties grindingProps = sourceSlot.Itemstack.Collectible.GetGrindingProperties(Api.World, sourceSlot.Itemstack);
-        //
-        //     if (targetSlot == slots[0] && grindingProps != null) return 4f;
-        //
-        //     return base.GetSuitability(sourceSlot, targetSlot, isMerge);
-        // }
+        public override float GetSuitability(ItemSlot sourceSlot, ItemSlot targetSlot, bool isMerge)
+        {
+            if (sourceSlot?.Itemstack == null) return 0f;
+
+            if (targetSlot == slots[0] &&
+                sourceSlot.Itemstack.Collectible.Code.Equals(new AssetLocation("dairyplus", "cream")))
+            {
+                return 4f;
+            }
+            return base.GetSuitability(sourceSlot, targetSlot, isMerge);
+        
+        }
     }
 }
-

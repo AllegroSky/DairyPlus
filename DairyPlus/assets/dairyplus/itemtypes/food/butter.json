@@ -33,7 +33,7 @@
 			"transitionHours": { "avg": 48 },
 			"transitionedStack": {
 				"type": "item",
-				"code": "rot"},
+				"code": "game:rot"},
 			"transitionRatio": 0.5
 		}],
 		"*-salted": [{
@@ -42,7 +42,7 @@
 			"transitionHours": { "avg": 96 },
 			"transitionedStack": {
 				"type": "item",
-				"code": "rot"},
+				"code": "game:rot"},
 			"transitionRatio": 0.5
 		}],
 		"*-twicesalted": [{
@@ -51,7 +51,7 @@
 			"transitionHours": { "avg": 168 },
 			"transitionedStack": {
 				"type": "item",
-				"code": "rot"},
+				"code": "game:rot"},
 			"transitionRatio": 0.5
 		}],
 		"*-veggie" : [{
@@ -60,7 +60,7 @@
 			"transitionHours": { "avg": 108 },
 			"transitionedStack": {
 				"type": "item",
-				"code": "rot"
+				"code": "game:rot"
 			},
 			"transitionRatio": 0.5
 		}],
@@ -70,7 +70,7 @@
 			"transitionHours": { "avg": 240 },
 			"transitionedStack": {
 				"type": "item",
-				"code": "rot"
+				"code": "game:rot"
 			},
 			"transitionRatio": 0.5
 		}]

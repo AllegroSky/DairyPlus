@@ -4,9 +4,9 @@
     "modid": "dairyplus",
     "name": "DairyPlus",
     "authors": [
-        "Unknown"
+        "AllegroSky"
     ],
-    "description": "To be added",
+    "description": "Adds butter, cream, and a number of other dairy based additions to the game.",
     "version": "1.0.0",
     "dependencies": {
         "game": "1.21.0"
