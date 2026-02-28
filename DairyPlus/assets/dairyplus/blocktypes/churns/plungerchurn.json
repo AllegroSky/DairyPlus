@@ -2,24 +2,63 @@
 	"code": "plungerchurn",
 	"class": "dairyplus.churn",
 	"entityclass": "dairyplus.bechurn",
+	"entityBehaviors": [
+		{ "name": "Animatable" }
+	],
+
 	"creativeinventory": {
 		"general": [ "*" ],
 		"dairyplus": [ "*" ]
 	},
+
 	"shape": { "base": "dairyplus:block/plungerchurn" },
 	"drawtype": "json",
 	"texture": {
 		"base": "dairyplus:block/churn/plungerChurn"
 	},
+
 	"blockmaterial": "Wood",
 	"sidesolid": { "all": false },
 	"sideopaque": { "all": false },
-	
+	"sideao": { "all": false },
+	"lightAbsorption": 1,
+	"maxStackSize": 1,
+
+	"attributes": {
+		"capacityLitres": 12
+	},
+
 	"sounds": {
-		"place": "block/planks",
-		"walk": "walk/wood",
-		"hit": "block/planks",
-		"break": "block/planks"
+		"place": "game:block/planks",
+		"walk": "game:walk/wood",
+		"hit": "game:block/planks",
+		"break": "game:block/planks"
+	},
+
+	"guiTransform": {
+		"origin": {
+			"x": 0.5,
+			"y": 0.6,
+			"z": 0.5
+		}
+	},
+	"tpHandTransform": {
+		"translation": {
+			"x": -0.2,
+			"y": -0.2,
+			"z": 1
+		},
+		"rotation": {
+			"x": 12,
+			"y": -39,
+			"z": -35
+		},
+		"origin": {
+			"x": 0,
+			"y": -0,
+			"z": -0
+		},
+		"scale": 0.74
 	},
 	"collisionboxes": [
 		{
@@ -27,11 +66,11 @@
 			"y1": 0,
 			"z1": 0.2,
 			"x2": 0.7,
-			"y2": 1.7,
+			"y2": 1.6,
 			"z2": 0.7
 		}
-		],
-		"selectionboxes" :  [
+	],
+	"selectionboxes": [
 		{
 			"x1": 0.2,
 			"y1": 0,
@@ -48,7 +87,5 @@
 			"y2": 1.7,
 			"z2": 0.7
 		}
-		],
-
-	"maxStackSize": 1
+	]
 }

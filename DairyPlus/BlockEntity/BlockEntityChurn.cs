@@ -10,28 +10,30 @@ using Vintagestory.GameContent;
 using Vintagestory.GameContent.Mechanics;
 using DairyPlus.GUI;
 using DairyPlus.Inventory;
+using HarmonyLib;
 
 
 namespace DairyPlus.BlockEntity
 {
     public class BlockEntityChurn : BlockEntityOpenableContainer
     {
-        public int CapacityLitres { get; set; } = 6;
-        public float CreamLitres;
-
-
+        public int CapacityLitres { get; set; } = 12;
 
         protected InventoryChurn inventory;
         // For how long the current churn has been oreing
         public float inputGrindTime;
         public float prevInputGrindTime;
-        protected int nowOutputFace;
         protected GuiDialogChurn clientDialog;
         protected float prevSpeed = float.NaN;
         // Server side only
         protected Dictionary<string, long> playersGrinding = new Dictionary<string, long>();
         // Client and serverside
         protected int quantityPlayersGrinding;
+
+        BlockEntityAnimationUtil animUtil
+        {
+            get { return GetBehavior<BEBehaviorAnimatable>().animUtil; }
+        }
 
 
         #region Getters
@@ -58,10 +60,9 @@ namespace DairyPlus.BlockEntity
 
         #region Config
 
-        // seconds it requires to melt the ore once beyond melting point
         public virtual float maxGrindingTime()
         {
-            return 4;
+            return 6;
         }
 
         public override string InventoryClassName
@@ -94,6 +95,11 @@ namespace DairyPlus.BlockEntity
 
             inventory.LateInitialize("churn-" + Pos.X + "/" + Pos.Y + "/" + Pos.Z, api);
 
+            if (inventory[0] is ItemSlotLiquidOnly liquidSlot)
+            {
+                liquidSlot.CapacityLitres = CapacityLitres;
+            }
+
             RegisterGameTickListener(Every100ms, 100);
             RegisterGameTickListener(Every500ms, 500);       
             
@@ -101,7 +107,7 @@ namespace DairyPlus.BlockEntity
        
         public void IsGrinding(IPlayer byPlayer)
         {
-            SetPlayerGrinding(byPlayer, true);
+        SetPlayerGrinding(byPlayer, true);
         }
 
         protected void Every100ms(float dt)
@@ -152,27 +158,9 @@ namespace DairyPlus.BlockEntity
                 }
             }
 
-            ItemStack buttermilkStack = new ItemStack(
-            Api.World.GetItem(new AssetLocation("dairyplus:skimmilk")),
-                100);
-            if (OutputSlot2.Itemstack == null)
-            {
-                OutputSlot2.Itemstack = buttermilkStack;
-            }
-            else
-            {
-                int mergableQuantity = OutputSlot2.Itemstack.Collectible.GetMergableQuantity(OutputSlot2.Itemstack, buttermilkStack, EnumMergePriority.AutoMerge);
-
-                if (mergableQuantity > 0)
-                {
-                    OutputSlot2.Itemstack.StackSize += buttermilkStack.StackSize;
-                }
-            }
-
-            InputSlot.TakeOut(200);
+            InputSlot.TakeOut(100);
             InputSlot.MarkDirty();
             OutputSlot.MarkDirty();
-            OutputSlot2.MarkDirty();
         }
 
 
@@ -186,7 +174,6 @@ namespace DairyPlus.BlockEntity
 
             prevInputGrindTime = inputGrindTime;
 
-
             foreach (var val in playersGrinding)
             {
                 long ellapsedMs = Api.World.ElapsedMilliseconds;
@@ -197,7 +184,6 @@ namespace DairyPlus.BlockEntity
                 }
             }
         }
-
 
         public void SetPlayerGrinding(IPlayer player, bool playerGrinding)
         {
@@ -214,6 +200,7 @@ namespace DairyPlus.BlockEntity
                 quantityPlayersGrinding = playersGrinding.Count;
            
             updateGrindingState();
+            MarkDirty();
         }
 
         bool beforeGrinding;
@@ -223,15 +210,30 @@ namespace DairyPlus.BlockEntity
 
             bool nowGrinding = quantityPlayersGrinding > 0;
 
-            if (nowGrinding != beforeGrinding)
+            if (Api.Side == EnumAppSide.Client)
             {
-           
+                if (nowGrinding && !beforeGrinding)
+                {
+                    animUtil?.StartAnimation(new AnimationMetaData()
+                    {
+                        Animation = "onchurn",
+                        Code = "onchurn",
+                        EaseInSpeed = 1,
+                        EaseOutSpeed = 2,
+                        AnimationSpeed = 1f
+                    });
+                    MarkDirty();
+                }
+
+                if (!nowGrinding && beforeGrinding)
+                {
+                    animUtil?.StopAnimation("onchurn");
+                }
             }
+
 
             beforeGrinding = nowGrinding;
         }
-
-
 
 
         protected void OnSlotModified(int slotid)
@@ -269,6 +271,7 @@ namespace DairyPlus.BlockEntity
                     clientDialog.Update(inputGrindTime, maxGrindingTime());
                     return clientDialog;
                 });
+
             }
 
             return true;
@@ -305,10 +308,7 @@ namespace DairyPlus.BlockEntity
                 Inventory.AfterBlocksLoaded(Api.World);
             }
 
-
             inputGrindTime = tree.GetFloat("inputGrindTime");
-            nowOutputFace = tree.GetInt("nowOutputFace");
-
             if (worldForResolving.Side == EnumAppSide.Client)
             {
                 List<int> clientIds = new List<int>((tree["clientIdsGrinding"] as IntArrayAttribute).value);
@@ -340,7 +340,6 @@ namespace DairyPlus.BlockEntity
                 updateGrindingState();
             }
 
-
             if (Api?.Side == EnumAppSide.Client && clientDialog != null)
             {
                 clientDialog.Update(inputGrindTime, maxGrindingTime());
@@ -357,7 +356,6 @@ namespace DairyPlus.BlockEntity
             tree["inventory"] = invtree;
 
             tree.SetFloat("inputGrindTime", inputGrindTime);
-            tree.SetInt("nowOutputFace", nowOutputFace);
             List<int> vals = new List<int>();
             foreach (var val in playersGrinding)
             {
@@ -365,26 +363,18 @@ namespace DairyPlus.BlockEntity
                 if (plr == null) continue;
                 vals.Add(plr.ClientId);
             }
-
-
             tree["clientIdsGrinding"] = new IntArrayAttribute(vals.ToArray());
         }
-
-
-
 
         public override void OnBlockRemoved()
         {
             base.OnBlockRemoved();
-
             clientDialog?.TryClose();
         }
-
 
         #endregion
 
         #region Helper getters
-
 
         public ItemSlot InputSlot
         {
@@ -394,11 +384,6 @@ namespace DairyPlus.BlockEntity
         public ItemSlot OutputSlot
         {
             get { return inventory[1]; }
-        }
-
-        public ItemSlot OutputSlot2
-        {
-            get { return inventory[2]; }
         }
 
         public ItemStack InputStack
@@ -413,18 +398,13 @@ namespace DairyPlus.BlockEntity
             set { inventory[1].Itemstack = value; inventory[1].MarkDirty(); }
         }
 
-        public ItemStack OutputStack2
-        {
-            get { return inventory[1].Itemstack; }
-            set { inventory[1].Itemstack = value; inventory[1].MarkDirty(); }
-        }
-
-
         public bool CanChurn()
         {
             ItemStack stack = InputSlot.Itemstack;
+            ItemStack fullbutter = OutputSlot.Itemstack;
+            
             if (stack == null) return false;
-
+     //       if (fullbutter == ) return false;
             return stack.Collectible.Code.Path.Contains("cream");
         }
 
@@ -460,6 +440,15 @@ namespace DairyPlus.BlockEntity
                 }
                 slot.Itemstack?.Collectible.OnLoadCollectibleMappings(worldForResolve, slot, oldBlockIdMapping, oldItemIdMapping, resolveImports);
             }
+        }
+        public override bool OnTesselation(ITerrainMeshPool mesher, ITesselatorAPI tessThreadTesselator)
+        {
+            if (animUtil?.animator == null)
+            {
+                animUtil?.InitializeAnimator("riftward");
+            }
+
+            return base.OnTesselation(mesher, tessThreadTesselator);
         }
     }
 }

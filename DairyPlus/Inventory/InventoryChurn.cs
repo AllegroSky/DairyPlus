@@ -18,16 +18,15 @@ namespace DairyPlus.Inventory
         {
             // slot 0 = input
             // slot 1 = output butter
-            // slot 2 = output buttermilk
-            slots = GenEmptySlots(3);
+            slots = GenEmptySlots(2);
         }
 
         public InventoryChurn(string className, string instanceID, ICoreAPI api) : base(className, instanceID, api)
         {
-            slots = GenEmptySlots(3);
+            slots = GenEmptySlots(2);
         }
 
-        public override int Count => 3;
+        public override int Count => 2;
 
         public override ItemSlot this[int slotId]
         {
@@ -56,14 +55,20 @@ namespace DairyPlus.Inventory
         //slot type
         protected override ItemSlot NewSlot(int i)
         {
-            if (i == 0) return new ItemSlotWatertight(this);
+            if (i == 0)
+            {
+                {
+                    var slot = new ItemSlotWatertight(this);
+                    slot.capacityLitres = 12;
+                    return slot;
+                }
+            }
+            return new ItemSlotWatertight(this);
             if (i == 1) return new ItemSlotOutput(this);
-            if (i == 2) return new ItemSlotOutput(this);
             throw new ArgumentOutOfRangeException(nameof(i), "Invalid");
         }
 
-        // Add cream to inputslot restriction, quern reference below
-
+        // Add cream to inputslot restriction
         public override float GetSuitability(ItemSlot sourceSlot, ItemSlot targetSlot, bool isMerge)
         {
             if (sourceSlot?.Itemstack == null) return 0f;

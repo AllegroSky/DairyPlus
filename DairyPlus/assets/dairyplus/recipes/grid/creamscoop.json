@@ -1,0 +1,13 @@
+{
+  "type": "recipe",
+  "ingredientPattern": "B,S",
+	"width": 2,
+	"height": 1,
+  "shapeless": false,
+  
+  "ingredients": {
+    "B": { "type": "item", "code": "game:bowl-*-fired" },
+	"S": { "type": "item", "code": "game:stick" }
+  },
+  "output": { "type": "block", "code": "dairyplus:creamscoop" }
+}

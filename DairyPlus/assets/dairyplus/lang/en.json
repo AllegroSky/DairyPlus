@@ -1,9 +1,9 @@
 {
+    // item names
     "game:tabname-dairyplus": "Dairy Plus",
 
     "dairyplus:block-barrelchurn": "Butter Churning Barrel",
     "dairyplus:block-plungerchurn": "Butter Churn",
-
     "dairyplus:block-creamscoop": "Cream Scoop",
 
     "dairyplus:item-butter-unsalted": "Unsalted Butter",
@@ -29,5 +29,25 @@
     "dairyplus:item-cream": "Cream",
     "dairyplus:item-skimmilk": "Skim Milk",
     "dairyplus:item-condensedmilk": "Condensed Milk",
-    "dairyplus:item-soymilk": "Soy Milk"
+    "dairyplus:item-soymilk": "Soy Milk",
+
+    //item desc.
+    "itemdesc-butter-unsalted": "Fresh from the churn.",
+    "itemdesc-butter-salted": "Lightly salted for preservation and flavour.",
+    "itemdesc-butter-twicesalted": "Over-salted for preservation. Must be washed before this is edible again.",
+    "itemdesc-butter-veggie": "A plant-based option for cooking. Can also replace fat in a pinch.",
+    "itemdesc-butter-saltedveggie": "Lightly salted for preservation and flavour.",
+
+    "itemdesc-soybeans-shelled": "Removed from their pods.",
+    "itemdesc-soybeans-soaked": "Soaked and ready for processing.",
+    "itemdesc-soypaste": "A wet paste from grinding. Needs to be heated before it's safe to eat.",
+
+    //block desc.
+    "blockdesc-plungerchurn": "Used to work cream into butter with a little bit of elbow grease.",
+    "blockdesc-barrelchurn": "A larger churn, built to hold more cream, and be powered mechanically.",
+    "blockdesc-creamscoop": "A simple tool to skim cream from milk.",
+
+    //handbook enteries
+    "block-handbooktitle-block-plungerchurn": "Uses",
+    "block-handbooktext-block-plungerchurn": "Place cream in the top slot and interact with the handle to start churning."
 }

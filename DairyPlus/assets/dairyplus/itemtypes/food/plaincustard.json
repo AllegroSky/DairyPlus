@@ -1,0 +1,43 @@
+{
+	"code": "plaincustard",
+
+	"creativeinventory": { "general": [ "*" ], "dairyplus": [ "*" ]},
+	"maxStackSize": 32,
+	"materialDensity": 900,
+	
+	"nutritionProp":  { "saturation": 300, "foodcategory": "Dairy" },
+	"perishableProps": {
+		"freshHours": { "avg": 144 },
+		"transitionHours": { "avg": 36 },
+		"transitionRatio": 1,
+		"transitionedStack": { "type": "item", "code": "game:rot" },
+	},
+	
+	"drawtype": "json",
+	"shape": { "base": "dairyplus:item/plaincustard" },
+	"texture": { "base": "dairyplus:item/plaincustard" },
+
+	"tpHandTransform": {
+		"translation": { "x": -0.2, "y": -0.7, "z": 0 },
+		"rotation": { "x": -40, "y": -161, "z": 102 },
+		"origin": {	"x": 0,	"y": 0,	"z": 0 },
+		"scale": 0.7
+		},
+	"guiTransform": {
+		"translation": { "x": 0, "y": 0, "z": 0 },
+		"rotation": { "x": 151, "y": 148, "z": 2 },
+		"origin": {	"x": 0.45,	"y": 0.03,	"z": 0.39 },
+		"scale": 4.27
+	},
+	"groundTransform": {
+		"translation": { "x": 0, "y": 0, "z": 0 },
+		"rotation": { "x": 3, "y": 1, "z": 0 },
+		"origin": { "x": 0.5, "y": 0, "z": 0.5 },
+		"scale": 5
+	},
+
+	"heldRightReadyAnimationByType": {
+		"*": "holdbothhands"},
+	"heldTpIdleAnimationByType": {
+		"*": "holdbothhands"}
+}

@@ -11,7 +11,6 @@ namespace DairyPlus.Blocks
 {
     public class BlockChurn : BlockGeneric
     {
-
         public override bool OnBlockInteractStart(IWorldAccessor world, IPlayer byPlayer, BlockSelection blockSel)
         {
             BlockEntityChurn beChun = world.BlockAccessor.GetBlockEntity(blockSel.Position) as BlockEntityChurn;

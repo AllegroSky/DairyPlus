@@ -1,0 +1,23 @@
+{
+  "type": "recipe",
+  "code": "butterchurn",
+  "width": 3,
+  "height": 3,
+  "shapeless": false,
+
+  "ingredientPattern": "HS_,NBN,BRB",
+	
+  "ingredients": {
+    "H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+    "S": { "type": "item", "code": "game:stick", "quantity": 2 },
+    "N": { "type": "item", "code": "game:metalnailsandstrips-*" },
+    "B": { "type": "item", "code": "game:plank-*", "quantity": 3},
+    "R": { "type": "item", "code": "game:resin", "quantity": 2 }
+  },
+
+  "output": { 
+    "type": "block", 
+    "code": "dairyplus:plungerchurn",
+    "quantity": 1
+  }
+}

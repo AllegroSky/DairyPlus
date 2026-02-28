@@ -1,0 +1,29 @@
+{
+	"code": "plaincustard",
+	"enabled": true,
+	"perishableProps": {
+		"type": "None",
+		"freshHours": { "avg": 72 },
+		"transitionHours": { "avg": 48 },
+		"transitionRatio": 1,
+		"transitionedStack": { "type": "item", "code": "game:rot" }
+	},
+	"shape": { "base": "game:block/food/meal/liquid" },
+	"isfood": true,
+	"ingredients": [
+		{ 
+			"code": "cream", 
+			"validStacks": [ {"type": "item","code": "dairyplus:cream"}],
+			"minQuantity": 1,
+			"maxQuantity": 1,
+			"portionSizeLitres": 1
+		},
+		{ 
+			"code": "egg", 
+			"validStacks": [ {"type": "item","code": "game:egg-chicken-raw"}],
+			"minQuantity": 1,
+			"maxQuantity": 1,
+		}
+	],
+	"cooksInto": { "type": "item", "code": "dairyplus:plaincustard", "quantity": 2 }
+}

@@ -6,7 +6,7 @@
 		"handbook": {
 			"ignoreCreativeInvStacks": true
 		},
-		"inContainerTexture": { "base": "dairyplus:block/dairy/cream" },
+		"inContainerTexture": { "base": "dairyplus:block/dairy/creamportion" },
 		"inBowlShape": { "base": "game:block/food/meal/liquid" },
 		"waterTightContainerProps": {
 			"containable": true,
