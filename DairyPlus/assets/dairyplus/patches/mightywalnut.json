@@ -1,23 +1,23 @@
 ﻿[
   {
     "op": "addeach",
-    "path": "/ingredients/1/validStacks/-",
+    "path": "/ingredients/2/validStacks/-",
     "value": [
       { "type": "item", "code": "mightywalnut:walnut-shelled",  "shapeElement": "bowl/berry/*", "textureMapping": ["fruit", "peanutincust"]  },
 	  { "type": "item", "code": "mightywalnut:walnut-roasted",  "shapeElement": "bowl/berry/*", "textureMapping": ["fruit", "group5"]  }
     ],
-    "file": "recipes/cooking/custardmeal.json",
+    "file": "dairyplus:recipes/cooking/custardmeal.json",
     "side": "server",
     "dependsOn": [{ "modid": "mightywalnut" } ]
   },
   {
     "op": "addeach",
-    "path": "/ingredients/2/validStacks/-",
+    "path": "/ingredients/3/validStacks/-",
     "value": [
       { "type": "item", "code": "mightywalnut:walnut-shelled",  "shapeElement": "bowl/berry2/*", "textureMapping": ["fruit", "peanutincust"]  },
 	  { "type": "item", "code": "mightywalnut:walnut-roasted",  "shapeElement": "bowl/berry2/*", "textureMapping": ["fruit", "group5"]  }
     ],
-    "file": "recipes/cooking/custardmeal.json",
+    "file": "dairyplus:recipes/cooking/custardmeal.json",
     "side": "server",
     "dependsOn": [{ "modid": "mightywalnut" } ]
   }

@@ -19,6 +19,17 @@
             "typeName": "custard"
 		},
 		{
+			"code": "topping", 
+			"validStacks": [ 
+				{ "type": "item", "code": "game:honeyportion",  "shapeElement": "bowl/topping/*", "textureMapping": ["topping", "honey"] },
+				{ "type": "item", "code": "dairyplus:condensedmilk",  "shapeElement": "bowl/topping/*", "textureMapping": ["topping", "milkportion"] }
+			],
+			"minQuantity": 1,
+			"maxQuantity": 1,
+			"portionSizeLitres": 0.4,
+            "typeName": "sweetener"
+		},
+		{
 			"code": "berry", 
 			"validStacks": [ 
 				{ "type": "item", "code": "game:fruit-cranberry",  "shapeElement": "bowl/berry/*", "textureMapping": ["fruit", "group3"] },
@@ -94,17 +105,6 @@
 			"minQuantity": 0,
 			"maxQuantity": 1,
             "typeName": "other"
-		},
-		{
-			"code": "topping", 
-			"validStacks": [ 
-				{ "type": "item", "code": "game:honeyportion",  "shapeElement": "bowl/topping/*", "textureMapping": ["topping", "honey"] },
-				{ "type": "item", "code": "dairyplus:condensedmilk",  "shapeElement": "bowl/topping/*", "textureMapping": ["topping", "milkportion"] }
-			],
-			"minQuantity": 0,
-			"maxQuantity": 1,
-			"portionSizeLitres": 0.4,
-            "typeName": "sweetener"
 		}
-		]
+	]
 }

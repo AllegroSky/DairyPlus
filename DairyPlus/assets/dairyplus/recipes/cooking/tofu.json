@@ -13,7 +13,7 @@
 	"ingredients": [
 		{ 
 			"code": "vinegar", 
-			"validStacks": [ {"type": "item","code": "game:vinegarportion", "shapeElement": "game:bowl/water"}],
+			"validStacks": [ {"type": "item","code": "dairyplus:fruitvinegar", "shapeElement": "game:bowl/water"}],
 			"minQuantity": 1,
 			"maxQuantity": 1,
 			"portionSizeLitres": 0.2
