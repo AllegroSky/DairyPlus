@@ -1,0 +1,83 @@
+[
+  {
+    "op": "addmerge",
+    "path": "/ingredients/0/validStacks/-",
+    "value": { "type": "item", "code": "dairyplus:tofu",  "shapeElement": "bowl/egg1/*", "textureMapping": ["scrambledegg", "group1"] },
+    "side": "server",
+    "file": "game:recipes/cooking/scrambledeggs.json"
+  }, 
+    {
+    "op": "addmerge",
+    "path": "/ingredients/1/validStacks/-",
+    "value": { "type": "item", "code": "dairyplus:tofu",  "shapeElement": "bowl/egg2/*", "textureMapping": ["scrambledegg", "group1"] },
+    "side": "server",
+    "file": "game:recipes/cooking/scrambledeggs.json"
+  }, 
+    {
+    "op": "addmerge",
+    "path": "/ingredients/2/validStacks/-",
+    "value": { "type": "item", "code": "dairyplus:tofu",  "shapeElement": "bowl/egg3/*", "textureMapping": ["scrambledegg", "group1"] },
+    "side": "server",
+    "file": "game:recipes/cooking/scrambledeggs.json"
+  }, 
+  {
+    "op": "addeach",
+    "path": "/ingredients/4/validStacks/-",
+    "value": [
+      { "type": "item", "code": "dairyplus:butter-unsalted",  "shapeElement": "bowl/egg3/*", "textureMapping": ["vegetable", "group7"] },
+	  { "type": "item", "code": "dairyplus:butter-salted",  "shapeElement": "bowl/egg3/*", "textureMapping": ["vegetable", "group7"] },
+	  ],
+    "side": "server",
+    "file": "game:recipes/cooking/scrambledeggs.json"
+  }, 
+  {
+    "op": "addeach",
+    "path": "/ingredients/5/validStacks/-",
+    "value": [
+        { "type": "item", "code": "dairyplus:soybeans-shelled",  "shapeElement": "bowl/vegetable3/*", "textureMapping": [ "vegetable", "group4" ]  },
+		{ "type": "item", "code": "dairyplus:soybeans-soaked",  "shapeElement": "bowl/vegetable3/*", "textureMapping": [ "vegetable", "group4" ]  }
+	  ],
+    "side": "server",
+    "file": "game:recipes/cooking/scrambledeggs.json"
+  },  
+    {
+    "op": "addeach",
+    "path": "/ingredients/6/validStacks/-",
+    "value":  [
+        { "type": "item", "code": "dairyplus:soybeans-shelled",  "shapeElement": "bowl/vegetable3/*", "textureMapping": [ "vegetable", "group4" ]  },
+		{ "type": "item", "code": "dairyplus:soybeans-soaked",  "shapeElement": "bowl/vegetable3/*", "textureMapping": [ "vegetable", "group4" ]  }
+	  ],
+    "side": "server",
+    "file": "game:recipes/cooking/scrambledeggs.json"
+  },  
+  {
+    "op": "addmerge",
+    "path": "/ingredients/-",
+    "value": {
+      "code": "topping",
+      "validStacks": [
+        { "type": "item", "code": "game:milkportion" }
+      ],
+      "minQuantity": 0,
+      "maxQuantity": 1,
+      "portionSizeLitres": 0.2,
+      "typeName": "topping"
+    },
+    "side": "server",
+    "file": "game:recipes/cooking/scrambledeggs.json"
+  },
+  {
+    "op": "addeach",
+    "path": "/ingredients/7/validStacks/-",
+    "value": [ 
+      {"type": "item", "code": "dairyplus:soymilk"},
+      {"type": "item", "code": "dairyplus:skimmilk"},
+      {"type": "item", "code": "dairyplus:cream"},
+      {"type": "item", "code": "dairyplus:condensedmilk"},
+      {"type": "item", "code": "dairyplus:sauce-plain"},
+      {"type": "item", "code": "dairyplus:sauce-cheese"}
+    ],
+    "side": "server",
+    "file": "game:recipes/cooking/scrambledeggs.json"
+  }
+ ]

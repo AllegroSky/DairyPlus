@@ -8,7 +8,7 @@
   },
   {
   "op": "addmerge",
-  "path": "/attributesByType/claypot-blue-cooked/textureMapping/dairyplus:plaincustard",
+  "path": "/attributesByType/claypot-blue-cooked/textureMapping/plaincustard",
   "value": ["plaincustard", "plaincustard"],
   "side": "server",
   "file": "game:blocktypes/clay/fired/pot.json"
@@ -22,7 +22,7 @@
   },
   {
   "op": "addmerge",
-  "path": "/attributesByType/claypot-blue-cooked/textureMapping/dairyplus:meal1",
+  "path": "/attributesByType/claypot-blue-cooked/textureMapping/meal1",
   "value": ["slice", "meal1"],
   "side": "server",
   "file": "game:blocktypes/clay/fired/pot.json"
@@ -36,7 +36,7 @@
   },  
   {
   "op": "addmerge",
-  "path": "/attributesByType/claypot-blue-cooked/textureMapping/dairyplus:meal2",
+  "path": "/attributesByType/claypot-blue-cooked/textureMapping/meal2",
   "value": ["slice", "meal2"],
   "side": "server",
   "file": "game:blocktypes/clay/fired/pot.json"
@@ -50,9 +50,23 @@
   },
   {
   "op": "addmerge",
-  "path": "/attributesByType/claypot-blue-cooked/textureMapping/dairyplus:meal3",
+  "path": "/attributesByType/claypot-blue-cooked/textureMapping/meal3",
   "value": ["slice", "meal3"],
   "side": "server",
   "file": "game:blocktypes/clay/fired/pot.json"
   },
+  {
+    "op": "addmerge",
+    "path": "/textures/peanutincust",
+    "value": { "base": "game:block/food/pie/fill-mushroomorange" },
+    "side": "server",
+    "file": "game:blocktypes/clay/fired/pot.json"
+  },
+  {
+  "op": "addmerge",
+  "path": "/attributesByType/claypot-blue-cooked/textureMapping/game:fill-mushroomorange",
+  "value": ["fruit", "peanutincust"],
+  "side": "server",
+  "file": "game:blocktypes/clay/fired/pot.json"
+  }
 ]
