@@ -38,5 +38,5 @@
     "file": "dairyplus:recipes/cooking/custardmeal.json",
     "side": "server",
     "dependsOn": [{ "modid": "expandedfoods" }, {"modid": "mightywalnut"}, ]
-  }
+  },
 ]
