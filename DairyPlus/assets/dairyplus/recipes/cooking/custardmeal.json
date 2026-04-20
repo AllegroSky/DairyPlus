@@ -1,5 +1,6 @@
 {
 	"code": "custard",
+	"cookTimeHours": {"evg": 0.1},
 	"perishableProps": {
 		"freshHours": { "avg": 90 },
 		"transitionHours": { "avg": 24 },
@@ -78,7 +79,8 @@
 				{ "type": "item", "code": "game:fruit-pear",  "shapeElement": "bowl/fruit1/*", "textureMapping": ["fruit", "fruit-pear"] },
 				{ "type": "item", "code": "game:fruit-mango",  "shapeElement": "bowl/fruit1/*", "textureMapping": ["fruit", "fruit-mango"] },
 				{ "type": "item", "code": "game:fruit-saguaro",  "shapeElement": "bowl/fruit1/*", "textureMapping": ["fruit", "group2"] },
-				{ "type": "item", "code": "game:fruit-orange",  "shapeElement": "bowl/fruit1/*", "textureMapping": ["fruit", "fruit-orange"] }
+				{ "type": "item", "code": "game:fruit-orange",  "shapeElement": "bowl/fruit1/*", "textureMapping": ["fruit", "fruit-orange"] },
+				{ "type": "item", "code": "game:fruit-breadfruit",  "shapeElement": "bowl/fruit1/*", "textureMapping": ["fruit", "fruit-breadfruit"] }
 				],
 			"minQuantity": 0,
 			"maxQuantity": 1,
@@ -89,7 +91,8 @@
 			"validStacks": [ 
 				{ "type": "item", "code": "game:fruit-redapple",  "shapeElement": "bowl/slices/*", "textureMapping": ["slice", "meal1"] },
 				{ "type": "item", "code": "game:fruit-pinkapple",  "shapeElement": "bowl/slices/*", "textureMapping": ["slice", "meal2"] },
-				{ "type": "item", "code": "game:fruit-yellowapple",  "shapeElement": "bowl/slices/*", "textureMapping": ["slice", "meal3"] }
+				{ "type": "item", "code": "game:fruit-yellowapple",  "shapeElement": "bowl/slices/*", "textureMapping": ["slice", "meal3"] },
+				{ "type": "item", "code": "game:fruit-pineapple",  "shapeElement": "bowl/slices/*", "textureMapping": ["slice", "meal4"] }
 				],
 			"minQuantity": 0,
 			"maxQuantity": 1,
@@ -100,7 +103,8 @@
 			"validStacks": [ 
 				{ "type": "item", "code": "game:fruit-redapple",  "shapeElement": "bowl/slicesmore/*", "textureMapping": ["slice", "meal1"] },
 				{ "type": "item", "code": "game:fruit-pinkapple",  "shapeElement": "bowl/slicesmore/*", "textureMapping": ["slice", "meal2"] },
-				{ "type": "item", "code": "game:fruit-yellowapple",  "shapeElement": "bowl/slicesmore/*", "textureMapping": ["slice", "meal3"] }
+				{ "type": "item", "code": "game:fruit-yellowapple",  "shapeElement": "bowl/slicesmore/*", "textureMapping": ["slice", "meal3"] },
+				{ "type": "item", "code": "game:fruit-pineapple",  "shapeElement": "bowl/slicesmore/*", "textureMapping": ["slice", "meal4"] }
 				],
 			"minQuantity": 0,
 			"maxQuantity": 1,

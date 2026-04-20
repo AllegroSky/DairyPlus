@@ -1,0 +1,42 @@
+﻿[
+  {
+    "op": "addeach",
+    "path": "/ingredients/1/validStacks/-",
+    "value": [
+		{ "type": "item", "code": "expandedfoods:fruitsyrupportion-cranberry",  "shapeElement": "bowl/topping/*", "textureMapping": ["topping", "cranberrywine"] },
+		{ "type": "item", "code": "expandedfoods:fruitsyrupportion-blueberry",  "shapeElement": "bowl/topping/*", "textureMapping": ["topping", "blueberrywine"] },
+		{ "type": "item", "code": "expandedfoods:fruitsyrupportion-whitecurrant",  "shapeElement": "bowl/topping/*", "textureMapping": ["topping", "whitecurrantwine"] },
+		{ "type": "item", "code": "expandedfoods:fruitsyrupportion-redcurrant",  "shapeElement": "bowl/topping/*", "textureMapping": ["topping", "redcurrantwine"] },
+		{ "type": "item", "code": "expandedfoods:fruitsyrupportion-blackcurrant",  "shapeElement": "bowl/topping/*", "textureMapping": ["topping", "blackcurrantwine"] },
+		{ "type": "item", "code": "expandedfoods:fruitsyrupportion-cherry",  "shapeElement": "bowl/topping/*", "textureMapping": ["topping", "cherrywine"] },
+		{ "type": "item", "code": "expandedfoods:fruitsyrupportion-lychee",  "shapeElement": "bowl/topping/*", "textureMapping": ["topping", "lycheewine"] },
+		{ "type": "item", "code": "expandedfoods:fruitsyrupportion-pomegranate",  "shapeElement": "bowl/topping/*", "textureMapping": ["topping", "pomegranatewine"] },
+		{ "type": "item", "code": "expandedfoods:fruitsyrupportion-apple",  "shapeElement": "bowl/topping/*", "textureMapping": ["topping", "applewine"] },
+		{ "type": "item", "code": "expandedfoods:fruitsyrupportion-pineapple",  "shapeElement": "bowl/topping/*", "textureMapping": ["topping", "pineapplewine"] },
+		{ "type": "item", "code": "expandedfoods:fruitsyrupportion-breadfruit",  "shapeElement": "bowl/topping/*", "textureMapping": ["topping", "breadfruitwine"] },
+		{ "type": "item", "code": "expandedfoods:fruitsyrupportion-saguaro",  "shapeElement": "bowl/topping/*", "textureMapping": ["topping", "saguarosyrup"] },
+		{ "type": "item", "code": "expandedfoods:fruitsyrupportion-peach",  "shapeElement": "bowl/topping/*", "textureMapping": ["topping", "peachwine"] },
+		{ "type": "item", "code": "expandedfoods:fruitsyrupportion-pear",  "shapeElement": "bowl/topping/*", "textureMapping": ["topping", "pearwine"] },
+		{ "type": "item", "code": "expandedfoods:fruitsyrupportion-orange",  "shapeElement": "bowl/topping/*", "textureMapping": ["topping", "orangewine"] },
+		{ "type": "item", "code": "expandedfoods:fruitsyrupportion-mango",  "shapeElement": "bowl/topping/*", "textureMapping": ["topping", "mangowine"] },
+		{ "type": "item", "code": "expandedfoods:fruitsyrupportion-lychee",  "shapeElement": "bowl/topping/*", "textureMapping": ["topping", "lycheewine"] },
+		{ "type": "item", "code": "expandedfoods:fruitsyrupportion-pomegranate",  "shapeElement": "bowl/topping/*", "textureMapping": ["topping", "pomegranatewine"] },
+		{ "type": "item", "code": "expandedfoods:treesyrupportion-maple",  "shapeElement": "bowl/topping/*", "textureMapping": ["topping", "maplesyrup"]  },
+		{ "type": "item", "code": "expandedfoods:treesyrupportion-birch",  "shapeElement": "bowl/topping/*", "textureMapping": ["topping", "birchsyrup"]  }
+	
+    ],
+    "file": "dairyplus:recipes/cooking/custardmeal.json",
+    "side": "server",
+    "dependsOn": [{ "modid": "expandedfoods" } ]
+  },
+    {
+    "op": "addeach",
+    "path": "/ingredients/1/validStacks/-",
+    "value": [
+		{ "type": "item", "code": "expandedfoods:treesyrupportion-walnut",  "shapeElement": "bowl/topping/*", "textureMapping": ["topping", "walnutsyrup"]  }
+	],
+    "file": "dairyplus:recipes/cooking/custardmeal.json",
+    "side": "server",
+    "dependsOn": [{ "modid": "expandedfoods" }, {"modid": "mightywalnut"}, ]
+  }
+]

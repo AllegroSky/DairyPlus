@@ -550,7 +550,7 @@
 						"east": { "texture": "#topping", "uv": [ 0.0, 0.0, 0.25, 3.0 ], "rotation": 90 },
 						"south": { "texture": "#topping", "uv": [ 0.0, 0.0, 0.25, 3.0 ], "rotation": 270 },
 						"west": { "texture": "#topping", "uv": [ 0.0, 0.0, 0.25, 3.0 ], "rotation": 90 },
-						"up": { "texture": "#topping", "uv": [ 0.0, 0.0, 3.0, 3.0 ], "rotation": 270 }
+						"up": { "texture": "#topping", "uv": [ 2.5, 2.75, 5.5, 5.75 ], "rotation": 270 }
 					}
 				},
 				{
