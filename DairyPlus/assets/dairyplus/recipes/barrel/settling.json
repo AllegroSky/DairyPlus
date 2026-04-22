@@ -5,12 +5,12 @@
     {
       "type": "item",
       "code": "game:milkportion",
-      "litres": 50,
+      "litres": 10,
     },
   ],
   "output": {
     "type": "item",
     "code": "dairyplus:separatingmilk",
-    "litres": 50
+    "litres": 10
   }
 }
