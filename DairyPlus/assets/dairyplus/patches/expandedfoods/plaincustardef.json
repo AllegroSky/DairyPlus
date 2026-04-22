@@ -1,0 +1,118 @@
+[	
+	{
+	"op": "add",
+    "path": "/-",
+	"value": {
+		"code": "plaincustard",
+		"enabled": true,
+		"perishableProps": {
+			"type": "None",
+			"freshHours": { "avg": 72 },
+			"transitionHours": { "avg": 48 },
+			"transitionRatio": 1,
+			"transitionedStack": { "type": "item", "code": "game:rot" }
+		},
+		"shape": { "base": "game:block/food/meal/liquid" },
+		"isfood": true,
+		"ingredients": [
+			{ 
+				"code": "cream", 
+				"validStacks": [ {"type": "item","code": "dairyplus:cream"}],
+				"minQuantity": 1,
+				"maxQuantity": 1,
+				"portionSizeLitres": 1
+			},
+			{ 
+				"code": "egg", 
+				"validStacks": [ 
+					{ "type": "item", "code": "aculinaryartillery:eggyolkportion-chicken" },
+					{ "type": "item", "code": "aculinaryartillery:eggyolkfullportion-chicken" }],
+				"minQuantity": 1,
+				"maxQuantity": 1,
+				"portionSizeLitres": 0.4,
+			}
+			],
+		"cooksInto": { "type": "item", "code": "dairyplus:plaincustard", "quantity": 2 },
+		"dependsOn": [{ "modid": "aculinaryartillery" }]
+	},
+	"side": "server",
+    "file": "dairyplus:recipes/cooking/plaincustard.json",
+	"dependsOn": [{ "modid": "aculinaryartillery" }]
+		},	
+	
+	{
+	"op": "add",
+    "path": "/-",
+	"value": {
+		"code": "plaincustard",
+		"enabled": true,
+		"perishableProps": {
+			"type": "None",
+			"freshHours": { "avg": 72 },
+			"transitionHours": { "avg": 48 },
+			"transitionRatio": 1,
+			"transitionedStack": { "type": "item", "code": "game:rot" }
+		},
+		"shape": { "base": "game:block/food/meal/liquid" },
+		"isfood": true,
+		"ingredients": [
+			{ 
+				"code": "milk", 
+				"validStacks": [ {"type": "item","code": "game:milkportion"}],
+				"minQuantity": 1,
+				"maxQuantity": 1,
+				"portionSizeLitres": 1.5
+			},
+			{ 
+				"code": "egg", 
+				"validStacks": [ 
+					{ "type": "item", "code": "aculinaryartillery:eggyolkportion-chicken" },
+					{ "type": "item", "code": "aculinaryartillery:eggyolkfullportion-chicken" }],
+				"minQuantity": 1,
+				"maxQuantity": 1,
+				"portionSizeLitres": 0.4,
+			}
+			],
+		"cooksInto": { "type": "item", "code": "dairyplus:plaincustard", "quantity": 2 },
+		"dependsOn": [{ "modid": "aculinaryartillery" }]
+		},
+	"side": "server",
+    "file": "dairyplus:recipes/cooking/plaincustard.json",
+	"dependsOn": [{ "modid": "aculinaryartillery" }]
+	},
+	
+	{
+    "op": "addeach",
+    "path": "/2/ingredients/1/validStacks/-",
+    "value": [
+      { "type": "item", "code": "aculinaryartillery:eggyolkportion-pheasant" },
+      { "type": "item", "code": "aculinaryartillery:eggyolkportion-goldenpheasant" },
+	  { "type": "item", "code": "aculinaryartillery:eggyolkportion-wildturkey" },
+      { "type": "item", "code": "aculinaryartillery:eggyolkportion-capercaillie" },
+      { "type": "item", "code": "aculinaryartillery:eggyolkfullportion-pheasant" },
+      { "type": "item", "code": "aculinaryartillery:eggyolkfullportion-goldenpheasant" },
+	  { "type": "item", "code": "aculinaryartillery:eggyolkfullportion-wildturkey" },
+      { "type": "item", "code": "aculinaryartillery:eggyolkfullportion-capercaillie" }
+    ],
+    "file": "dairyplus:recipes/cooking/plaincustard.json",
+    "side": "server",
+    "dependsOn": [{ "modid": "moreanimals" }, { "modid": "aculinaryartillery" }]
+  },
+  {
+    "op": "addeach",
+    "path": "/3/ingredients/1/validStacks/-",
+    "value": [
+      { "type": "item", "code": "aculinaryartillery:eggyolkportion-pheasant" },
+      { "type": "item", "code": "aculinaryartillery:eggyolkportion-goldenpheasant" },
+	  { "type": "item", "code": "aculinaryartillery:eggyolkportion-wildturkey" },
+      { "type": "item", "code": "aculinaryartillery:eggyolkportion-capercaillie" },
+      { "type": "item", "code": "aculinaryartillery:eggyolkfullportion-pheasant" },
+      { "type": "item", "code": "aculinaryartillery:eggyolkfullportion-goldenpheasant" },
+	  { "type": "item", "code": "aculinaryartillery:eggyolkfullportion-wildturkey" },
+      { "type": "item", "code": "aculinaryartillery:eggyolkfullportion-capercaillie" }
+    ],
+    "file": "dairyplus:recipes/cooking/plaincustard.json",
+    "side": "server",
+    "dependsOn": [{ "modid": "moreanimals" }, { "modid": "aculinaryartillery" }]
+  }
+]

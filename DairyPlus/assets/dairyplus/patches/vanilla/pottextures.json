@@ -41,4 +41,18 @@
     "side": "server",
     "file": "game:blocktypes/clay/fired/pot.json"
   },
+    {
+    "op": "addmerge",
+    "path": "/textures/sauceplain",
+    "value": { "base": "dairyplus:liquid/sauceplain" },
+    "side": "server",
+    "file": "game:blocktypes/clay/fired/pot.json"
+  },
+      {
+    "op": "addmerge",
+    "path": "/textures/saucecheese",
+    "value": { "base": "dairyplus:liquid/saucecheese" },
+    "side": "server",
+    "file": "game:blocktypes/clay/fired/pot.json"
+  },
 ]

@@ -23,18 +23,15 @@
 		{ "type": "item", "code": "expandedfoods:fruitsyrupportion-pomegranate",  "shapeElement": "bowl/topping/*", "textureMapping": ["topping", "pomegranatewine"] },
 		{ "type": "item", "code": "expandedfoods:treesyrupportion-maple",  "shapeElement": "bowl/topping/*", "textureMapping": ["topping", "maplesyrup"]  },
 		{ "type": "item", "code": "expandedfoods:treesyrupportion-birch",  "shapeElement": "bowl/topping/*", "textureMapping": ["topping", "birchsyrup"]  }
-	
     ],
     "file": "dairyplus:recipes/cooking/custardmeal.json",
     "side": "server",
     "dependsOn": [{ "modid": "expandedfoods" } ]
   },
     {
-    "op": "addeach",
+    "op": "addmerge",
     "path": "/ingredients/1/validStacks/-",
-    "value": [
-		{ "type": "item", "code": "expandedfoods:treesyrupportion-walnut",  "shapeElement": "bowl/topping/*", "textureMapping": ["topping", "walnutsyrup"]  }
-	],
+    "value": { "type": "item", "code": "expandedfoods:treesyrupportion-walnut",  "shapeElement": "bowl/topping/*", "textureMapping": ["topping", "walnutsyrup"]  },
     "file": "dairyplus:recipes/cooking/custardmeal.json",
     "side": "server",
     "dependsOn": [{ "modid": "expandedfoods" }, {"modid": "mightywalnut"}, ]

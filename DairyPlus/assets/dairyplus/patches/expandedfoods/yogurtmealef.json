@@ -1,0 +1,13 @@
+﻿[
+    {
+    "op": "addeach",
+    "path": "/ingredients/9/validStacks/-",
+    "value": [
+		{ "type": "item", "code": "dairyplus:condensedmilk",  "shapeElement": "bowl/topping/*", "textureMapping": ["topping", "milkportion"]  },
+		{ "type": "item", "code": "dairyplus:plaincustard",  "shapeElement": "bowl/topping/*", "textureMapping": ["topping", "gelatinpeach"]  }
+		],
+    "file": "expandedfoods:recipes/mixing/yogurtmeal.json",
+    "side": "server",
+    "dependsOn": [{ "modid": "expandedfoods" }]
+  },
+]

@@ -1,0 +1,15 @@
+﻿[
+  {
+    "op": "addeach",
+    "path": "/ingredients/8/validStacks/-",
+    "value": [
+		{ "type": "item", "code": "dairyplus:condensedmilk",  "shapeElement": "bowl/topping/*", "textureMapping": ["topping", "milkportion"]  },
+		{ "type": "item", "code": "dairyplus:cream",  "shapeElement": "bowl/topping/*", "textureMapping": ["topping", "gelatinpeach"]  },
+		{ "type": "item", "code": "dairyplus:sauce-plain",  "shapeElement": "bowl/topping/*", "textureMapping": ["topping", "sauceplain"]  },
+		{ "type": "item", "code": "dairyplus:sauce-cheese",  "shapeElement": "bowl/topping/*", "textureMapping": ["topping", "saucecheese"]  }
+		],
+    "file": "game:recipes/cooking/riceandbeans.json",
+    "side": "server",
+    "dependsOn": [{ "modid": "expandedfoods" }]
+  }
+]

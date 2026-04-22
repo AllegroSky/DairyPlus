@@ -1,0 +1,22 @@
+[ 
+    {
+    "op": "addeach",
+    "path": "/ingredients/5/validStacks/-",
+    "value":  [
+		{"type": "item", "code": "dairyplus:soymilk", "shapeElement": "bowl/topping/*" },
+		{"type": "item", "code": "dairyplus:skimmilk", "shapeElement": "bowl/topping/*" },
+		{"type": "item", "code": "dairyplus:cream", "shapeElement": "bowl/topping/*" },
+		{"type": "item", "code": "dairyplus:condensedmilk", "shapeElement": "bowl/topping/*" },
+	  ],
+    "side": "server",
+    "file": "game:recipes/cooking/porridge.json",
+	},
+    {
+    "op": "addmerge",
+    "path": "/ingredients/5/validStacks/-",
+    "value": {"type": "item", "code": "game:milkportion", "shapeElement": "bowl/topping/*" },
+    "side": "server",
+    "file": "game:recipes/cooking/porridge.json",
+	"dependsOn": [ {"modid": "expandedfoods", "invert": true }]
+	}
+ ]

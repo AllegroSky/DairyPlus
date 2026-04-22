@@ -29,6 +29,7 @@
 	"dairyplus:liquid-separatingmilk": "Separating Milk",
 	"dairyplus:liquid-sauce-plain": "Creamy Sauce",
 	"dairyplus:liquid-sauce-cheese": "Cheesy Sauce",
+	"dairyplus:liquid-fruitvinegar": "Fruit Vinegar",
 
     "dairyplus:incontainer-item-cream": "Cream",
     "dairyplus:incontainer-item-skimmilk": "Skim Milk",
@@ -37,6 +38,7 @@
 	"dairyplus:incontainer-item-separatingmilk": "Separating Milk",
 	"dairyplus:incontainer-item-sauce-plain": "Creamy Sauce",
 	"dairyplus:incontainer-item-sauce-cheese": "Cheesy Sauce",
+	"dairyplus:incontainer-item-fruitvinegar": "Fruit Vinegar",
 
     "dairyplus:item-cream": "Cream",
     "dairyplus:item-skimmilk": "Skim Milk",
@@ -45,6 +47,7 @@
 	"dairyplus:item-separatingmilk": "Separating Milk",
 	"dairyplus:item-sauce-plain": "Creamy Sauce",
 	"dairyplus:item-sauce-cheese": "Cheesy Sauce",
+	"dairyplus:item-fruitvinegar": "Fruit Vinegar",
 
     //item desc.
     "itemdesc-butter-unsalted": "Fresh from the churn.",
@@ -97,12 +100,13 @@
 	"dairyplus:recipeingredient-item-tofu-insturmentalcase": "tofu",
 	
 	"game:meal-normal-custard": "sweet custard {1}",
-	"game:mealrecipe-name-custard": "sweet custard",
+	"game:mealrecipe-name-custard": "Sweet Custard",
 	"game:mealrecipe-name-custard-in-container": "sweet custard",
 	
 	"game:handbook-mealingredient-custard": "custard",
 	"game:handbook-mealingredient-other": "dipped wedges",
 	"game:handbook-mealingredient-smallbits": "small toppings",
+	"game:handbook-mealingredient-butter": "butter",
 
 	"creamguide-title": "Crafting Mechanic: Skimming Cream",
 	"creamguide-text": "<strong>Skimming Cream</strong><br>To start, you'll need some fresh milk. About 50L will do.<br>Milk will naturally seperate if left to settle; so go ahead and seal it in a barrel to let it rest undisturbed as you prepare for the next step. <br><br>Craft yourself a <a href=\"handbook://block-dairyplus:creamscoop\">Cream Scoop</a> and you'll be able to skim the cream from the <a href=\"handbook://item-dairyplus:separatingmilk\">Separating Milk</a> in the barrel once the milk fats have finished rising to the top. To do this, crouch with your scoop in hand and interract with the barrel. Be patient, this step is delicate and takes a few moments, else you'll simply mix the milk back together. <br><br>With a scoop full of <a href=\"handbook://item-dairyplus:cream\">Cream</a>, you'll be left some <a href=\"handbook://item-dairyplus:skimmilk\">Skim Milk</a> in the barrel. Though slightly less nutritious, and no longer capable of curdling into cheese, this milk can still be used in all other places you'd find yourself adding a splash of dairy.<br><br>mod: DairyPlus", 

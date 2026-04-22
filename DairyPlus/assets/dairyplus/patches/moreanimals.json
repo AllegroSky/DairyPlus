@@ -24,39 +24,5 @@
     "file": "dairyplus:recipes/cooking/plaincustard.json",
     "side": "server",
     "dependsOn": [{ "modid": "moreanimals" }]
-  },
-    {
-    "op": "addeach",
-    "path": "/2/ingredients/1/validStacks/-",
-    "value": [
-      { "type": "item", "code": "aculinaryartillery:eggyolkportion-pheasant" },
-      { "type": "item", "code": "aculinaryartillery:eggyolkportion-goldenpheasant" },
-	  { "type": "item", "code": "aculinaryartillery:eggyolkportion-wildturkey" },
-      { "type": "item", "code": "aculinaryartillery:eggyolkportion-capercaillie" },
-      { "type": "item", "code": "aculinaryartillery:eggyolkfullportion-pheasant" },
-      { "type": "item", "code": "aculinaryartillery:eggyolkfullportion-goldenpheasant" },
-	  { "type": "item", "code": "aculinaryartillery:eggyolkfullportion-wildturkey" },
-      { "type": "item", "code": "aculinaryartillery:eggyolkfullportion-capercaillie" }
-    ],
-    "file": "dairyplus:recipes/cooking/plaincustard.json",
-    "side": "server",
-    "dependsOn": [{ "modid": "moreanimals" }, { "modid": "aculinaryartillery" }]
-  },
-  {
-    "op": "addeach",
-    "path": "/3/ingredients/1/validStacks/-",
-    "value": [
-      { "type": "item", "code": "aculinaryartillery:eggyolkportion-pheasant" },
-      { "type": "item", "code": "aculinaryartillery:eggyolkportion-goldenpheasant" },
-	  { "type": "item", "code": "aculinaryartillery:eggyolkportion-wildturkey" },
-      { "type": "item", "code": "aculinaryartillery:eggyolkportion-capercaillie" },
-      { "type": "item", "code": "aculinaryartillery:eggyolkfullportion-pheasant" },
-      { "type": "item", "code": "aculinaryartillery:eggyolkfullportion-goldenpheasant" },
-	  { "type": "item", "code": "aculinaryartillery:eggyolkfullportion-wildturkey" },
-      { "type": "item", "code": "aculinaryartillery:eggyolkfullportion-capercaillie" }
-    ],
-    "file": "dairyplus:recipes/cooking/plaincustard.json",
-    "side": "server",
-    "dependsOn": [{ "modid": "moreanimals" }, { "modid": "aculinaryartillery" }]
   }
 ]

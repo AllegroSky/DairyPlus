@@ -1,0 +1,14 @@
+﻿[
+    {
+    "op": "addeach",
+    "path": "/ingredients/4/validStacks/-",
+    "value": [
+		{ "type": "item", "code": "dairyplus:condensedmilk",  "shapeElement": "bowl/topping/*", "textureMapping": ["topping", "milkportion"]  },
+		{ "type": "item", "code": "dairyplus:cream",  "shapeElement": "bowl/topping/*", "textureMapping": ["topping", "gelatinpeach"]  },
+		{ "type": "item", "code": "dairyplus:plaincustard",  "shapeElement": "bowl/topping/*", "textureMapping": ["topping", "gelatinpeach"]  }
+		],
+    "file": "game:recipes/cooking/augratin.json",
+    "side": "server",
+    "dependsOn": [{ "modid": "expandedfoods" }]
+  }
+]
