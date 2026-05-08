@@ -1,11 +1,14 @@
 {
-    "$schema": "https://moddbcdn.vintagestory.at/schema/modinfo.latest.json",
-    "type": "Code",
-    "modid": "dairyplus",
-    "name": "DairyPlus",
-    "authors": [
-        "AllegroSky"
-    ],
-    "description": "Adds butter, cream, and a number of other dairy based additions to the game.",
-    "version": "1.0.2"
+  "$schema": "https://moddbcdn.vintagestory.at/schema/modinfo.latest.json",
+  "type": "Code",
+  "modid": "dairyplus",
+  "name": "DairyPlus",
+  "authors": [
+    "AllegroSky"
+  ],
+  "description": "Adds butter, cream, and a number of other dairy based additions to the game.",
+  "version": "1.0.5",
+  "dependencies": {
+    "game": "1.22.0"
+  }
 }

@@ -22,7 +22,7 @@
 				}
 			},
 			"nutritionPropsPerLitre": {
-				"saturation": 175,
+				"saturation": 125,
 				"foodcategory": "Dairy"
 			}
 		}

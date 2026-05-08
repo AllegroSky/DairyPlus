@@ -84,7 +84,7 @@
 				],
 			"minQuantity": 0,
 			"maxQuantity": 1,
-            "typeName": "fruit"
+            "typeName": "mediumbits"
 		},
 		{
 			"code": "slices", 

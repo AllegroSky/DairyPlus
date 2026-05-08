@@ -1,7 +1,7 @@
 {
 	"code": "butter",
 	"variantgroups": [
-		{ "code": "type", "states": [ "unsalted", "salted", "twicesalted" ] }
+		{ "code": "type", "states": [ "unsalted", "salted", "twicesalted", "veggie", "saltedveggie" ] }
 	],
 
 	"creativeinventory": { "general": [ "*" ], "dairyplus": [ "*" ], "items": [ "*" ] },
@@ -16,6 +16,8 @@
 	"nutritionPropsByType": {
 		"*-unsalted" : { "saturation": 300, "foodcategory": "Dairy" },
 		"*-salted" : { "saturation": 300, "foodcategory": "Dairy" },
+		"*-veggie" : { "saturation": 250, "foodcategory": "Dairy" },
+		"*-saltedveggie" : { "saturation": 250, "foodcategory": "Dairy" }
 	},
 
 	"transitionablePropsByType": {

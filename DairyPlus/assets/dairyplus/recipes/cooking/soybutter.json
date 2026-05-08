@@ -1,0 +1,39 @@
+{
+	"code": "soybutter",
+	"enabled": true,
+	"perishableProps": {
+		"type": "None",
+		"freshHours": { "avg": 288 },
+		"transitionHours": { "avg": 72 },
+		"transitionRatio": 1,
+		"transitionedStack": { "type": "item", "code": "game:rot" }
+	},
+	"shape": { "base": "game:block/food/meal/liquid" },
+	"isfood": true,
+	"ingredients": [
+		{ 
+			"code": "vinegar", 
+			"validStacks": [ {"type": "item","code": "game:vinegarportion", "shapeElement": "game:bowl/water"}],
+			"minQuantity": 1,
+			"maxQuantity": 1,
+			"portionSizeLitres": 0.2
+		},
+		{ 
+			"code": "oil", 
+			"validStacks": [ 
+				{"type": "item","code": "game:oilportion-olive", "shapeElement": "game:bowl/water"},
+				{"type": "item","code": "game:oilportion-flax", "shapeElement": "game:bowl/water"}
+				],
+			"minQuantity": 1,
+			"maxQuantity": 1,
+			"portionSizeLitres": 1
+		},
+		{ 
+			"code": "paste", 
+			"validStacks": [ {"type": "item","code": "dairyplus:soypaste"}],
+			"minQuantity": 1,
+			"maxQuantity": 1
+		}
+	],
+	"cooksInto": { "type": "item", "code": "dairyplus:butter-veggie", "quantity": 2 }
+}

@@ -13,7 +13,7 @@ namespace DairyPlus.Blocks
     {
         public override bool OnBlockInteractStart(IWorldAccessor world, IPlayer byPlayer, BlockSelection blockSel)
         {
-            BlockEntityChurn beChun = world.BlockAccessor.GetBlockEntity(blockSel.Position) as BlockEntityChurn;
+            BlockEntityChurn? beChun = world.BlockAccessor.GetBlockEntity(blockSel.Position) as BlockEntityChurn;
 
             if (beChun != null)
             {
@@ -33,7 +33,7 @@ namespace DairyPlus.Blocks
 
         public override bool OnBlockInteractStep(float secondsUsed, IWorldAccessor world, IPlayer byPlayer, BlockSelection blockSel)
         {
-            BlockEntityChurn beChun = world.BlockAccessor.GetBlockEntity(blockSel.Position) as BlockEntityChurn;
+            BlockEntityChurn? beChun = world.BlockAccessor.GetBlockEntity(blockSel.Position) as BlockEntityChurn;
 
             if (beChun != null && (blockSel.SelectionBoxIndex == 1))
             {
@@ -46,7 +46,7 @@ namespace DairyPlus.Blocks
 
         public override void OnBlockInteractStop(float secondsUsed, IWorldAccessor world, IPlayer byPlayer, BlockSelection blockSel)
         {
-            BlockEntityChurn beChun = world.BlockAccessor.GetBlockEntity(blockSel.Position) as BlockEntityChurn;
+            BlockEntityChurn? beChun = world.BlockAccessor.GetBlockEntity(blockSel.Position) as BlockEntityChurn;
             if (beChun != null)
             {
                 beChun.SetPlayerGrinding(byPlayer, false);
@@ -56,7 +56,7 @@ namespace DairyPlus.Blocks
 
         public override bool OnBlockInteractCancel(float secondsUsed, IWorldAccessor world, IPlayer byPlayer, BlockSelection blockSel, EnumItemUseCancelReason cancelReason)
         {
-            BlockEntityChurn beChun = world.BlockAccessor.GetBlockEntity(blockSel.Position) as BlockEntityChurn;
+            BlockEntityChurn? beChun = world.BlockAccessor.GetBlockEntity(blockSel.Position) as BlockEntityChurn;
             if (beChun != null)
             {
                 beChun.SetPlayerGrinding(byPlayer, false);

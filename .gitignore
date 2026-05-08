@@ -676,3 +676,10 @@ fabric.properties
 /DairyPlus/Config
 /DairyPlus/assets/dairyplus/patches/expandedfoods/gelatinrecipe.json
 /DairyPlus/assets/dairyplus/patches/expandedfoods/milkgelatin.json
+/DairyPlus/assets/dairyplus/itemtypes/food/cheesecurd.json
+/DairyPlus/BlockEntity/BlockEntityKettle.cs
+/DairyPlus/Blocks/BlockKettle.cs
+/DairyPlus/GUI/GuiDialogKettle.cs
+/DairyPlus/Inventory/InventoryKettle.cs
+/DairyPlus/Util/RecipeSystem.cs
+/DairyPlus/assets/hinterland

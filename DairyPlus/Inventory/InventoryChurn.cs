@@ -8,11 +8,10 @@ namespace DairyPlus.Inventory
 {
     public class InventoryChurn : InventoryBase, ISlotProvider
     {
-        // inventory with one input and two outputs
+        // buttermilk removed, just 2 slots now
 
         ItemSlot[] slots;
         public ItemSlot[] Slots => slots;
-
 
         public InventoryChurn(string inventoryID, ICoreAPI api) : base(inventoryID, api)
         {

@@ -1,0 +1,64 @@
+{
+	"code": "cheesekettle",
+	"class": "dairyplus.cheesepot",
+	"entityclass": "dairyplus.becheesepot",
+	"behaviors": [
+		{ "name": "UnstableFalling" }
+	],
+	"creativeinventory": {
+		"general": [ "*" ],
+		"dairyplus": [ "*" ],
+		"tools": [ "*" ]
+	},
+	"maxStackSize": 1,
+	"materialDensity": 400,
+	"blockmaterial": "Metal",
+	"resistance": 0.75,
+	"lightAbsorption": 0,
+
+	"attributes": {
+		"maxTemperature": 200,
+		"inFirePitProps": {
+			"transform": {
+				"translation": {
+					"x": 0,
+					"y": 0.2,
+					"z": 0
+				}
+			},
+			"useFirepitModel": "Wide"
+		}
+	},
+
+	"drawtype": "json",
+	"shape": { "base": "dairyplus:block/cheesekettle" },
+	"texture": { "base": "dairyplus:block/other/cheesekettle" },
+	"sideopaque": {
+		"all": "false"
+	},
+	"sidesolid": {
+		"all": "false"
+	},
+	"selectionBox": {
+		"x1": 0,
+		"y1": 0,
+		"z1": 0,
+		"x2": 1,
+		"y2": 0.8,
+		"z2": 1
+	},
+
+
+	"groundTransform": {
+		"scale": 5
+	},
+
+	"heldTpIdleAnimation": "holdbothhandsverylarge",
+	"heldTpUseAnimation": "twohandplaceblock",
+	"sounds": {
+		"place": "game:block/metaldoor-place",
+		"hit": "game:block/metaldoor-place",
+		"break": "game:block/metaldoor-place",
+		"walk": "game:walk/stone"
+	}
+}

@@ -5,7 +5,7 @@
 	"maxStackSize": 32,
 	"materialDensity": 900,
 	
-	"nutritionProps":  { "saturation": 300, "foodcategory": "Dairy" },
+	"nutritionProps":  { "saturation": 230, "foodcategory": "Dairy" },
 	"transitionableProps": [{
 		"type": "Perish",
 		"freshHours": { "avg": 480 },

@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <OutputPath>bin\$(Configuration)\Mods\mod</OutputPath>
     <Nullable>enable</Nullable>
@@ -14,6 +14,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="assets\dairyplus\itemtypes\food\cheesecurd.json" />
+    <None Remove="assets\dairyplus\itemtypes\liquid\cheesesauce.json" />
+    <None Remove="assets\dairyplus\itemtypes\liquid\whitesauce.json" />
     <None Remove="assets\game\recipes\cooking\creamymeal.json" />
   </ItemGroup>
 

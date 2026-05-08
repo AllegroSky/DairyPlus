@@ -1,0 +1,19 @@
+{
+  "code": "test",
+  "ProcessingTime" : 5,
+  "ingredients": [
+    {
+      "type": "item",
+      "code": "game:milkportion",
+      "litres": 10
+    },
+	    {
+      "type": "item",
+      "code": "dairyplus:fruitvinegar",
+      "litres": 0.1
+    }
+  ],
+	"outputs": [
+	 { "type": "item", "code": "dairyplus:skimmilk", "litres": 9 },
+	 { "type": "item", "code": "dairyplus:tofu", "quantity": 1 }]
+}
