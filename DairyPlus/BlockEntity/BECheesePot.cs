@@ -18,7 +18,9 @@ namespace DairyPlus.BlockEntity
         public int CapacityLitres { get; set; } = 30;
         protected InventoryCheesePot inventory;
         protected GuiDialogCheesePot clientDialog;
-
+        private float progress = 0f;
+        private float maxProgress = 1f;
+        private CheesePotRecipe currentRecipe;
 
         public override string InventoryClassName
         {
@@ -53,11 +55,6 @@ namespace DairyPlus.BlockEntity
 
         protected void OnSlotModified(int slotid)
         {
-            if (Api is ICoreClientAPI && clientDialog != null && clientDialog.IsOpened())   
-            {
-                clientDialog.SingleComposer?.ReCompose();
-            }
-
             MarkDirty(true);
         }
 
@@ -103,6 +100,13 @@ namespace DairyPlus.BlockEntity
             {
                 Inventory.AfterBlocksLoaded(Api.World);
             }
+
+            progress = tree.GetFloat("progress");
+            maxProgress = tree.GetFloat("maxProgress");
+            if (Api?.Side == EnumAppSide.Client && clientDialog != null)
+            {
+                clientDialog.Update(progress, maxProgress);
+            }
         }
         public override void ToTreeAttributes(ITreeAttribute tree)
         {
@@ -110,6 +114,9 @@ namespace DairyPlus.BlockEntity
             ITreeAttribute invtree = new TreeAttribute();
             Inventory.ToTreeAttributes(invtree);
             tree["inventory"] = invtree;
+
+            tree.SetFloat("progress", progress);
+            tree.SetFloat("maxProgress", maxProgress);
         }
 
         public override void OnBlockRemoved()
@@ -134,46 +141,6 @@ namespace DairyPlus.BlockEntity
             inventory[4]
         };
 
-        public ItemStack[] GetInputStacks()
-        {
-            return new ItemStack[]
-            {
-        inventory[0].Itemstack,
-        inventory[1].Itemstack,
-        inventory[2].Itemstack
-            };
-        }
-
-        public ItemStack[] GetOutputStacks()
-        {
-            return new ItemStack[]
-            {
-        inventory[3].Itemstack,
-        inventory[4].Itemstack
-            };
-        }
-
-        public void SetInputStacks(ItemStack[] stacks)
-        {
-            for (int i = 0; i < 3; i++)
-            {
-                inventory[i].Itemstack = stacks[i];
-            }
-
-            MarkDirty(true);
-        }
-
-        public void SetOutputStacks(ItemStack[] stacks)
-        {
-            for (int i = 0; i < 2; i++)
-            {
-                inventory[3 + i].Itemstack = stacks[i];
-            }
-
-            MarkDirty(true);
-        }
-
-
         public CheesePotRecipe FindMatchingRecipe(out int outputSize)
         {
             outputSize = 0;
@@ -193,56 +160,57 @@ namespace DairyPlus.BlockEntity
             return null;
         }
 
-        public void TryCraft(double dt)
-        {
-            var recipe = FindMatchingRecipe(out int outputSize);
-            if (recipe == null) return;
-
-
-            if (recipe.ProcessingTime > 0)
-            {
-                return;
-            }
-
-            recipe.TryCraftNow(Api, recipe.ProcessingTime, InputSlots, OutputSlots);
-
-            MarkDirty(true);
-        }
-
-
-        private double progress;
-        private CheesePotRecipe currentRecipe;
-
         private void Every100ms(float dt)
         {
             if (Api.Side == EnumAppSide.Client) return;
 
-            var input = InputSlots;
-            var output = OutputSlots;
+            UpdateRecipe();
 
-            //get recipie
+            if (!ValidateRecipe())
+            {
+                progress = 0;
+                MarkDirty();
+                return;
+            }
+
+            ProcessRecipe(dt);
+
+            MarkDirty();
+        }
+
+        private void UpdateRecipe()
+        {
             if (currentRecipe == null)
             {
                 currentRecipe = FindMatchingRecipe(out int _);
                 progress = 0;
             }
 
-            if (currentRecipe == null) return;
+            if (currentRecipe != null)
+            {
+                maxProgress = (float)currentRecipe.ProcessingTime;
+            }
+        }
+        private bool ValidateRecipe()
+        {
+            if (currentRecipe == null) return false;
 
-            //reset if changed
-            if (!currentRecipe.Matches(input, out _))
+            if (!currentRecipe.Matches(InputSlots, out _))
             {
                 currentRecipe = null;
                 progress = 0;
-                return;
+                return false;
             }
+            return true;
+        }
+        private void ProcessRecipe(float dt)
+        {
+            if (currentRecipe == null) return;
 
-            //process
             progress += dt;
 
-            if (progress < currentRecipe.ProcessingTime) return;
-
-            currentRecipe.TryCraftNow(Api, currentRecipe.ProcessingTime, input, output);
+            if (progress < maxProgress) return;
+            currentRecipe.TryCraftNow(Api, currentRecipe.ProcessingTime, InputSlots, OutputSlots);
 
             //cleanup
             progress = 0;

@@ -1,0 +1,10 @@
+{
+  "type": "recipe",
+  "ingredientPattern": "M",
+	"width": 1,
+	"height": 1,
+  "shapeless": true,
+  "ingredients": {
+  "M": { "type": "item", "code": "dairyplus:mozzaball", "quantity": 3 }},
+  "output": {"type": "item", "code": "dairyplus:provalone-fresh"}
+}

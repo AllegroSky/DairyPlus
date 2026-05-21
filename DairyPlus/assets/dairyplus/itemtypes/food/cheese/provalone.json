@@ -1,0 +1,82 @@
+{
+	"code": "provalone",
+	"variantgroups": [
+		{ "code": "age", "states": ["fresh", "aged"] }
+	],
+
+	"creativeinventory": { "general": [ "*" ], "dairyplus": [ "*" ]},
+	"maxStackSize": 16,
+	"materialDensity": 900,
+	
+	"transitionablePropsByType": {
+		"*-fresh": [{
+			"type": "Dry",
+			"freshHours": { "avg": 720 },
+			"spoilHours": { "avg": 0 },
+			"transitionedStack": { "type": "item", "code": "dairyplus:provalone-aged" },
+			"transitionRatio": 1
+		}],
+		"*-aged": [{
+			"type": "Perish",
+			"freshHours": { "avg": 1440 },
+			"transitionHours": { "avg": 720 },
+			"transitionRatio": 1,
+			"transitionedStack": { "type": "item", "code": "game:rot" }
+			}]
+	},
+		
+	"attributes": {
+		"displaycaseable": true,
+		"shelvable": true,
+		"onshelfTransform": {
+			"rotation": { "x": 0, "y": 92, "z": 0 },
+			"origin": { "x": 0.5, "y": 0, "z": 0.5 },
+			"scale": 0.65},
+		"groundStorageTransform": {
+			"origin": { "x": 0.5, "y": 0, "z": 0.5 },
+			"scale": 0.65}
+		},
+		
+    "behaviors": [
+        {
+          "name": "GroundStorable",
+          "properties": {
+            "layout": "SingleCenter",
+            "collisionBox": { "x1": 0, "y1": 0, "z1": 0, "x2": 1, "y2": 0.125, "z2": 1 }
+          }
+        },
+		{
+		  "name": "GroundStoredProcessable",
+          "properties": {
+            "processTime": 1,
+            "processedStacks": [{ "type": "item", "code": "dairyplus:provaloneslice-{age}", "quantity": { "avg": 4 }}],
+			"toolDurabilityCost": 1,
+		    "tool": "knife",
+			"transferFreshness": true
+		}}
+	  ],
+	"drawtype": "json",
+	"shape": { "base": "dairyplus:item/cheese/provalone" },
+	"textureByType" : {
+		"*-fresh" : {"base": "dairyplus:item/cheese/curd-whole" },
+		"*-aged" : {"base" : "dairyplus:item/cheese/provaged" }},
+	
+	"tpHandTransform": {
+		"translation": { "x": 0.4, "y": -0.3, "z": -0.1 },
+		"rotation": { "x": 104, "y": -30, "z": -69 },
+		"origin": { "x": -0.2, "y": -0.1, "z": 0.5 },
+		"scale": 0.6
+		},
+	"guiTransform": {
+		"translation": { "x": 0, "y": -4.4, "z": 0 },
+		"rotation": { "x": -14, "y": 31, "z": 168 },
+		"origin": { "x": 0.5, "y": 0.2, "z": 0.5 },
+		"scale": 1.89
+	},
+	"groundTransform": {
+		"translation": { "x": 0, "y": 0, "z": 0 },
+		"rotation": { "x": 3, "y": 1, "z": 0 },
+		"origin": { "x": 0.5, "y": 0, "z": 0.5 },
+		"scale": 3.3
+	}	
+}

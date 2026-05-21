@@ -16,6 +16,7 @@ public class DairyPlusModSystem : ModSystem
     // Useful for registering block/entity classes on both sides
     public override void Start(ICoreAPI api)
     {
+        api.RegisterItemClass(Mod.Info.ModID + ".skimcurd", typeof(ItemSkimCurd));
 
         api.RegisterBlockClass(Mod.Info.ModID + ".creamscoop", typeof(BlockCreamScoop));
 

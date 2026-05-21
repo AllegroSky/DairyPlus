@@ -3,7 +3,7 @@ using Vintagestory.API.Common;
 using Vintagestory.API.Config;
 using Vintagestory.GameContent;
 
-namespace DairyPlus.Items
+namespace DairyPlus.Blocks
 {
     public class BlockCreamScoop : BlockLiquidContainerTopOpened
     {

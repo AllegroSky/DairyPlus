@@ -10,8 +10,7 @@
 	"canSealCrock": true,
 
 	"shape": { "base": "dairyplus:item/butter" },
-	"texture": { "base": "dairyplus:item/butter/{type}"
-	},
+	"texture": { "base": "dairyplus:item/butter/{type}" },
 
 	"nutritionPropsByType": {
 		"*-unsalted" : { "saturation": 300, "foodcategory": "Dairy" },

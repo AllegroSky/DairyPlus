@@ -15,10 +15,10 @@ namespace DairyPlus.Util
         public string? Code { get; set; }
 
         [DocumentAsJson("Required")]
-        public CheesePotIngredient[] Ingredients { get; set; }
+        public CheesePotIngredient[]? Ingredients { get; set; }
 
         [DocumentAsJson("Required")]
-        public CheesePotOutputStack[] Outputs { get; set; }
+        public CheesePotOutputStack[]? Outputs { get; set; }
 
         [DocumentAsJson("Required")]
         public double ProcessingTime { get; set; }
@@ -94,6 +94,17 @@ namespace DairyPlus.Util
                 craftedStacks.Add(stack);
             }
 
+            int emptySlots = 0;
+
+            foreach (var slot in outputSlot)
+            {
+                if (slot.Empty) emptySlots++;
+            }
+
+            if (emptySlots < craftedStacks.Count)
+            {
+                return false; 
+            }
 
             foreach (ItemStack stack in craftedStacks)
             {
@@ -115,14 +126,11 @@ namespace DairyPlus.Util
                 slot.MarkDirty();
             }
 
-
-            // This part needs to change 
             ItemSlot input1 = inputSlots[0];
             ItemSlot input2 = inputSlots[1];
             ItemSlot input3 = inputSlots[2];
             ItemSlot output1 = outputSlot[0];
-            //ItemSlot output2 = outputSlot[1];
-
+            ItemSlot output2 = outputSlot[1];
 
             return true;
         }

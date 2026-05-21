@@ -1,0 +1,19 @@
+{
+  "code": "skimcurd",
+  "ProcessingTime" : 10,
+  "ingredients": [
+    {
+      "type": "item",
+      "code": "dairyplus:skimmilk",
+      "litres": 10
+    },
+	    {
+      "type": "item",
+      "code": "dairyplus:fruitvinegar",
+      "litres": 1
+    }
+  ],
+	"outputs": [
+	 { "type": "item", "code": "dairyplus:whey", "litres": 9 },
+	 { "type": "item", "code": "dairyplus:curd-skim", "quantity": 3 }]
+}

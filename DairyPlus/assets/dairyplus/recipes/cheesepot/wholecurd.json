@@ -1,0 +1,19 @@
+{
+  "code": "wholecurd",
+  "ProcessingTime" : 10,
+  "ingredients": [
+    {
+      "type": "item",
+      "code": "game:milkportion",
+      "litres": 10
+    },
+	    {
+      "type": "item",
+      "code": "dairyplus:fruitvinegar",
+      "litres": 1
+    }
+  ],
+	"outputs": [
+	 { "type": "item", "code": "dairyplus:whey", "litres": 9 },
+	 { "type": "item", "code": "dairyplus:curd-whole", "quantity": 4 }]
+}
