@@ -1,0 +1,18 @@
+{
+  "code": "halloumi",
+  "ProcessingTime" : 10,
+  "ingredients": [
+    {
+      "type": "item",
+      "code": "dairyplus:curd-whole",
+      "quantity": 2
+    },
+	    {
+      "type": "item",
+      "code": "dairyplus:whey",
+      "litres": 4
+    }
+  ],
+	"outputs": [
+	 { "type": "item", "code": "dairyplus:halloumi", "quantity": 1 }]
+}
