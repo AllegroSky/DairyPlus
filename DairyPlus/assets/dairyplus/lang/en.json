@@ -19,7 +19,13 @@
     "dairyplus:item-soypaste": "Soybean Paste",
 
     "dairyplus:item-plaincustard": "Plain Custard",
-	"dairyplus:item-tofu": "Tofu",
+    "dairyplus:item-tofu": "Tofu",
+
+    "pie-single-dairyplus:tofu-raw": "Tofu pie (raw)",
+    "pie-single-dairyplus:tofu-partbaked": "Tofu pie (part-baked)",
+    "pie-single-dairyplus:tofu-perfect": "Tofu pie",
+    "pie-single-dairyplus:tofu-charred": "Tofu pie (charred)",
+
 
     // liquid names
     "dairyplus:liquid-cream": "Cream",
