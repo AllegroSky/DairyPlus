@@ -1,18 +1,18 @@
 {
 	"code": "tofu",
 
-	"creativeinventory": { "general": [ "*" ], "dairyplus": [ "*" ]},
+	"creativeinventory": { "general": [ "*" ], "dairyplus": [ "*" ] },
 	"maxStackSize": 32,
 	"materialDensity": 900,
 	
-	"nutritionProps":  { "saturation": 230, "foodcategory": "Dairy" },
+	"nutritionProps":  { "satiety": 230, "foodcategory": "Dairy" },
 	"transitionableProps": [{
 		"type": "Perish",
 		"freshHours": { "avg": 480 },
 		"transitionHours": { "avg": 108 },
 		"transitionRatio": 1,
 		"transitionedStack": { "type": "item", "code": "game:rot" }
-		}],
+	}],
 		
 	"attributes": {
 		"displaycaseable": true,
@@ -20,12 +20,22 @@
 		"onshelfTransform": {
 			"rotation": { "x": 0, "y": 92, "z": 0 },
 			"origin": { "x": 0.5, "y": 0, "z": 0.5 },
-			"scale": 0.65},
+			"scale": 0.65
+		},
 		"groundStorageTransform": {
 			"origin": { "x": 0.5, "y": 0, "z": 0.5 },
-			"scale": 0.65}
+			"scale": 0.65
 		},
-		
+		"nutritionPropsWhenInMeal": {
+			"satiety": 350, // 1.5 from base as in vanilla, with minor rounding 
+			"foodcategory": "Dairy"
+		},
+		"inPieProperties": {
+			"texture": "game:block/food/pie/fill-potato",
+			"partType": "Filling",
+			"mixingCodes": ["potpie"]
+		}
+	},
 	"behaviors": [{
 		"name": "GroundStorable",
 		"properties": {
@@ -47,7 +57,7 @@
 		"rotation": { "x": -31, "y": -31, "z": 1 },
 		"origin": {	"x": 0.22,	"y": 0.36,	"z": 0.1 },
 		"scale": 2.18
-		},
+	},
 		
 	"tpHandTransform": {
 		"translation": { "x": 0, "y": 0, "z": 0 },
@@ -61,5 +71,5 @@
 		"rotation": { "x": 3, "y": 1, "z": 0 },
 		"origin": { "x": 0.5, "y": 0, "z": 0.5 },
 		"scale": 2.5
-		},
+	}
 }
