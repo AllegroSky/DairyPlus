@@ -1,3 +1,16 @@
+[{
+  "type": "recipe",
+  "ingredientPattern": "K,P",
+	"width": 2,
+	"height": 1,
+  "shapeless": true,
+  
+  "ingredients": {
+    "K": { "type": "item", "code": "game:knife-*", "isTool": true },
+	"P": { "type": "item", "code": "dairyplus:provalone-aged" }
+  },
+  "output": { "type": "item", "code": "dairyplus:provaloneslice-aged", "quanity" : 4 }
+},
 {
   "type": "recipe",
   "ingredientPattern": "K,P",
@@ -7,7 +20,7 @@
   
   "ingredients": {
     "K": { "type": "item", "code": "game:knife-*", "isTool": true },
-	"P": { "type": "item", "code": "dairyplus:provalone-{age}" }
+	"P": { "type": "item", "code": "dairyplus:provalone-fresh" }
   },
-  "output": { "type": "block", "code": "dairyplus:provaloneslice-{age}" }
-}
+  "output": { "type": "item", "code": "dairyplus:provaloneslice-fresh", "quanity" : 4 }
+}]

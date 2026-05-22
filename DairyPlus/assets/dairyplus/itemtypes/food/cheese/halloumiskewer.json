@@ -1,0 +1,116 @@
+{
+	"code": "halloumiskewer",
+	"variantgroups": [
+		{ "code": "type", "states":  ["uncooked", "partcooked", "cooked", "burnt"] }
+	],
+
+	"creativeinventory": { "general": [ "*" ], "dairyplus": [ "*" ]},
+	"maxStackSize": 16,
+	"materialDensity": 900,
+	
+	"nutritionPropsByType": {
+		"*-uncooked" : { "saturation": 100, "foodcategory": "Dairy", "eatenStack" : { "type": "item", "code": "game:stick", "quanity" : 1} },
+		"*-partcooked" : { "saturation": 115, "foodcategory": "Dairy", "eatenStack" : { "type": "item", "code": "game:stick", "quanity" : 1} },
+		"*-cooked" : { "saturation": 130, "foodcategory": "Dairy", "eatenStack" : { "type": "item", "code": "game:stick", "quanity" : 1} },
+		"*-burnt" : { "saturation": 90, "foodcategory": "Dairy", "eatenStack" : { "type": "item", "code": "game:stick", "quanity" : 1} }
+		},
+	
+	"transitionablePropsByType": {
+		"*-burnt": [{
+			"type": "Perish",
+			"freshHours": { "avg": 192 },
+			"transitionHours": { "avg": 72 },
+			"transitionedStack": {
+				"type": "item",
+				"code": "game:rot"},
+			"transitionRatio": 0.5
+		}],
+		"*": [{
+			"type": "Perish",
+			"freshHours": { "avg": 140 },
+			"transitionHours": { "avg": 36 },
+			"transitionedStack": {
+				"type": "item",
+				"code": "game:rot"},
+			"transitionRatio": 0.5
+		}]
+	},
+		
+		
+	"attributes": {
+		"displaycaseable": true,
+		"shelvable": true,
+		"onshelfTransform": {
+			"rotation": { "x": 0, "y": 92, "z": 0 },
+			"origin": { "x": 0.5, "y": 0, "z": 0.5 },
+			"scale": 0.65},
+		"bakingPropertiesByType": {
+			"*-uncooked": {
+				"temp": 160,
+				"levelFrom": 0.0,
+				"levelTo": 0.25,
+				"resultCode": "dairyplus:halloumiskewer-partcooked",
+			},
+			"*-partcooked": {
+				"temp": 160,
+				"levelFrom": 0.25,
+				"levelTo": 0.5,
+				"resultCode": "dairyplus:halloumiskewer-cooked",
+				"initialCode": "dairyplus:halloumiskewer-partcooked"
+			},
+			"*-cooked": {
+				"temp": 160,
+				"levelFrom": 0.5,
+				"levelTo": 0.75,
+				"resultCode": "dairyplus:halloumiskewer-burnt",
+				"initialCode": "dairyplus:halloumiskewer-cooked"
+			},
+			"*-burnt": {
+				"temp": 160,
+				"levelFrom": 0.75,
+				"levelTo": 1.0,
+				"initialCode": "dairyplus:halloumiskewer-cooked"
+			}
+		}
+	},
+		
+	"behaviors": [{
+		"name": "GroundStorable",
+		"properties": {
+			"layout": "Quadrants",
+			"collisionBox": { 
+				"x1": 0, "y1": 0, "z1": 0,
+				"x2": 1, "y2": 0.125, "z2": 1,
+				"scale" : 0.25
+				}
+		}
+	}],
+	
+	"drawtype": "json",
+	"shape": { "base": "dairyplus:item/cheese/halloumistick" },
+	"texturesByType": {
+		"*-uncooked": { "base": {"base": "dairyplus:item/cheese/halloumifresh"}, "stick" : {"base" : "game:block/wood/debarked/oak"} },
+		"*-partcooked" : { "base": {"base": "dairyplus:item/cheese/halloumipartgrilled"}, "stick" : {"base" : "game:block/wood/debarked/oak"} },
+		"*-cooked": { "base": {"base": "dairyplus:item/cheese/halloumigrilled" }, "stick" : {"base" : "game:block/wood/debarked/oak"}},
+		"*-burnt" : { "base": {"base": "dairyplus:item/cheese/halloumiburnt" }, "stick" : {"base" : "game:block/wood/debarked/oak"}}
+	},
+	
+	"tpHandTransform": {
+		"translation": { "x": 0.25, "y": -0.41, "z": -0.51 },
+		"rotation": { "x": 103, "y": -74, "z": -41 },
+		"origin": { "x": -0.27, "y": -0.29, "z": 0.4 },
+		"scale": 0.6
+		},
+	"guiTransform": {
+		"translation": { "x": 0, "y": -4.4, "z": 0 },
+		"rotation": { "x": -96, "y": -41, "z": -127 },
+		"origin": { "x": 0.5, "y": 0, "z": 0.45 },
+		"scale": 2.85
+	},
+	"groundTransform": {
+		"translation": { "x": 0, "y": 0, "z": 0 },
+		"rotation": { "x": 3, "y": 1, "z": 0 },
+		"origin": { "x": 0.5, "y": 0, "z": 0.5 },
+		"scale": 3.3
+	}	
+}

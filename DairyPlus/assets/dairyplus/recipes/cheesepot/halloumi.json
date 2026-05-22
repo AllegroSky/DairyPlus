@@ -14,5 +14,5 @@
     }
   ],
 	"outputs": [
-	 { "type": "item", "code": "dairyplus:halloumi", "quantity": 1 }]
+	 { "type": "item", "code": "dairyplus:halloumi-uncooked", "quantity": 1 }]
 }

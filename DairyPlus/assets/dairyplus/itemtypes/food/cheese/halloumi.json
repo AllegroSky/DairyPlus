@@ -1,19 +1,39 @@
 {
 	"code": "halloumi",
+	"variantgroups": [
+		{ "code": "type", "states": ["uncooked", "partcooked", "cooked", "burnt"] }
+	],
 
 	"creativeinventory": { "general": [ "*" ], "dairyplus": [ "*" ]},
 	"maxStackSize": 16,
 	"materialDensity": 900,
 	
-	"nutritionProps": {"saturation": 400, "foodcategory": "Dairy" },
-	"transitionableProps": [{
+	"nutritionPropsByType": {
+		"*-uncooked" : {"saturation": 400, "foodcategory": "Dairy" },
+		"*-partcooked" : {"saturation": 425, "foodcategory": "Dairy" },
+		"*-cooked" : {"saturation": 450, "foodcategory": "Dairy" },
+		"*-burnt" : {"saturation": 380, "foodcategory": "Dairy" }
+		},	
+	"transitionablePropsByType": {
+		"*-burnt": [{
+			"type": "Perish",
+			"freshHours": { "avg": 192 },
+			"transitionHours": { "avg": 72 },
+			"transitionedStack": {
+				"type": "item",
+				"code": "game:rot"},
+			"transitionRatio": 0.5
+		}],
+		"*": [{
 			"type": "Perish",
 			"freshHours": { "avg": 140 },
 			"transitionHours": { "avg": 36 },
-			"transitionRatio": 1,
-			"transitionedStack": { "type": "item", "code": "game:rot" }
-			}
-		],
+			"transitionedStack": {
+				"type": "item",
+				"code": "game:rot"},
+			"transitionRatio": 0.5
+		}]
+	},
 		
 	"attributes": {
 		"displaycaseable": true,
@@ -21,11 +41,39 @@
 		"onshelfTransform": {
 			"rotation": { "x": 0, "y": 92, "z": 0 },
 			"origin": { "x": 0.5, "y": 0, "z": 0.5 },
-			"scale": 0.65},
+			"scale": 0.8},
 		"groundStorageTransform": {
 			"origin": { "x": 0.5, "y": 0, "z": 0.5 },
-			"scale": 0.65}
-		},
+			"scale": 0.8},
+		"bakingPropertiesByType": {
+			"*-uncooked": {
+				"temp": 160,
+				"levelFrom": 0.0,
+				"levelTo": 0.25,
+				"resultCode": "dairyplus:halloumi-partcooked"
+			},
+			"*-partcooked": {
+				"temp": 160,
+				"levelFrom": 0.25,
+				"levelTo": 0.5,
+				"resultCode": "dairyplus:halloumi-cooked",
+				"initialCode": "dairyplus:halloumi-partcooked"
+			},
+			"*-cooked": {
+				"temp": 160,
+				"levelFrom": 0.5,
+				"levelTo": 0.75,
+				"resultCode": "dairyplus:halloumi-burnt",
+				"initialCode": "dairyplus:halloumi-cooked"
+			},
+			"*-burnt": {
+				"temp": 160,
+				"levelFrom": 0.75,
+				"levelTo": 1.0,
+				"initialCode": "dairyplus:halloumi-cooked"
+			}
+		}
+	},
 		
 	"behaviors": [{
 		"name": "GroundStorable",
@@ -41,24 +89,29 @@
 	
 	"drawtype": "json",
 	"shape": { "base": "dairyplus:item/cheese/halloumi" },
-	"texture": { "base": "dairyplus:item/cheese/mozzaball" },
+	"textureByType": {
+		"*-uncooked": { "base": "dairyplus:item/cheese/halloumifresh" },
+		"*-partcooked" : { "base": "dairyplus:item/cheese/halloumipartgrilled" },
+		"*-cooked": { "base": "dairyplus:item/cheese/halloumigrilled" },
+		"*-burnt" : { "base": "dairyplus:item/cheese/halloumiburnt" }
+	},
 	
 	"tpHandTransform": {
-		"translation": { "x": 0.4, "y": -0.3, "z": -0.1 },
-		"rotation": { "x": 104, "y": -30, "z": -69 },
-		"origin": { "x": -0.2, "y": -0.1, "z": 0.5 },
+		"translation": { "x": 0, "y": 0, "z": 0 },
+		"rotation": { "x": 111, "y": -40, "z": -70 },
+		"origin": { "x": 0.05, "y": -0.6, "z": 0 },
 		"scale": 0.6
 		},
 	"guiTransform": {
-		"translation": { "x": 0, "y": -4.4, "z": 0 },
-		"rotation": { "x": -14, "y": 31, "z": 168 },
-		"origin": { "x": 0.5, "y": 0.2, "z": 0.5 },
-		"scale": 1.89
+		"translation": { "x": -1.5, "y": -4.4, "z": 0 },
+		"rotation": { "x": -14, "y": 20, "z": -14 },
+		"origin": { "x": 0.5, "y": 0, "z": 0.4 },
+		"scale": 2.85
 	},
 	"groundTransform": {
 		"translation": { "x": 0, "y": 0, "z": 0 },
-		"rotation": { "x": 3, "y": 1, "z": 0 },
+		"rotation": { "x": 0, "y": 0, "z": 0 },
 		"origin": { "x": 0.5, "y": 0, "z": 0.5 },
-		"scale": 3.3
-	}	
+		"scale": 3
+	}
 }

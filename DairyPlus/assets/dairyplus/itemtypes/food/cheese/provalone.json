@@ -10,7 +10,7 @@
 	
 	"transitionablePropsByType": {
 		"*-fresh": [{
-			"type": "Dry",
+			"type": "Ripen",
 			"freshHours": { "avg": 720 },
 			"spoilHours": { "avg": 0 },
 			"transitionedStack": { "type": "item", "code": "dairyplus:provalone-aged" },
