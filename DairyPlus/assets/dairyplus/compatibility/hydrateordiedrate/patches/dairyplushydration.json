@@ -1,0 +1,62 @@
+[
+    {
+        "file": "dairyplus:itemtypes/liquid/condensedmilk",
+        "dependsOn": [{ "modId": "hydrateordiedrate" }],
+        "op": "addmerge",
+        "path": "/attributes",
+        "value": { "hydration": 400 }
+    },
+    {
+        "file": "dairyplus:itemtypes/liquid/cream",
+        "dependsOn": [{ "modId": "hydrateordiedrate" }],
+        "op": "addmerge",
+        "path": "/attributes",
+        "value": { "hydration": 80 }
+    },
+    {
+        "file": "dairyplus:itemtypes/liquid/fruitvinegar",
+        "dependsOn": [{ "modId": "hydrateordiedrate" }],
+        "op": "addmerge",
+        "path": "/attributes",
+        "value": { "hydration": 500 }
+    },
+    {
+        "file": "dairyplus:itemtypes/liquid/sauce",
+        "dependsOn": [{ "modId": "hydrateordiedrate" }],
+        "op": "addmerge",
+        "path": "/attributes",
+        "value": { 
+            "hydrationByType": {
+                "*-cheese": -60
+            } 
+        }
+    },
+    {
+        "file": "dairyplus:itemtypes/liquid/skimmilk",
+        "dependsOn": [{ "modId": "hydrateordiedrate" }],
+        "op": "addmerge",
+        "path": "/attributes",
+        "value": { "hydration": 800 }
+    },
+    {
+        "file": "dairyplus:itemtypes/liquid/soymilk",
+        "dependsOn": [{ "modId": "hydrateordiedrate" }],
+        "op": "addmerge",
+        "path": "/attributes",
+        "value": { "hydration": 800 }
+    },
+    {
+        "file": "dairyplus:itemtypes/liquid/whey",
+        "dependsOn": [{ "modId": "hydrateordiedrate" }],
+        "op": "addmerge",
+        "path": "/attributes",
+        "value": { "hydration": 800 }
+    },
+    {
+        "file": "dairyplus:itemtypes/food/butter",
+        "dependsOn": [{ "modId": "hydrateordiedrate" }],
+        "op": "addmerge",
+        "path": "/attributes",
+        "value": { "hydration": -200 }
+    },
+]
