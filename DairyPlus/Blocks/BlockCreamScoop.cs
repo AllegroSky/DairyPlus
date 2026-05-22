@@ -28,7 +28,9 @@ namespace DairyPlus.Blocks
             var milkProps = GetContainableProps(liqslot.Itemstack);
             float itemsPerLitre = milkProps?.ItemsPerLitre ?? 1f;
             float curLitres = liqslot.Itemstack.StackSize / itemsPerLitre;
-            if (liqslot.Itemstack.Item.Code.Path == "item/liquid/separatingmilk") return;
+            
+            // liquid type validation
+            if (liqslot.Itemstack.Item.Code.Path != "separatingmilk") return;
 
                 //has enough milk + is mutiple of 10
             if (curLitres < 10f || curLitres % 10f != 0f)
