@@ -27,14 +27,9 @@
 		
 	"attributes": {
 		"displaycaseable": true,
-		"shelvable": true,
-		"onshelfTransform": {
-			"rotation": { "x": 0, "y": 92, "z": 0 },
-			"origin": { "x": 0.5, "y": 0, "z": 0.5 },
-			"scale": 0.65},
 		"groundStorageTransform": {
 			"origin": { "x": 0.5, "y": 0, "z": 0.5 },
-			"scale": 0.65}
+			"scale": 0.9}
 		},
 		
     "behaviors": [

@@ -140,6 +140,7 @@ namespace DairyPlus.BlockEntity
             inventory[3],
             inventory[4]
         };
+        public ItemSlot FuelSlot => inventory[5];
 
         public CheesePotRecipe FindMatchingRecipe(out int outputSize)
         {
