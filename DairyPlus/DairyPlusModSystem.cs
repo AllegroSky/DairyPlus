@@ -23,7 +23,7 @@ public class DairyPlusModSystem : ModSystem
         api.RegisterBlockClass(Mod.Info.ModID + ".churn", typeof(BlockChurn));
         api.RegisterBlockEntityClass(Mod.Info.ModID + ".bechurn", typeof(BlockEntityChurn));
 
-        api.RegisterBlockClass(Mod.Info.ModID + ".cheesepot", typeof(CheesePot));
+        api.RegisterBlockClass(Mod.Info.ModID + ".cheesepot", typeof(BlockCheesePot));
         api.RegisterBlockEntityClass(Mod.Info.ModID + ".becheesepot", typeof(BECheesePot));
 
     }

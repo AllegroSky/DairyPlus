@@ -20,7 +20,20 @@ namespace DairyPlus.BlockEntity
         protected GuiDialogCheesePot clientDialog;
         private float progress = 0f;
         private float maxProgress = 1f;
-        private CheesePotRecipe currentRecipe;
+        public CheesePotRecipe currentRecipe;
+
+        public float prevTemperature = 20;
+        public float potTemperature = 20;
+
+        public int maxTemperature;
+        public float fuelBurnTime;
+        public float maxFuelBurnTime;
+
+        public bool CanIgniteFuel;
+        public bool IsBurning => fuelBurnTime > 0;
+
+        public const float RecipeMinTemp = 60f;
+        public const float MaxPotTemp = 130f;
 
         public override string InventoryClassName
         {
@@ -50,6 +63,7 @@ namespace DairyPlus.BlockEntity
             inventory.LateInitialize("cheesepot-" + Pos.X + "/" + Pos.Y + "/" + Pos.Z, api);
 
             RegisterGameTickListener(Every100ms, 100);
+            RegisterGameTickListener(Every500ms, 500);
         }
 
 
@@ -105,8 +119,14 @@ namespace DairyPlus.BlockEntity
             maxProgress = tree.GetFloat("maxProgress");
             if (Api?.Side == EnumAppSide.Client && clientDialog != null)
             {
-                clientDialog.Update(progress, maxProgress);
+                clientDialog.Update(progress, maxProgress, potTemperature, fuelBurnTime, maxFuelBurnTime);
             }
+
+            potTemperature = tree.GetFloat("temperature", 20);
+            maxTemperature = tree.GetInt("maxTemperature");
+            fuelBurnTime = tree.GetFloat("fuelBurnTime");
+            maxFuelBurnTime = tree.GetFloat("maxFuelBurnTime");
+            CanIgniteFuel = tree.GetBool("canIgniteFuel");
         }
         public override void ToTreeAttributes(ITreeAttribute tree)
         {
@@ -117,6 +137,12 @@ namespace DairyPlus.BlockEntity
 
             tree.SetFloat("progress", progress);
             tree.SetFloat("maxProgress", maxProgress);
+
+            tree.SetFloat("temperature", potTemperature);
+            tree.SetInt("maxTemperature", maxTemperature);
+            tree.SetFloat("fuelBurnTime", fuelBurnTime);
+            tree.SetFloat("maxFuelBurnTime", maxFuelBurnTime);
+            tree.SetBool("canIgniteFuel", CanIgniteFuel);
         }
 
         public override void OnBlockRemoved()
@@ -132,15 +158,104 @@ namespace DairyPlus.BlockEntity
         {
             inventory[0],
             inventory[1],
-            inventory[2]
+            inventory[2],
+            inventory[3]
         };
 
         public ItemSlot[] OutputSlots => new ItemSlot[]
         {
-            inventory[3],
-            inventory[4]
+            inventory[4],
+            inventory[5]
         };
-        public ItemSlot FuelSlot => inventory[5];
+        public ItemSlot FuelSlot => inventory[6];
+
+        public ItemStack FuelStack
+        {
+            get => FuelSlot.Itemstack;
+            set => FuelSlot.Itemstack = value;
+        }
+
+        public CombustibleProperties FuelProps
+        {
+            get
+            {
+                if (FuelSlot.Empty) return null;
+                return FuelSlot.Itemstack.Collectible.GetCombustibleProperties(Api.World,FuelSlot.Itemstack,null);
+            }
+        }
+
+        public bool TryIgnite()
+        {
+            Api.Logger.Notification("TryIgnite called");
+            if (IsBurning) return false;
+            if (!CanBurnFuel()) return false;
+
+            CanIgniteFuel = true;
+            IgniteFuel();
+
+            return true;
+        }
+
+        public void IgniteFuel()
+        {
+            IgniteWithFuel(FuelSlot.Itemstack);
+
+            FuelSlot.Itemstack.StackSize--;
+
+            if (FuelSlot.Itemstack.StackSize <= 0)
+            {
+                FuelSlot.Itemstack = null;
+            }
+
+            FuelSlot.MarkDirty();
+        }
+
+        public void IgniteWithFuel(ItemStack stack)
+        {
+            CombustibleProperties props =
+                stack.Collectible.GetCombustibleProperties(Api.World, stack, null);
+
+            maxFuelBurnTime =
+                fuelBurnTime =
+                props.BurnDuration * 3f;
+
+            maxTemperature =
+                (int)Math.Min(MaxPotTemp, props.BurnTemperature);
+
+            MarkDirty(true);
+        }
+
+        public float ChangeTemperature(float fromTemp, float toTemp, float dt)
+        {
+            float diff = Math.Abs(fromTemp - toTemp);
+
+            dt = dt + dt * (diff / 28);
+
+            if (diff < dt)
+            {
+                return toTemp;
+            }
+
+            if (fromTemp > toTemp)
+            {
+                dt = -dt;
+            }
+
+            if (Math.Abs(fromTemp - toTemp) < 1)
+            {
+                return toTemp;
+            }
+
+            return fromTemp + dt;
+        }
+
+        private bool CanBurnFuel()
+        {
+            var props = FuelProps;
+
+            return props != null
+                && props.BurnTemperature > 0;
+        }
 
         public CheesePotRecipe FindMatchingRecipe(out int outputSize)
         {
@@ -165,6 +280,7 @@ namespace DairyPlus.BlockEntity
         {
             if (Api.Side == EnumAppSide.Client) return;
 
+            UpdateHeat(dt);
             UpdateRecipe();
 
             if (!ValidateRecipe())
@@ -173,12 +289,74 @@ namespace DairyPlus.BlockEntity
                 MarkDirty();
                 return;
             }
-
             ProcessRecipe(dt);
 
             MarkDirty();
         }
+        private void Every500ms(float dt)
+        {
+            if (Api is ICoreServerAPI &&
+                (IsBurning || prevTemperature != potTemperature))
+            {
+                MarkDirty();
+            }
 
+            prevTemperature = potTemperature;
+        }
+        private void UpdateHeat(float dt)
+        {
+            if (IsBurning)
+            {
+                fuelBurnTime -= dt;
+
+                if (fuelBurnTime <= 0)
+                {
+                    fuelBurnTime = 0;
+                    maxFuelBurnTime = 0;
+                }
+
+                potTemperature =
+                    ChangeTemperature(
+                        potTemperature,
+                        maxTemperature,
+                        dt
+                    );
+            }
+            else
+            {
+                potTemperature = ChangeTemperature(potTemperature,EnvironmentTemperature(), dt);
+            }
+
+            if (potTemperature >= 60)
+            {
+                CanIgniteFuel = true;
+            }
+            if (potTemperature < 60)
+            {
+                CanIgniteFuel = false;
+            }
+
+
+            if (!IsBurning && CanIgniteFuel && CanBurnFuel())
+            {
+                IgniteFuel();
+            }
+        }
+        public EnumIgniteState GetIgnitableState(float secondsIgniting)
+        {
+            if (FuelSlot.Empty) return EnumIgniteState.NotIgnitablePreventDefault;
+            if (IsBurning) return EnumIgniteState.NotIgnitablePreventDefault;
+
+            return secondsIgniting > 3
+                ? EnumIgniteState.IgniteNow
+                : EnumIgniteState.Ignitable;
+        }
+
+        private int EnvironmentTemperature()
+        {
+            return (int)Api.World.BlockAccessor
+                .GetClimateAt(Pos,EnumGetClimateMode.ForSuppliedDate_TemperatureOnly,Api.World.Calendar.TotalDays).Temperature;
+        }
         private void UpdateRecipe()
         {
             if (currentRecipe == null)
@@ -208,7 +386,14 @@ namespace DairyPlus.BlockEntity
         {
             if (currentRecipe == null) return;
 
-            progress += dt;
+            if (potTemperature >= RecipeMinTemp)
+            {
+                progress += dt;
+            }
+            else
+            {
+                progress = Math.Max(0, progress - dt);
+            }
 
             if (progress < maxProgress) return;
             currentRecipe.TryCraftNow(Api, currentRecipe.ProcessingTime, InputSlots, OutputSlots);

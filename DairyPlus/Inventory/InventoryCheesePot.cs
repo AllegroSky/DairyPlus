@@ -15,18 +15,18 @@ namespace DairyPlus.Inventory
 
         public InventoryCheesePot(string inventoryID, ICoreAPI api) : base(inventoryID, api)
         {
-            // slot 0-2 = input
-            // slot 3-4 = output 
-            // slot 5 = fuel
-            slots = GenEmptySlots(6);
+            // slot 0-3 = input
+            // slot 4-5 = output 
+            // slot 6 = fuel
+            slots = GenEmptySlots(7);
         }
 
         public InventoryCheesePot(string className, string instanceID, ICoreAPI api) : base(className, instanceID, api)
         {
-            slots = GenEmptySlots(6);
+            slots = GenEmptySlots(7);
         }
 
-        public override int Count => 6;
+        public override int Count => 7;
 
         public override ItemSlot this[int slotId]
         {
