@@ -7,7 +7,6 @@
 	"creativeinventory": { "general": [ "*" ], "dairyplus": [ "*" ], "items": [ "*" ] },
 	"maxStackSize": 24,
 	"materialDensity": 900,
-	"canSealCrock": true,
 
 	"shape": { "base": "dairyplus:item/butter" },
 	"texture": { "base": "dairyplus:item/butter/{type}" },
@@ -67,6 +66,7 @@
 		}],
 		
 	"attributes": {
+		"canSealCrock": true,
 		"displaycaseable": true,
 		"shelvable": true,
 		"onshelfTransform": {
