@@ -12,10 +12,10 @@
 	"texture": { "base": "dairyplus:item/butter/{type}" },
 
 	"nutritionPropsByType": {
-		"*-unsalted" : { "saturation": 300, "foodcategory": "Dairy" },
-		"*-salted" : { "saturation": 300, "foodcategory": "Dairy" },
-		"*-veggie" : { "saturation": 250, "foodcategory": "Dairy" },
-		"*-saltedveggie" : { "saturation": 250, "foodcategory": "Dairy" }
+		"*-unsalted" : { "satiety": 300, "foodcategory": "Dairy" },
+		"*-salted" : { "satiety": 300, "foodcategory": "Dairy" },
+		"*-veggie" : { "satiety": 250, "foodcategory": "Dairy" },
+		"*-saltedveggie" : { "satiety": 250, "foodcategory": "Dairy" }
 	},
 
 	"transitionablePropsByType": {
@@ -69,6 +69,12 @@
 		"canSealCrock": true,
 		"displaycaseable": true,
 		"shelvable": true,
+		"nutritionPropsWhenInMealByType": { // 1.5 as in vanilla
+			"*-unsalted" : { "satiety": 450, "foodcategory": "Dairy" },
+			"*-salted" : { "satiety": 450, "foodcategory": "Dairy" },
+			"*-veggie" : { "satiety": 380, "foodcategory": "Dairy" },
+			"*-saltedveggie" : { "satiety": 380, "foodcategory": "Dairy" }
+		},
 		"onshelfTransform": {
 			"rotation": { "x": 0, "y": 90, "z": 0 },
 			"origin": { "x": 0.5, "y": 0, "z": 0.5 },

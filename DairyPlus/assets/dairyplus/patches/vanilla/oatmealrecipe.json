@@ -1,22 +1,40 @@
 [ 
     {
-    "op": "addeach",
-    "path": "/ingredients/5/validStacks/-",
-    "value":  [
-		{"type": "item", "code": "dairyplus:soymilk", "shapeElement": "bowl/topping/*" },
-		{"type": "item", "code": "dairyplus:skimmilk", "shapeElement": "bowl/topping/*" },
-		{"type": "item", "code": "dairyplus:cream", "shapeElement": "bowl/topping/*" },
-		{"type": "item", "code": "dairyplus:condensedmilk", "shapeElement": "bowl/topping/*" },
-	  ],
-    "side": "server",
-    "file": "game:recipes/cooking/porridge.json",
+        "op": "addeach",
+        "path": "/ingredients/5/validStacks/-",
+        "value":  [
+            { "type": "item", "code": "dairyplus:soymilk", "shapeElement": "bowl/topping/*" },
+            { "type": "item", "code": "dairyplus:skimmilk", "shapeElement": "bowl/topping/*" },
+            { "type": "item", "code": "dairyplus:cream", "shapeElement": "bowl/topping/*" },
+            { "type": "item", "code": "dairyplus:condensedmilk", "shapeElement": "bowl/topping/*" },
+        ],
+        "side": "server",
+        "file": "game:recipes/cooking/porridge.json",
+    },
+    {
+        "op": "addmerge",
+        "path": "/ingredients/5/validStacks/-",
+        "value": { "type": "item", "code": "game:milkportion", "shapeElement": "bowl/topping/*" },
+        "side": "server",
+        "file": "game:recipes/cooking/porridge.json",
+        "dependsOn": [ {"modid": "expandedfoods", "invert": true }]
 	},
     {
-    "op": "addmerge",
-    "path": "/ingredients/5/validStacks/-",
-    "value": {"type": "item", "code": "game:milkportion", "shapeElement": "bowl/topping/*" },
-    "side": "server",
-    "file": "game:recipes/cooking/porridge.json",
-	"dependsOn": [ {"modid": "expandedfoods", "invert": true }]
+		"op": "addmerge",
+		"path": "/ingredients/-",
+		"value": {
+			"code": "butter",
+			"validStacks": [
+				{ "type": "item", "code": "dairyplus:butter-unsalted" },
+				{ "type": "item", "code": "dairyplus:butter-salted" },
+				{ "type": "item", "code": "dairyplus:butter-veggie" },
+				{ "type": "item", "code": "dairyplus:butter-saltedveggie" }
+			],
+			"minQuantity": 0,
+			"maxQuantity": 1,
+			"typeName": "butter"
+		},
+		"side": "server",
+		"file": "game:recipes/cooking/porridge.json"
 	}
- ]
+]
