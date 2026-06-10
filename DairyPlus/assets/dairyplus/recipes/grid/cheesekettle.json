@@ -1,0 +1,23 @@
+{
+  "type": "recipe",
+  "recipeGroup": 1,
+  "code": "cheesekettle",
+  "width": 3,
+  "height": 2,
+  "shapeless": false,
+
+  "ingredientPattern": "P_P,IpS",
+	
+  "ingredients": {
+    "p": { "type": "item", "code": "game:metalplate-copper" },
+	"P": { "type": "item", "code": "game:metalplate-copper", "quantity": 2 },
+    "I": { "type": "item", "code": "game:solderingiron", "isTool": true, "toolDurabilityCost": 5 },
+    "S": { "type": "item", "code": "game:solderbar-*", "quantity": 4 }
+  },
+
+  "output": { 
+    "type": "block", 
+    "code": "dairyplus:cheesekettle-east",
+    "quantity": 1
+  }
+}

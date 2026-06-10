@@ -1,0 +1,11 @@
+{
+  "type": "recipe",
+  "ingredientPattern": "CS", 
+	"width": 2,
+	"height": 1,
+  "shapeless": true,
+  "ingredients": {
+	"C": { "type": "item", "code": "dairyplus:curd-whole", "quantity": 6 },
+	"S": { "type": "item", "code": "game:salt", "quantity": 4 },},
+  "output": {"type": "item", "code": "game:rawcheese-salted" }
+}

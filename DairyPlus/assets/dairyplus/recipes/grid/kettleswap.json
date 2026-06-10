@@ -1,0 +1,39 @@
+[{
+  "type": "recipe",
+  "code": "kettleswap",
+  "width": 1,
+  "height": 1,
+  "shapeless": true,
+
+  "ingredientPattern": "K",
+	
+  "ingredients": {
+    "K": { "type": "block", "code": "dairyplus:cheesekettle-east" }
+  },
+
+  "output": { 
+    "type": "block", 
+    "code": "dairyplus:decorativecheesekettle-east",
+    "quantity": 1
+  }
+},
+{
+  "type": "recipe",
+  "recipeGroup": 2,
+  "code": "kettleswap",
+  "width": 1,
+  "height": 1,
+  "shapeless": true,
+
+  "ingredientPattern": "K",
+	
+  "ingredients": {
+    "K": { "type": "block", "code": "dairyplus:decorativecheesekettle-east" }
+  },
+
+  "output": { 
+    "type": "block", 
+    "code": "dairyplus:cheesekettle-east",
+    "quantity": 1
+  }
+}]

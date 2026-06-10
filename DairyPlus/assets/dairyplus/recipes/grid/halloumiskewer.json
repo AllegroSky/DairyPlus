@@ -7,8 +7,8 @@
   
   "ingredients": {
     "K": { "type": "item", "code": "game:knife-*", "isTool": true },
-	"H": { "type": "item", "code": "dairyplus:halloumi-uncooked", "quanity" : 1 },
-	"S": { "type": "item", "code": "game:stick", "quanity" : 4 }
+	"H": { "type": "item", "code": "dairyplus:halloumi-uncooked", "quantity": 1 },
+	"S": { "type": "item", "code": "game:stick", "quantity": 4 }
   },
-  "output": { "type": "item", "code": "dairyplus:halloumiskewer-uncooked", "quanity" : 4 }
+  "output": { "type": "item", "code": "dairyplus:halloumiskewer-uncooked", "quantity": 4 }
 }
