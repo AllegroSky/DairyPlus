@@ -1,7 +1,5 @@
 {
-	"code": "cheesekettle",
-	"class": "dairyplus.cheesepot",
-	"entityclass": "dairyplus.becheesepot",
+	"code": "decorativecheesekettle",
 	"variantgroups": [
 		{"loadFromProperties": "abstract/horizontalorientation" }],
 	"behaviors": [
@@ -20,20 +18,16 @@
 
 	"drawtype": "json",
 	"shapeByType": {
-		"*-north": { "base": "dairyplus:block/cheesekettlestand", "rotateY": 90 },
-		"*-east": { "base": "dairyplus:block/cheesekettlestand", "rotateY": 0 },
-		"*-south": { "base": "dairyplus:block/cheesekettlestand", "rotateY":270 },
-		"*-west": { "base": "dairyplus:block/cheesekettlestand", "rotateY": 180 },
+		"*-north": { "base": "dairyplus:block/cheesekettle", "rotateY": 90 },
+		"*-east": { "base": "dairyplus:block/cheesekettle", "rotateY": 0 },
+		"*-south": { "base": "dairyplus:block/cheesekettle", "rotateY":270 },
+		"*-west": { "base": "dairyplus:block/cheesekettle", "rotateY": 180 },
 		},
 	"texture": { "base": "dairyplus:block/other/cheesekettle" },
-	"sideopaque": {
-		"all": "false"
-		},
-	"sidesolid": {
-		"all": "false"
-		},
+	"sideopaque": { "all": "false" },
+	"sidesolid": { "all": "false" },
 	"selectionBox": {
-		"x1": 0, "y1": 0, "z1": 0, "x2": 1, "y2": 0.9, "z2": 1
+		"x1": 0, "y1": 0, "z1": 0.06, "x2": 0.93, "y2": 0.7, "z2": 0.93
 		},
 
 	"groundTransform": {
