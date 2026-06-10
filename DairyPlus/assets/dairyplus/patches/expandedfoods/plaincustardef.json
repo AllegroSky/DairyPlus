@@ -1,5 +1,5 @@
-[	
-	{
+[
+    {
 	"op": "add",
     "path": "/-",
 	"value": {
@@ -38,7 +38,7 @@
 	"side": "server",
     "file": "dairyplus:recipes/cooking/plaincustard.json",
 	"dependsOn": [{ "modid": "aculinaryartillery" }]
-		},	
+	},	
 	
 	{
 	"op": "add",
@@ -79,10 +79,9 @@
 	"side": "server",
     "file": "dairyplus:recipes/cooking/plaincustard.json",
 	"dependsOn": [{ "modid": "aculinaryartillery" }]
-	},
-	
-	{
-    "op": "addeach",
+  },
+  {
+    "op": "addmerge",
     "path": "/2/ingredients/1/validStacks/-",
     "value": [
       { "type": "item", "code": "aculinaryartillery:eggyolkportion-pheasant" },
@@ -99,7 +98,7 @@
     "dependsOn": [{ "modid": "moreanimals" }, { "modid": "aculinaryartillery" }]
   },
   {
-    "op": "addeach",
+    "op": "addmerge",
     "path": "/3/ingredients/1/validStacks/-",
     "value": [
       { "type": "item", "code": "aculinaryartillery:eggyolkportion-pheasant" },

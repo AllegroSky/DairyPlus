@@ -1,5 +1,5 @@
-﻿[
-  {
+[
+    {
     "op": "addeach",
     "path": "/ingredients/1/validStacks/-",
     "value": [
