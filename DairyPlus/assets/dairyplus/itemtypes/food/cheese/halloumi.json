@@ -36,7 +36,10 @@
 	},
 		
 	"attributes": {
-		"displaycaseable": true,
+		"onDisplayTransform": {
+			"origin": { "x": 0.5, "y": 0, "z": 0.5 },
+			"scale": 0.9
+			},
 		"shelvable": true,
 		"onshelfTransform": {
 			"rotation": { "x": 0, "y": 92, "z": 0 },
@@ -47,29 +50,41 @@
 			"scale": 0.8},
 		"bakingPropertiesByType": {
 			"*-uncooked": {
+				"LargeItem": true,
 				"temp": 160,
 				"levelFrom": 0.0,
 				"levelTo": 0.25,
+				"startScaleY": 1,
+				"endScaleY": 1,
 				"resultCode": "dairyplus:halloumi-partcooked"
 			},
 			"*-partcooked": {
+				"LargeItem": true,
 				"temp": 160,
 				"levelFrom": 0.25,
 				"levelTo": 0.5,
+				"startScaleY": 1,
+				"endScaleY": 1,
 				"resultCode": "dairyplus:halloumi-cooked",
-				"initialCode": "dairyplus:halloumi-partcooked"
+				"initialCode": "dairyplus:halloumi-uncooked"
 			},
 			"*-cooked": {
+				"LargeItem": true,
 				"temp": 160,
 				"levelFrom": 0.5,
 				"levelTo": 0.75,
+				"startScaleY": 1,
+				"endScaleY": 1,
 				"resultCode": "dairyplus:halloumi-burnt",
-				"initialCode": "dairyplus:halloumi-cooked"
+				"initialCode": "dairyplus:halloumi-partcooked"
 			},
 			"*-burnt": {
+				"LargeItem": true,
 				"temp": 160,
 				"levelFrom": 0.75,
 				"levelTo": 1.0,
+				"startScaleY": 1,
+				"endScaleY": 1,
 				"initialCode": "dairyplus:halloumi-cooked"
 			}
 		}
@@ -103,10 +118,10 @@
 		"scale": 0.6
 		},
 	"guiTransform": {
-		"translation": { "x": -1.5, "y": -4.4, "z": 0 },
+		"translation": { "x": 0.5, "y": 2, "z": 0 },
 		"rotation": { "x": -14, "y": 20, "z": -14 },
-		"origin": { "x": 0.5, "y": 0, "z": 0.4 },
-		"scale": 2.85
+		"origin": { "x": 0.62, "y": 0.19, "z": 0 },
+		"scale": 2.6
 	},
 	"groundTransform": {
 		"translation": { "x": 0, "y": 0, "z": 0 },

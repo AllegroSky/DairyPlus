@@ -22,14 +22,26 @@
 			"transitionedStack": { "type": "item", "code": "game:rot" }
 			}
 		],
-		
-	"bakingProperties": {
-		"temp": 160,
-		"resultCode": "dairyplus:drycurds",
-	},
-		
+			
 	"attributes": {
-		"displaycaseable": true,
+		"bakingPropertiesByType": {
+			"*-whole": {
+				"temp": 100,
+				"levelFrom": 0,
+				"levelTo": 0.8,
+				"startScaleY": 1,
+				"endScaleY": 1,
+				"resultCode": "dairyplus:driedcurds"
+				},
+			"*-skim": {
+				"temp": 100,
+				"levelFrom": 0,
+				"levelTo": 0.8,
+				"startScaleY": 1,
+				"endScaleY": 1,
+				"resultCode": "dairyplus:driedcurds"
+				}
+			},
 		"shelvable": true,
 		"onshelfTransform": {
 			"rotation": { "x": 0, "y": 92, "z": 0 },
@@ -37,7 +49,10 @@
 			"scale": 0.65},
 		"groundStorageTransform": {
 			"origin": { "x": 0.5, "y": 0, "z": 0.5 },
-			"scale": 0.59}
+			"scale": 0.59},
+		"onDisplayTransform": {
+			"origin": { "x": 0.5, "y": 0, "z": 0.5 },
+			"scale": 0.5}
 		},
 		
 	"behaviors": [{
