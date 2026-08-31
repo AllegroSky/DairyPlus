@@ -10,8 +10,8 @@
 	"materialDensity": 900,
 	
 	"nutritionPropsByType": {
-		"*-whole" : { "saturation": 225, "foodcategory": "Dairy" },
-		"*-skim" : { "saturation": 150, "foodcategory": "Dairy" }
+		"*-whole" : { "satiety": 225, "foodcategory": "Dairy" },
+		"*-skim" : { "satiety": 150, "foodcategory": "Dairy" }
 	},
 	
 	"transitionableProps": [{
@@ -20,10 +20,14 @@
 			"transitionHours": { "avg": 36 },
 			"transitionRatio": 1,
 			"transitionedStack": { "type": "item", "code": "game:rot" }
-			}
-		],
+		}],
 			
 	"attributes": {
+		"inPieProperties": {
+			"texture": "game:block/food/pie/fill-potato",
+			"partType": "Filling",
+			"mixingCodes": ["potpie"]
+		},
 		"bakingPropertiesByType": {
 			"*-whole": {
 				"temp": 100,

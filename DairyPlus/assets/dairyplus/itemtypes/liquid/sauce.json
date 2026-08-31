@@ -25,8 +25,8 @@
 				}
 			},
 			"nutritionPropsPerLitreByType": {
-				"*-cheese": { "saturation": 240, "foodcategory": "Dairy" },
-				"*": { "saturation": 190, "foodcategory": "Dairy" }
+				"*-cheese": { "satiety": 240, "foodcategory": "Dairy" },
+				"*": { "satiety": 190, "foodcategory": "Dairy" }
 				}
 			}
 		},

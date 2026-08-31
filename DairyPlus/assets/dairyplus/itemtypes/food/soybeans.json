@@ -76,7 +76,6 @@
 			"satiety": 240,
 			"foodcategory": "Protein" 
 		},
-		"displaycaseable": true,
 		"shelvable": true,
 		"onshelfTransform": {
 			"origin": { "x": 0.5, "y": 0, "z": 0.5 },

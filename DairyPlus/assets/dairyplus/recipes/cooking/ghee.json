@@ -1,0 +1,25 @@
+{
+	"code": "ghee",
+	"enabled": true,
+	"perishableProps": {
+		"type": "None",
+		"freshHours": { "avg": 720 },
+		"transitionHours": { "avg": 168 },
+		"transitionRatio": 1,
+		"transitionedStack": { "type": "item", "code": "game:rot" }
+	},
+	"shape": { "base": "game:block/food/meal/liquid" },
+	"isfood": true,
+	"ingredients": [
+		{ 
+			"code": "butter", 
+			"validStacks": [ 
+				{"type": "item","code": "dairyplus:butter-unsalted"}, 
+				{"type": "item","code": "dairyplus:butter-salted"} 
+				],
+			"minQuantity": 1,
+			"maxQuantity": 1,
+		}
+	],
+	"cooksInto": { "type": "item", "code": "dairyplus:ghee", "quantity": 40 }
+}

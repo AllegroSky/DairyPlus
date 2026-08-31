@@ -15,8 +15,8 @@
 		"*-aged" : {"base" : "dairyplus:item/cheese/provaged" }},
 		
 	"nutritionPropsByType": {
-		"*-fresh" : { "saturation": 100, "foodcategory": "Dairy" },
-		"*-aged" : { "saturation": 115, "foodcategory": "Dairy" }
+		"*-fresh" : { "satiety": 100, "foodcategory": "Dairy" },
+		"*-aged" : { "satiety": 115, "foodcategory": "Dairy" }
 		},
 	
 	"transitionablePropsByType": {
@@ -37,7 +37,11 @@
 	},
 	
 	"attributes": {
-		"displaycaseable": true,
+		"inPieProperties": {
+			"texture": "game:block/food/pie/fill-potato",
+			"partType": "Filling",
+			"mixingCodes": ["potpie"]
+		},
 		"shelvable": true,
 		"onshelfTransform": {
 			"rotation": { "x": 0, "y": -11, "z": 0 },

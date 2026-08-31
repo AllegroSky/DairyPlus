@@ -5,7 +5,7 @@
 	"maxStackSize": 16,
 	"materialDensity": 900,
 	
-	"nutritionProps": {"saturation": 150, "foodcategory": "Dairy" },
+	"nutritionProps": {"satiety": 150, "foodcategory": "Dairy" },
 	"transitionableProps": [{
 			"type": "Perish",
 			"freshHours": { "avg": 90 },
@@ -16,7 +16,11 @@
 		],
 		
 	"attributes": {
-		"displaycaseable": true,
+		"inPieProperties": {
+			"texture": "game:block/food/pie/fill-potato",
+			"partType": "Filling",
+			"mixingCodes": ["potpie"]
+		},
 		"shelvable": true,
 		"onshelfTransform": {
 			"rotation": { "x": 0, "y": 92, "z": 0 },
@@ -37,7 +41,7 @@
 				"scale" : 0.25
 				}
 		}
-	}],
+		}],
 	
 	"drawtype": "json",
 	"shape": { "base": "dairyplus:item/cheese/mozzaball" },
@@ -50,9 +54,9 @@
 		"scale": 0.6
 		},
 	"guiTransform": {
-		"translation": { "x": 0, "y": -4.4, "z": 0 },
+		"translation": { "x": 0, "y": 0, "z": 0 },
 		"rotation": { "x": -14, "y": 31, "z": 168 },
-		"origin": { "x": 0.5, "y": 0.2, "z": 0.5 },
+		"origin": { "x": 0.5, "y": 0.1, "z": 0.5 },
 		"scale": 2.5
 	},
 	"groundTransform": {

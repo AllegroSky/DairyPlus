@@ -1,0 +1,57 @@
+{
+	"code": "ricotta",
+	"creativeinventory": { "general": [ "*" ], "dairyplus": [ "*" ], "items": [ "*" ] },
+	"maxStackSize": 32,
+	"materialDensity": 900,
+
+	"shape": { "base": "dairyplus:item/cheese/ricotta" },
+	"texture": { "base": "dairyplus:item/cheese/ricotta" },
+
+	"nutritionProps": {"satiety": 250, "foodcategory": "Dairy" },
+
+	"transitionableProps": [{
+		"type": "Perish",
+		"freshHours": { "avg": 90 },
+		"transitionHours": { "avg": 12 },
+		"transitionedStack": {
+			"type": "item",
+			"code": "game:rot"},
+		"transitionRatio": 1
+	}],
+
+	"attributes": {
+		"displaycaseable": true,
+		"shelvable": true,
+		"onshelfTransform": {
+			"rotation": { "x": 0, "y": 0, "z": 0 },
+			"origin": { "x": 0.5, "y": 0, "z": 0.5 },
+			"scale": 0.7	
+			}
+		},
+		
+	"guiTransform": {
+		"translation": { "x": 0, "y": 0, "z": 0 },
+		"rotation": { "x": 158, "y": -31, "z": 9 },
+		"origin": {	"x": 0.49,	"y": 0.15,	"z": 0.43 },
+		"scale": 3
+		},
+	"tpHandTransform": {
+		"translation": { "x": -0.15, "y": 0.2, "z": 0 },
+		"rotation": { "x": -10, "y": 15, "z": -89 },
+		"origin": { "x": -0.1, "y": 0.28, "z": 0.22 },
+		"scale": 0.65
+		},
+	"groundTransform": {
+		"translation": { "x": 0, "y": 0, "z": 0 },
+		"rotation": { "x": 0, "y": 1, "z": 0 },
+		"origin": { "x": 0.5, "y": 0, "z": 0.5 },
+		"scale": 3.7
+		},
+		
+	"heldRightReadyAnimationByType": {
+		"*": "holdbothhands"
+		},
+	"heldTpIdleAnimationByType": {
+		"*": "holdbothhands"
+		}
+}

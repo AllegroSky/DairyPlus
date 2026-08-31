@@ -6,7 +6,7 @@
   "shapeless": false,
   
   "ingredients": {
-    "B": { "type": "block", "code": "game:bowl-blue-fired" },
+    "B": { "type": "block", "code": "game:bowl-*-fired" },
 	"S": { "type": "item", "code": "game:stick" }
   },
   "output": { "type": "block", "code": "dairyplus:creamscoop" }

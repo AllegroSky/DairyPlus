@@ -1,11 +1,10 @@
 {
 	"code": "driedcurds",
-
 	"creativeinventory": { "general": [ "*" ], "dairyplus": [ "*" ]},
 	"maxStackSize": 32,
 	"materialDensity": 900,
 	
-	"nutritionProps": {"saturation": 150, "foodcategory": "Dairy" },
+	"nutritionProps": {"satiety": 150, "foodcategory": "Dairy" },
 	"transitionableProps": [{
 			"type": "Perish",
 			"freshHours": { "avg": 1920 },
@@ -26,7 +25,7 @@
 			"scale": 0.5},
 		"groundStorageTransform": {
 			"origin": { "x": 0.5, "y": 0, "z": 0.5 },
-			"scale": 0.65}
+			"scale": 0.55}
 		},
 		
 	"behaviors": [{
@@ -55,13 +54,13 @@
 		"translation": { "x": -0.5, "y": 0.2, "z": 0.4 },
 		"rotation": { "x": 0, "y": 20, "z": -71 },
 		"origin": { "x": 0.1, "y": 0.1, "z": 0.1 },
-		"scale": 0.31
+		"scale": 0.28
 	},
 	"guiTransform": {
-		"translation": { "x": 0.9, "y": -1.2, "z": 0 },
-		"rotation": { "x": -37, "y": 13, "z": 180 },
-		"origin": { "x": 0.5, "y": 0.2, "z": 0.5 },
-		"scale": 1.89
+		"translation": { "x": 0.5, "y": -1.5, "z": 0 },
+		"rotation": { "x": -38, "y": -159, "z": 178 },
+		"origin": { "x": 0.4, "y": 0.3, "z": 0.4 },
+		"scale": 1.8
 	},
 		
 	"heldRightReadyAnimationByType": {

@@ -1,0 +1,27 @@
+[
+    {
+	"op": "addmerge",
+    "path": "/ingredients/0/validStacks",
+	"value": [{ "type": "item","code": "game:vinegarportion" }],
+	"side": "server",
+    "file": "dairyplus:recipes/cooking/soybutter.json",
+	"dependsOn": [{ "modid": "aculinaryartillery" }]
+	},
+	
+	{
+	"op": "addmerge",
+    "path": "/ingredients/1/validStacks",
+	"value": [
+		{ "type": "item","code": "expandedfoods:foodoilportion-flax" }, 
+		{ "type": "item","code": "expandedfoods:foodoilportion-rice" }, 
+		{ "type": "item","code": "expandedfoods:foodoilportion-seed" },
+		{ "type": "item","code": "expandedfoods:foodoilportion-soy" },
+		{ "type": "item","code": "expandedfoods:foodoilportion-sunflower" },
+		{ "type": "item","code": "expandedfoods:foodoilportion-peanut" },
+		{ "type": "item","code": "expandedfoods:foodoilportion-olive" }
+		],
+	"side": "server",
+    "file": "dairyplus:recipes/cooking/soybutter.json",
+	"dependsOn": [{ "modid": "aculinaryartillery" }]
+	}
+]

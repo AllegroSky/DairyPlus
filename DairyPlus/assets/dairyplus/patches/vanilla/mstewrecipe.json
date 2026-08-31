@@ -1,19 +1,37 @@
 [
-    {
+   {
     "op": "addmerge",
     "path": "/ingredients/3/validStacks/-",
     "value": { "type": "item", "code": "dairyplus:tofu", "shapeElement": "bowl/vegetable 2/*", "textureMapping": [ "vegetable", "group4" ] },
     "side": "server",
     "file": "game:recipes/cooking/meatystew.json"
   },
-    {
+  {
     "op": "addmerge",
     "path": "/ingredients/4/validStacks/-",
     "value": { "type": "item", "code": "dairyplus:tofu", "shapeElement": "bowl/vegetable 2/*", "textureMapping": [ "vegetable", "group4" ] },
     "side": "server",
     "file": "game:recipes/cooking/meatystew.json"
   },
- {
+  {
+    "op": "addeach",
+    "path": "/ingredients/5/validStacks/-",
+    "value": [
+		{ "type": "item", "code": "dairyplus:soybeans-*", "shapeElement": "bowl/vegetable 2/*", "textureMapping": [ "vegetable", "group4" ] }
+	],
+    "side": "server",
+    "file": "game:recipes/cooking/meatystew.json"
+  },
+  {
+    "op": "addeach",
+    "path": "/ingredients/6/validStacks/-",
+    "value": [
+		{ "type": "item", "code": "dairyplus:soybeans-*", "shapeElement": "bowl/vegetable 2/*", "textureMapping": [ "vegetable", "group4" ] }
+	],
+    "side": "server",
+    "file": "game:recipes/cooking/meatystew.json"
+  },
+  {
     "op": "addeach",
     "path": "/ingredients/8/validStacks/-",
     "value": [
@@ -22,9 +40,52 @@
         { "type": "item", "code": "dairyplus:soymilk", "shapeElement": "bowl/topping/*" },
         { "type": "item", "code": "dairyplus:skimmilk", "shapeElement": "bowl/topping/*" },
 		{ "type": "item", "code": "dairyplus:condensedmilk", "shapeElement": "bowl/topping/*" },
-		{ "type": "item", "code": "dairyplus:sauce-plain", "shapeElement": "bowl/topping/*" , "shapeElement": "bowl/topping/*", "textureMapping": [ "topping", "sauceplain" ] },
-		{ "type": "item", "code": "dairyplus:sauce-cheese", "shapeElement": "bowl/topping/*" , "shapeElement": "bowl/topping/*", "textureMapping": [ "topping", "saucecheese" ] }
+		{ "type": "item", "code": "dairyplus:whey", "shapeElement": "bowl/topping/*" },
+		{ "type": "item", "code": "dairyplus:sauce-plain", "shapeElement": "bowl/topping/*" , "textureMapping": [ "topping", "sauceplain" ] },
+		{ "type": "item", "code": "dairyplus:sauce-cheese", "shapeElement": "bowl/topping/*" , "textureMapping": [ "topping", "saucecheese" ] }
        ],
+    "side": "server",
+    "file": "game:recipes/cooking/meatystew.json"
+  },
+  {
+    "op": "addmerge",
+    "path": "/ingredients/-",
+    "value": {
+      "code": "dpcheese",
+      "validStacks": [
+      { "type": "item", "code": "dairyplus:curd-*" },
+	  { "type": "item", "code": "dairyplus:provaloneslice-*" },
+	  { "type": "item", "code": "dairyplus:mozzaball" },
+	  { "type": "item", "code": "dairyplus:driedcurds" },
+	  { "type": "item", "code": "dairyplus:halloumi-uncooked" },
+	  { "type": "item", "code": "dairyplus:feta" },
+	  { "type": "item", "code": "dairyplus:ricotta" },
+	  { "type": "item", "code": "dairyplus:brunost" },
+	  { "type": "item", "code": "game:cheese-*-1slice" }
+	  ],
+      "minQuantity": 0,
+      "maxQuantity": 1,
+      "typeName": "dairy"
+    },
+    "side": "server",
+    "file": "game:recipes/cooking/meatystew.json",
+	"dependsOn": [ {"modid": "expandedfoods", "invert": true} ]
+  },
+  {
+    "op": "addmerge",
+    "path": "/ingredients/-",
+    "value": {
+      "code": "butter",
+      "validStacks": [
+      { "type": "item", "code": "dairyplus:butter-unsalted" },
+	  { "type": "item", "code": "dairyplus:butter-salted" },
+	  { "type": "item", "code": "dairyplus:butter-veggie" },
+	  { "type": "item", "code": "dairyplus:butter-saltedveggie" }
+	  ],
+      "minQuantity": 0,
+      "maxQuantity": 1,
+      "typeName": "butter"
+    },
     "side": "server",
     "file": "game:recipes/cooking/meatystew.json"
   }

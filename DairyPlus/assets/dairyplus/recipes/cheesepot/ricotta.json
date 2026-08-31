@@ -1,0 +1,25 @@
+[
+{
+  "code": "ricotta",
+  "ProcessingTime" : 15,
+  "ingredients": [
+  	{ "type": "item", "code": "dairyplus:whey", "litres": 9 },
+	{ "type": "item", "code": "dairyplus:cream", "litres": 0.2},
+	{ "type": "item", "code": "game:salt", "quantity": 1 }
+  ],
+	"outputs": [
+	 { "type": "item", "code": "dairyplus:ricotta", "quantity": 2 },
+  ]
+},
+{
+  "code": "ricotta",
+  "ProcessingTime" : 15,
+  "ingredients": [
+  	{ "type": "item", "code": "dairyplus:whey", "litres": 9 },
+	{ "type": "item", "code": "game:salt", "quantity": 1 }
+  ],
+	"outputs": [
+	 { "type": "item", "code": "dairyplus:ricotta", "quantity": 1 },
+  ]
+},
+]

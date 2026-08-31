@@ -9,10 +9,10 @@
 	"materialDensity": 900,
 	
 	"nutritionPropsByType": {
-		"*-uncooked" : { "saturation": 100, "foodcategory": "Dairy", "eatenStack" : { "type": "item", "code": "game:stick", "quanity" : 1} },
-		"*-partcooked" : { "saturation": 115, "foodcategory": "Dairy", "eatenStack" : { "type": "item", "code": "game:stick", "quanity" : 1} },
-		"*-cooked" : { "saturation": 130, "foodcategory": "Dairy", "eatenStack" : { "type": "item", "code": "game:stick", "quanity" : 1} },
-		"*-burnt" : { "saturation": 90, "foodcategory": "Dairy", "eatenStack" : { "type": "item", "code": "game:stick", "quanity" : 1} }
+		"*-uncooked" : { "satiety": 100, "foodcategory": "Dairy", "eatenStack" : { "type": "item", "code": "game:stick", "quanity" : 1} },
+		"*-partcooked" : { "satiety": 115, "foodcategory": "Dairy", "eatenStack" : { "type": "item", "code": "game:stick", "quanity" : 1} },
+		"*-cooked" : { "satiety": 130, "foodcategory": "Dairy", "eatenStack" : { "type": "item", "code": "game:stick", "quanity" : 1} },
+		"*-burnt" : { "satiety": 90, "foodcategory": "Dairy", "eatenStack" : { "type": "item", "code": "game:stick", "quanity" : 1} }
 		},
 	
 	"transitionablePropsByType": {
@@ -44,7 +44,6 @@
 			"transitionRatio": 0.5
 		}]
 	},
-		
 		
 	"attributes": {
 		"groundStoreageTransform": {

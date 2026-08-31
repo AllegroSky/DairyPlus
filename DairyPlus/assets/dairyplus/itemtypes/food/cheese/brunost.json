@@ -1,0 +1,50 @@
+{
+	"code": "brunost",
+	"creativeinventory": { "general": [ "*" ], "dairyplus": [ "*" ], "items": [ "*" ] },
+	"maxStackSize": 32,
+	"materialDensity": 900,
+
+	"shape": { "base": "dairyplus:item/cheese/brunost" },
+	"texture": { "base": "dairyplus:item/cheese/brunost" },
+
+	"nutritionProps": {"satiety": 250, "foodcategory": "Dairy" },
+
+	"transitionableProps": [{
+		"type": "Perish",
+		"freshHours": { "avg": 960 },
+		"transitionHours": { "avg": 168 },
+		"transitionedStack": {
+			"type": "item",
+			"code": "game:rot"},
+		"transitionRatio": 1
+	}],
+
+	"attributes": {
+		"displaycaseable": true,
+		"shelvable": true,
+		"onshelfTransform": {
+			"rotation": { "x": 0, "y": 0, "z": 0 },
+			"origin": { "x": 0.5, "y": 0, "z": 0.5 },
+			"scale": 0.7	
+			}
+		},
+		
+	"guiTransform": {
+		"translation": { "x": 0, "y": 0, "z": 0 },
+		"rotation": { "x": 157, "y": -28, "z": 0 },
+		"origin": {	"x": 0.42,	"y": 0.13,	"z": 0.4 },
+		"scale": 4
+		},
+	"tpHandTransform": {
+		"translation": { "x": -0.15, "y": 0.2, "z": 0 },
+		"rotation": { "x": -10, "y": 15, "z": -89 },
+		"origin": { "x": -0.1, "y": 0.28, "z": 0.22 },
+		"scale": 0.65
+		},
+	"groundTransform": {
+		"translation": { "x": 0, "y": 0, "z": 0 },
+		"rotation": { "x": 0, "y": 1, "z": 0 },
+		"origin": { "x": 0.5, "y": 0, "z": 0.5 },
+		"scale": 3.7
+		}
+}

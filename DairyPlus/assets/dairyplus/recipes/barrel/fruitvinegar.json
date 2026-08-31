@@ -3,45 +3,180 @@
   "code": "fruitvinegar",
   "sealHours": 336,
   "ingredients": [
-    { "type": "item", "code": "game:waterportion", "litres": 10,},
-	{ "type": "item", "code": "game:fruit-redapple", "quantity": 5 },
+    { "type": "item", "code": "game:waterportion", "litres": 5 },
+	{ "type": "item", "code": "game:pressedmash-apple", "quantity": 5 }
 	],
-  "output": { "type": "item", "code": "dairyplus:fruitvinegar", "litres": 10 },
+  "output": { "type": "item", "code": "dairyplus:fruitvinegar", "litres": 5 }
 },
 {
   "code": "fruitvinegar",
   "sealHours": 336,
   "ingredients": [
-    { "type": "item", "code": "game:waterportion", "litres": 10,},
-	{ "type": "item", "code": "game:fruit-pinkapple", "quantity": 5 },
+    { "type": "item", "code": "game:waterportion", "litres": 5 },
+	{ "type": "item", "code": "game:pressedmash-blueberry", "quantity": 5 }
 	],
-  "output": { "type": "item", "code": "dairyplus:fruitvinegar", "litres": 10 },
+  "output": { "type": "item", "code": "dairyplus:fruitvinegar", "litres": 5 }
 },
 {
   "code": "fruitvinegar",
   "sealHours": 336,
   "ingredients": [
-    { "type": "item", "code": "game:waterportion", "litres": 10,},
-	{ "type": "item", "code": "game:fruit-yellowapple", "quantity": 5 },
+    { "type": "item", "code": "game:waterportion", "litres": 5 },
+	{ "type": "item", "code": "game:pressedmash-cranberry", "quantity": 5 }
 	],
-  "output": { "type": "item", "code": "dairyplus:fruitvinegar", "litres": 10 },
+  "output": { "type": "item", "code": "dairyplus:fruitvinegar", "litres": 5 }
 },
 {
   "code": "fruitvinegar",
   "sealHours": 336,
   "ingredients": [
-    { "type": "item", "code": "game:waterportion", "litres": 10,},
-	{ "type": "item", "code": "game:fruit-cherry", "quantity": 5 },
+    { "type": "item", "code": "game:waterportion", "litres": 5 },
+	{ "type": "item", "code": "game:pressedmash-redcurrant", "quantity": 5 }
 	],
-  "output": { "type": "item", "code": "dairyplus:fruitvinegar", "litres": 10 },
+  "output": { "type": "item", "code": "dairyplus:fruitvinegar", "litres": 5 }
 },
 {
   "code": "fruitvinegar",
   "sealHours": 336,
   "ingredients": [
-    { "type": "item", "code": "game:waterportion", "litres": 10,},
-	{ "type": "item", "code": "game:fruit-pear", "quantity": 5 },
+    { "type": "item", "code": "game:waterportion", "litres": 5 },
+	{ "type": "item", "code": "game:pressedmash-blackcurrant", "quantity": 5 }
 	],
-  "output": { "type": "item", "code": "dairyplus:fruitvinegar", "litres": 10 },
-}
+  "output": { "type": "item", "code": "dairyplus:fruitvinegar", "litres": 5 }
+},
+{
+  "code": "fruitvinegar",
+  "sealHours": 336,
+  "ingredients": [
+    { "type": "item", "code": "game:waterportion", "litres": 5 },
+	{ "type": "item", "code": "game:pressedmash-whitecurrant", "quantity": 5 }
+	],
+  "output": { "type": "item", "code": "dairyplus:fruitvinegar", "litres": 5 }
+},
+{
+  "code": "fruitvinegar",
+  "sealHours": 336,
+  "ingredients": [
+    { "type": "item", "code": "game:waterportion", "litres": 5 },
+	{ "type": "item", "code": "game:pressedmash-saguaro", "quantity": 5 }
+	],
+  "output": { "type": "item", "code": "dairyplus:fruitvinegar", "litres": 5 }
+},
+{
+  "code": "fruitvinegar",
+  "sealHours": 336,
+  "ingredients": [
+    { "type": "item", "code": "game:waterportion", "litres": 5 },
+	{ "type": "item", "code": "game:pressedmash-breadfruit", "quantity": 5 }
+	],
+  "output": { "type": "item", "code": "dairyplus:fruitvinegar", "litres": 5 }
+},
+{
+  "code": "fruitvinegar",
+  "sealHours": 336,
+  "ingredients": [
+    { "type": "item", "code": "game:waterportion", "litres": 5 },
+	{ "type": "item", "code": "game:pressedmash-pomegranate", "quantity": 5 }
+	],
+  "output": { "type": "item", "code": "dairyplus:fruitvinegar", "litres": 5 }
+},
+{
+  "code": "fruitvinegar",
+  "sealHours": 336,
+  "ingredients": [
+    { "type": "item", "code": "game:waterportion", "litres": 5 },
+	{ "type": "item", "code": "game:pressedmash-cherry", "quantity": 5 }
+	],
+  "output": { "type": "item", "code": "dairyplus:fruitvinegar", "litres": 5 }
+},
+{
+  "code": "fruitvinegar",
+  "sealHours": 336,
+  "ingredients": [
+    { "type": "item", "code": "game:waterportion", "litres": 5 },
+	{ "type": "item", "code": "game:pressedmash-peach", "quantity": 5 }
+	],
+  "output": { "type": "item", "code": "dairyplus:fruitvinegar", "litres": 5 }
+},
+{
+  "code": "fruitvinegar",
+  "sealHours": 336,
+  "ingredients": [
+    { "type": "item", "code": "game:waterportion", "litres": 5 },
+	{ "type": "item", "code": "game:pressedmash-pear", "quantity": 5 }
+	],
+  "output": { "type": "item", "code": "dairyplus:fruitvinegar", "litres": 5 }
+},
+{
+  "code": "fruitvinegar",
+  "sealHours": 336,
+  "ingredients": [
+    { "type": "item", "code": "game:waterportion", "litres": 5 },
+	{ "type": "item", "code": "game:pressedmash-orange", "quantity": 5 }
+	],
+  "output": { "type": "item", "code": "dairyplus:fruitvinegar", "litres": 5 }
+},
+{
+  "code": "fruitvinegar",
+  "sealHours": 336,
+  "ingredients": [
+    { "type": "item", "code": "game:waterportion", "litres": 5 },
+	{ "type": "item", "code": "game:pressedmash-mango", "quantity": 5 }
+	],
+  "output": { "type": "item", "code": "dairyplus:fruitvinegar", "litres": 5 }
+},
+{
+  "code": "fruitvinegar",
+  "sealHours": 336,
+  "ingredients": [
+    { "type": "item", "code": "game:waterportion", "litres": 5 },
+	{ "type": "item", "code": "game:pressedmash-lychee", "quantity": 5 }
+	],
+  "output": { "type": "item", "code": "dairyplus:fruitvinegar", "litres": 5 }
+},
+{
+  "code": "fruitvinegar",
+  "sealHours": 336,
+  "ingredients": [
+    { "type": "item", "code": "game:waterportion", "litres": 5 },
+	{ "type": "item", "code": "game:pressedmash-beautyberry", "quantity": 5 }
+	],
+  "output": { "type": "item", "code": "dairyplus:fruitvinegar", "litres": 5 }
+},
+{
+  "code": "fruitvinegar",
+  "sealHours": 336,
+  "ingredients": [
+    { "type": "item", "code": "game:waterportion", "litres": 5 },
+	{ "type": "item", "code": "game:pressedmash-cloudberry", "quantity": 5 }
+	],
+  "output": { "type": "item", "code": "dairyplus:fruitvinegar", "litres": 5 }
+},
+{
+  "code": "fruitvinegar",
+  "sealHours": 336,
+  "ingredients": [
+    { "type": "item", "code": "game:waterportion", "litres": 5 },
+	{ "type": "item", "code": "game:pressedmash-raspberry", "quantity": 5 }
+	],
+  "output": { "type": "item", "code": "dairyplus:fruitvinegar", "litres": 5 }
+},
+{
+  "code": "fruitvinegar",
+  "sealHours": 336,
+  "ingredients": [
+    { "type": "item", "code": "game:waterportion", "litres": 5 },
+	{ "type": "item", "code": "game:pressedmash-blackberry", "quantity": 5 }
+	],
+  "output": { "type": "item", "code": "dairyplus:fruitvinegar", "litres": 5 }
+},
+{
+  "code": "fruitvinegar",
+  "sealHours": 336,
+  "ingredients": [
+    { "type": "item", "code": "game:waterportion", "litres": 5 },
+	{ "type": "item", "code": "game:pressedmash-strawberry", "quantity": 5 }
+	],
+  "output": { "type": "item", "code": "dairyplus:fruitvinegar", "litres": 5 }
+},
 ]

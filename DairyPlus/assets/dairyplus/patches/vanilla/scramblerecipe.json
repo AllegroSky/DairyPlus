@@ -23,24 +23,79 @@
     "file": "game:recipes/cooking/scrambledeggs.json",
 	"dependsOn": [ {"modid": "expandedfoods", "invert": true} ]
   }, 
-  
-      {
-    "op": "addmerge",
-    "path": "/ingredients/1/validStacks/-",
-    "value": { "type": "item", "code": "dairyplus:tofu",  "shapeElement": "bowl/egg2/*", "textureMapping": ["scrambledegg", "group1"] },
+  {
+    "op": "addeach",
+    "path": "/ingredients/3/validStacks/-",
+    "value":[
+      { "type": "item", "code": "dairyplus:curd-whole",  "shapeElement": "bowl/cheese2/*", "textureMapping": ["cheese", "whitecheese"] },
+	  { "type": "item", "code": "dairyplus:curd-skim", "shapeElement": "bowl/cheese2/*", "textureMapping": ["cheese", "whitecheese"] },
+	  { "type": "item", "code": "dairyplus:feta", "shapeElement": "bowl/cheese2/*", "textureMapping": ["cheese", "whitecheese"] },
+	  { "type": "item", "code": "dairyplus:ricotta", "shapeElement": "bowl/cheese2/*", "textureMapping": ["cheese", "whitecheese"] },
+	  { "type": "item", "code": "dairyplus:mozzaball", "shapeElement": "bowl/cheese2/*", "textureMapping": ["cheese", "whitecheese"] },
+	  { "type": "item", "code": "dairyplus:provaloneslice-fresh", "shapeElement": "bowl/cheese2/*", "textureMapping": ["cheese", "whitecheese"] },
+	  { "type": "item", "code": "dairyplus:provaloneslice-aged", "shapeElement": "bowl/cheese2/*", "textureMapping": ["cheese", "yellowcheese"] },
+	  { "type": "item", "code": "dairyplus:brunost", "shapeElement": "bowl/cheese3/*", "textureMapping": ["cheese", "yellowcheese"] }
+	  ],
     "side": "server",
-    "file": "game:recipes/cooking/scrambledeggs.json",
-	"dependsOn": [ {"modid": "expandedfoods"} ]
+    "file": "game:recipes/cooking/scrambledeggs.json"
+  }, 
+  {
+    "op": "addeach",
+    "path": "/ingredients/4/validStacks/-",
+    "value":[
+      { "type": "item", "code": "dairyplus:curd-whole",  "shapeElement": "bowl/cheese3/*", "textureMapping": ["cheese", "whitecheese"] },
+	  { "type": "item", "code": "dairyplus:curd-skim", "shapeElement": "bowl/cheese3/*", "textureMapping": ["cheese", "whitecheese"] },
+	  { "type": "item", "code": "dairyplus:feta", "shapeElement": "bowl/cheese2/*", "textureMapping": ["cheese", "whitecheese"] },
+	  { "type": "item", "code": "dairyplus:ricotta", "shapeElement": "bowl/cheese2/*", "textureMapping": ["cheese", "whitecheese"] },
+	  { "type": "item", "code": "dairyplus:mozzaball", "shapeElement": "bowl/cheese3/*", "textureMapping": ["cheese", "whitecheese"] },
+	  { "type": "item", "code": "dairyplus:provaloneslice-fresh", "shapeElement": "bowl/cheese3/*", "textureMapping": ["cheese", "whitecheese"] },
+	  { "type": "item", "code": "dairyplus:provaloneslice-aged", "shapeElement": "bowl/cheese3/*", "textureMapping": ["cheese", "yellowcheese"] },
+	  { "type": "item", "code": "dairyplus:brunost", "shapeElement": "bowl/cheese3/*", "textureMapping": ["cheese", "yellowcheese"] }
+	  ],
+    "side": "server",
+    "file": "game:recipes/cooking/scrambledeggs.json"
   }, 
     {
-    "op": "addmerge",
-    "path": "/ingredients/2/validStacks/-",
-    "value": { "type": "item", "code": "dairyplus:tofu",  "shapeElement": "bowl/egg3/*", "textureMapping": ["scrambledegg", "group1"] },
+    "op": "addeach",
+    "path": "/ingredients/5/validStacks/-",
+    "value":[
+      { "type": "item", "code": "dairyplus:soybeans-*",  "shapeElement": "bowl/vegetable2/*",  }
+	  ],
     "side": "server",
-    "file": "game:recipes/cooking/scrambledeggs.json",
-	"dependsOn": [ {"modid": "expandedfoods"} ]
+    "file": "game:recipes/cooking/scrambledeggs.json"
   }, 
-
+    {
+    "op": "addeach",
+    "path": "/ingredients/6/validStacks/-",
+    "value":[
+      { "type": "item", "code": "dairyplus:soybeans-*",  "shapeElement": "bowl/vegetable3/*",  },
+	  ],
+    "side": "server",
+    "file": "game:recipes/cooking/scrambledeggs.json"
+  }, 
+  {
+    "op": "addmerge",
+    "path": "/ingredients/-",
+    "value": {
+      "code": "dptopping",
+      "validStacks": [
+        {"type": "item", "code": "game:milkportion" },
+		{"type": "item", "code": "dairyplus:soymilk"},
+		{"type": "item", "code": "dairyplus:skimmilk"},
+		{"type": "item", "code": "dairyplus:cream"},
+		{"type": "item", "code": "dairyplus:condensedmilk"},
+		{"type": "item", "code": "dairyplus:whey"},
+		{"type": "item", "code": "dairyplus:sauce-plain"},
+		{"type": "item", "code": "dairyplus:sauce-cheese"}
+      ],
+      "minQuantity": 0,
+      "maxQuantity": 1,
+      "portionSizeLitres": 0.2,
+      "typeName": "dairy"
+    },
+    "side": "server",
+    "file": "game:recipes/cooking/scrambledeggs.json"
+  },
   {
     "op": "addmerge",
     "path": "/ingredients/-",
@@ -48,37 +103,15 @@
       "code": "butter",
       "validStacks": [
       { "type": "item", "code": "dairyplus:butter-unsalted" },
-	  { "type": "item", "code": "dairyplus:butter-salted" }
+	  { "type": "item", "code": "dairyplus:butter-salted" },
+	  { "type": "item", "code": "dairyplus:butter-veggie" },
+	  { "type": "item", "code": "dairyplus:butter-saltedveggie" }
 	  ],
       "minQuantity": 0,
       "maxQuantity": 1,
-      "portionSizeLitres": 0.2,
       "typeName": "butter"
     },
     "side": "server",
     "file": "game:recipes/cooking/scrambledeggs.json"
-  },
-  
-  {
-    "op": "addmerge",
-    "path": "/ingredients/-",
-    "value": {
-      "code": "topping",
-      "validStacks": [
-        {"type": "item", "code": "game:milkportion" },
-		{"type": "item", "code": "dairyplus:soymilk"},
-		{"type": "item", "code": "dairyplus:skimmilk"},
-		{"type": "item", "code": "dairyplus:cream"},
-		{"type": "item", "code": "dairyplus:condensedmilk"},
-		{"type": "item", "code": "dairyplus:sauce-plain"},
-		{"type": "item", "code": "dairyplus:sauce-cheese"}
-      ],
-      "minQuantity": 0,
-      "maxQuantity": 1,
-      "portionSizeLitres": 0.2,
-      "typeName": "topping"
-    },
-    "side": "server",
-    "file": "game:recipes/cooking/scrambledeggs.json"
-  }
+  }, 
  ]

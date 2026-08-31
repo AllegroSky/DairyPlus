@@ -1,0 +1,53 @@
+[
+	{
+		"ingredientPattern": "LG",
+		"ingredients": {
+			"L": { "type": "block", "code": "oillamp-genie-*-fired", "name": "color" },
+			"G": { "type": "block", "code": "game:bowl-*-fired" },
+		},
+		"attributes": {
+			"liquidContainerProps": {
+				"requiresContent": { "type": "item", "code": "dairyplus:ghee" },
+				"requiresLitres": 0.2
+			}
+		},
+		"width": 2,
+		"height": 1,
+		"shapeless": true,
+		"output": { "type": "block", "code": "game:oillamp-{color}-up"  }
+	},
+	{
+		"ingredientPattern": "LG",
+		"ingredients": {
+			"L": { "type": "block", "code": "game:oillamp-genie-*-fired", "name": "color" },
+			"G": { "type": "block", "code": "game:woodbucket" },
+		},
+		"attributes": {
+			"liquidContainerProps": {
+				"requiresContent": { "type": "item", "code": "dairyplus:ghee" },
+				"requiresLitres": 0.2
+			}
+		},
+		"width": 2,
+		"height": 1,
+		"shapeless": true,
+		"output": { "type": "block", "code": "game:oillamp-{color}-up"  }
+	},
+	{
+		"ingredientPattern": "LG",
+		"ingredients": {
+			"L": { "type": "block", "code": "game:oillamp-genie-*-fired", "name": "color" },
+			"G": { "type": "block", "code": "game:jug-*-fired" },
+		},
+		"attributes": {
+			"liquidContainerProps": {
+				"requiresContent": { "type": "item", "code": "dairyplus:ghee" },
+				"requiresLitres": 0.2
+			}
+		},
+		"width": 2,
+		"height": 1,
+		"shapeless": true,
+		"output": { "type": "block", "code": "game:oillamp-{color}-up"  }
+	}
+]

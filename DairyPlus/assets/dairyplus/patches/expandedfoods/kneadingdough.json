@@ -1,0 +1,481 @@
+[
+				//liquids
+		{
+	"op": "addeach",
+    "path": "/0/ingredients/0/inputs/-",
+	"value": [ 
+		{ "type": "item", "code": "dairyplus:whey",  "quantity": 10 },
+		{ "type": "item", "code": "dairyplus:soymilk", "quantity": 10 },
+		{ "type": "item", "code": "dairyplus:skimmilk", "quantity": 10 }
+		],
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/dough.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addeach",
+    "path": "/1/ingredients/0/inputs/-",
+	"value": [ 
+		{ "type": "item", "code": "dairyplus:whey",  "quantity": 10 },
+		{ "type": "item", "code": "dairyplus:soymilk", "quantity": 10 },
+		{ "type": "item", "code": "dairyplus:skimmilk", "quantity": 10 }
+		],
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/dough.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addeach",
+    "path": "/2/ingredients/0/inputs/-",
+	"value": [ 
+		{ "type": "item", "code": "dairyplus:whey",  "quantity": 10 },
+		{ "type": "item", "code": "dairyplus:soymilk", "quantity": 10 },
+		{ "type": "item", "code": "dairyplus:skimmilk", "quantity": 10 }
+		],
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/dough.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addeach",
+    "path": "/3/ingredients/0/inputs/-",
+	"value": [ 
+		{ "type": "item", "code": "dairyplus:whey",  "quantity": 10 },
+		{ "type": "item", "code": "dairyplus:soymilk", "quantity": 10 },
+		{ "type": "item", "code": "dairyplus:skimmilk", "quantity": 10 }
+		],
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/dough.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addeach",
+    "path": "/4/ingredients/0/inputs/-",
+	"value": [ 
+		{ "type": "item", "code": "dairyplus:whey",  "quantity": 10 },
+		{ "type": "item", "code": "dairyplus:soymilk", "quantity": 10 },
+		{ "type": "item", "code": "dairyplus:skimmilk", "quantity": 10 }
+		],
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/dough.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addeach",
+    "path": "/5/ingredients/0/inputs/-",
+	"value": [ 
+		{ "type": "item", "code": "dairyplus:whey",  "quantity": 10 },
+		{ "type": "item", "code": "dairyplus:soymilk", "quantity": 10 },
+		{ "type": "item", "code": "dairyplus:skimmilk", "quantity": 10 }
+		],
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/dough.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addeach",
+    "path": "/6/ingredients/0/inputs/-",
+	"value": [ 
+		{ "type": "item", "code": "dairyplus:whey",  "quantity": 10 },
+		{ "type": "item", "code": "dairyplus:soymilk", "quantity": 10 },
+		{ "type": "item", "code": "dairyplus:skimmilk", "quantity": 10 }
+		],
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/dough.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addeach",
+    "path": "/8/ingredients/0/inputs/-",
+	"value": [ 
+		{ "type": "item", "code": "dairyplus:whey",  "quantity": 10 },
+		{ "type": "item", "code": "dairyplus:soymilk", "quantity": 10 },
+		{ "type": "item", "code": "dairyplus:skimmilk", "quantity": 10 }
+		],
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/dough.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addeach",
+    "path": "/9/ingredients/0/inputs/-",
+	"value": [ 
+		{ "type": "item", "code": "dairyplus:whey",  "quantity": 10 },
+		{ "type": "item", "code": "dairyplus:soymilk", "quantity": 10 },
+		{ "type": "item", "code": "dairyplus:skimmilk", "quantity": 10 }
+		],
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/dough.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addeach",
+    "path": "/10/ingredients/0/inputs/-",
+	"value": [ 
+		{ "type": "item", "code": "dairyplus:whey",  "quantity": 10 },
+		{ "type": "item", "code": "dairyplus:soymilk", "quantity": 10 },
+		{ "type": "item", "code": "dairyplus:skimmilk", "quantity": 10 }
+		],
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/dough.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addeach",
+    "path": "/11/ingredients/0/inputs/-",
+	"value": [ 
+		{ "type": "item", "code": "dairyplus:whey",  "quantity": 10 },
+		{ "type": "item", "code": "dairyplus:soymilk", "quantity": 10 },
+		{ "type": "item", "code": "dairyplus:skimmilk", "quantity": 10 }
+		],
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/dough.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addeach",
+    "path": "/12/ingredients/0/inputs/-",
+	"value": [ 
+		{ "type": "item", "code": "dairyplus:whey",  "quantity": 10 },
+		{ "type": "item", "code": "dairyplus:soymilk", "quantity": 10 },
+		{ "type": "item", "code": "dairyplus:skimmilk", "quantity": 10 }
+		],
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/dough.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addeach",
+    "path": "/13/ingredients/0/inputs/-",
+	"value": [ 
+		{ "type": "item", "code": "dairyplus:whey",  "quantity": 10 },
+		{ "type": "item", "code": "dairyplus:soymilk", "quantity": 10 },
+		{ "type": "item", "code": "dairyplus:skimmilk", "quantity": 10 }
+		],
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/dough.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addeach",
+    "path": "/14/ingredients/0/inputs/-",
+	"value": [ 
+		{ "type": "item", "code": "dairyplus:whey",  "quantity": 10 },
+		{ "type": "item", "code": "dairyplus:soymilk", "quantity": 10 },
+		{ "type": "item", "code": "dairyplus:skimmilk", "quantity": 10 }
+		],
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/dough.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addeach",
+    "path": "/15/ingredients/0/inputs/-",
+	"value": [ 
+		{ "type": "item", "code": "dairyplus:whey",  "quantity": 10 },
+		{ "type": "item", "code": "dairyplus:soymilk", "quantity": 10 },
+		{ "type": "item", "code": "dairyplus:skimmilk", "quantity": 10 }
+		],
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/dough.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addeach",
+    "path": "/16/ingredients/0/inputs/-",
+	"value": [ 
+		{ "type": "item", "code": "dairyplus:whey",  "quantity": 10 },
+		{ "type": "item", "code": "dairyplus:soymilk", "quantity": 10 },
+		{ "type": "item", "code": "dairyplus:skimmilk", "quantity": 10 }
+		],
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/dough.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addeach",
+    "path": "/17/ingredients/0/inputs/-",
+	"value": [ 
+		{ "type": "item", "code": "dairyplus:whey",  "quantity": 10 },
+		{ "type": "item", "code": "dairyplus:soymilk", "quantity": 10 },
+		{ "type": "item", "code": "dairyplus:skimmilk", "quantity": 10 }
+		],
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/dough.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addeach",
+    "path": "/18/ingredients/0/inputs/-",
+	"value": [ 
+		{ "type": "item", "code": "dairyplus:whey",  "quantity": 10 },
+		{ "type": "item", "code": "dairyplus:soymilk", "quantity": 10 },
+		{ "type": "item", "code": "dairyplus:skimmilk", "quantity": 10 }
+		],
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/dough.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addeach",
+    "path": "/19/ingredients/0/inputs/-",
+	"value": [ 
+		{ "type": "item", "code": "dairyplus:whey",  "quantity": 10 },
+		{ "type": "item", "code": "dairyplus:soymilk", "quantity": 10 },
+		{ "type": "item", "code": "dairyplus:skimmilk", "quantity": 10 }
+		],
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/dough.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addeach",
+    "path": "/20/ingredients/0/inputs/-",
+	"value": [ 
+		{ "type": "item", "code": "dairyplus:whey",  "quantity": 10 },
+		{ "type": "item", "code": "dairyplus:soymilk", "quantity": 10 },
+		{ "type": "item", "code": "dairyplus:skimmilk", "quantity": 10 }
+		],
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/dough.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addeach",
+    "path": "/21/ingredients/0/inputs/-",
+	"value": [ 
+		{ "type": "item", "code": "dairyplus:whey",  "quantity": 10 },
+		{ "type": "item", "code": "dairyplus:soymilk", "quantity": 10 },
+		{ "type": "item", "code": "dairyplus:skimmilk", "quantity": 10 }
+		],
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/dough.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addeach",
+    "path": "/22/ingredients/0/inputs/-",
+	"value": [ 
+		{ "type": "item", "code": "dairyplus:whey",  "quantity": 10 },
+		{ "type": "item", "code": "dairyplus:soymilk", "quantity": 10 },
+		{ "type": "item", "code": "dairyplus:skimmilk", "quantity": 10 }
+		],
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/dough.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addeach",
+    "path": "/23/ingredients/0/inputs/-",
+	"value": [ 
+		{ "type": "item", "code": "dairyplus:whey",  "quantity": 10 },
+		{ "type": "item", "code": "dairyplus:soymilk", "quantity": 10 },
+		{ "type": "item", "code": "dairyplus:skimmilk", "quantity": 10 }
+		],
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/dough.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addeach",
+    "path": "/24/ingredients/0/inputs/-",
+	"value": [ 
+		{ "type": "item", "code": "dairyplus:whey",  "quantity": 10 },
+		{ "type": "item", "code": "dairyplus:soymilk", "quantity": 10 },
+		{ "type": "item", "code": "dairyplus:skimmilk", "quantity": 10 }
+		],
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/dough.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addeach",
+    "path": "/25/ingredients/0/inputs/-",
+	"value": [ 
+		{ "type": "item", "code": "dairyplus:whey",  "quantity": 10 },
+		{ "type": "item", "code": "dairyplus:soymilk", "quantity": 10 },
+		{ "type": "item", "code": "dairyplus:skimmilk", "quantity": 10 }
+		],
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/dough.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addeach",
+    "path": "/26/ingredients/0/inputs/-",
+	"value": [ 
+		{ "type": "item", "code": "dairyplus:whey",  "quantity": 10 },
+		{ "type": "item", "code": "dairyplus:soymilk", "quantity": 10 },
+		{ "type": "item", "code": "dairyplus:skimmilk", "quantity": 10 }
+		],
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/dough.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addeach",
+    "path": "/27/ingredients/0/inputs/-",
+	"value": [ 
+		{ "type": "item", "code": "dairyplus:whey",  "quantity": 10 },
+		{ "type": "item", "code": "dairyplus:soymilk", "quantity": 10 },
+		{ "type": "item", "code": "dairyplus:skimmilk", "quantity": 10 }
+		],
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/dough.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+			//oils
+			
+	{
+	"op": "addmerge",
+    "path": "/14/ingredients/1/inputs/-",
+	"value": { "type": "item", "code": "dairyplus:ghee",  "quantity": 10 },
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/dough.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addmerge",
+    "path": "/15/ingredients/1/inputs/-",
+	"value": { "type": "item", "code": "dairyplus:ghee",  "quantity": 10 },
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/dough.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addmerge",
+    "path": "/16/ingredients/1/inputs/-",
+	"value": { "type": "item", "code": "dairyplus:ghee",  "quantity": 10 },
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/dough.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addmerge",
+    "path": "/17/ingredients/1/inputs/-",
+	"value": { "type": "item", "code": "dairyplus:ghee",  "quantity": 10 },
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/dough.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+		
+	{
+	"op": "addmerge",
+    "path": "/18/ingredients/1/inputs/-",
+	"value": { "type": "item", "code": "dairyplus:ghee",  "quantity": 10 },
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/dough.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addmerge",
+    "path": "/19/ingredients/1/inputs/-",
+	"value": { "type": "item", "code": "dairyplus:ghee",  "quantity": 10 },
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/dough.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addmerge",
+    "path": "/20/ingredients/1/inputs/-",
+	"value": { "type": "item", "code": "dairyplus:ghee",  "quantity": 10 },
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/dough.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addmerge",
+    "path": "/21/ingredients/1/inputs/-",
+	"value": { "type": "item", "code": "dairyplus:ghee",  "quantity": 10 },
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/dough.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addmerge",
+    "path": "/22/ingredients/1/inputs/-",
+	"value": { "type": "item", "code": "dairyplus:ghee",  "quantity": 10 },
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/dough.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addmerge",
+    "path": "/23/ingredients/1/inputs/-",
+	"value": { "type": "item", "code": "dairyplus:ghee",  "quantity": 10 },
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/dough.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addmerge",
+    "path": "/24/ingredients/1/inputs/-",
+	"value": { "type": "item", "code": "dairyplus:ghee",  "quantity": 10 },
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/dough.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addmerge",
+    "path": "/25/ingredients/1/inputs/-",
+	"value": { "type": "item", "code": "dairyplus:ghee",  "quantity": 10 },
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/dough.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addmerge",
+    "path": "/26/ingredients/1/inputs/-",
+	"value": { "type": "item", "code": "dairyplus:ghee",  "quantity": 10 },
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/dough.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addmerge",
+    "path": "/27/ingredients/1/inputs/-",
+	"value": { "type": "item", "code": "dairyplus:ghee",  "quantity": 10 },
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/dough.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	}
+]

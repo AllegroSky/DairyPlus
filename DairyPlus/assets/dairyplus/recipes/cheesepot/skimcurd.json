@@ -1,19 +1,25 @@
-{
+[{
   "code": "skimcurd",
   "ProcessingTime" : 20,
   "ingredients": [
-    {
-      "type": "item",
-      "code": "dairyplus:skimmilk",
-      "litres": 10
-    },
-	    {
-      "type": "item",
-      "code": "dairyplus:fruitvinegar",
-      "litres": 1
-    }
-  ],
-	"outputs": [
-	 { "type": "item", "code": "dairyplus:whey", "litres": 9 },
-	 { "type": "item", "code": "dairyplus:curd-skim", "quantity": 3 }]
-}
+    { "type": "item", "code": "dairyplus:skimmilk", "litres": 10 },
+	{ "type": "item", "code": "dairyplus:fruitvinegar", "litres": 1 }
+	],
+  "outputs": [
+	{ "type": "item", "code": "dairyplus:whey", "litres": 9 },
+	{ "type": "item", "code": "dairyplus:curd-skim", "quantity": 3 }
+	]
+},
+{
+  "code": "skimcurd",
+  "enabled": false,
+  "ProcessingTime" : 20,
+  "ingredients": [
+    { "type": "item", "code": "dairyplus:skimmilk", "litres": 10 },
+	{ "type": "item", "code": "game:vinegarportion", "litres": 1 }
+	],
+  "outputs": [
+	{ "type": "item", "code": "dairyplus:whey", "litres": 9 },
+	{ "type": "item", "code": "dairyplus:curd-skim", "quantity": 3 }
+	]
+}]

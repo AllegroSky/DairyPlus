@@ -12,10 +12,10 @@
 	"texture": { "base": "dairyplus:item/butter/{type}" },
 
 	"nutritionPropsByType": {
-		"*-unsalted" : { "saturation": 300, "foodcategory": "Dairy" },
-		"*-salted" : { "saturation": 300, "foodcategory": "Dairy" },
-		"*-veggie" : { "saturation": 250, "foodcategory": "Dairy" },
-		"*-saltedveggie" : { "saturation": 250, "foodcategory": "Dairy" }
+		"*-unsalted" : { "satiety": 300, "foodcategory": "Dairy" },
+		"*-salted" : { "satiety": 300, "foodcategory": "Dairy" },
+		"*-veggie" : { "satiety": 250, "foodcategory": "Dairy" },
+		"*-saltedveggie" : { "satiety": 250, "foodcategory": "Dairy" }
 	},
 
 	"transitionablePropsByType": {
@@ -45,10 +45,26 @@
 				"type": "item",
 				"code": "game:rot"},
 			"transitionRatio": 0.5
+		}],
+		"*-veggie": [{
+			"type": "Perish",
+			"freshHours": { "avg": 480 },
+			"transitionHours": { "avg": 120 },
+			"transitionedStack": {
+				"type": "item",
+				"code": "game:rot"},
+			"transitionRatio": 0.5
+		}],
+		"*-saltedveggie": [{
+			"type": "Perish",
+			"freshHours": { "avg": 900 },
+			"transitionHours": { "avg": 168 },
+			"transitionedStack": {
+				"type": "item",
+				"code": "game:rot"},
+			"transitionRatio": 0.5
 		}]
 	},
-
-
 
 	"behaviors": [{
 		"name": "GroundStorable",

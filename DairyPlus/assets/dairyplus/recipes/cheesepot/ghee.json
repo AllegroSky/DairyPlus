@@ -1,0 +1,18 @@
+[{
+  "code": "ghee",
+  "ProcessingTime" : 60,
+  "ingredients": [
+    { "type": "item", "code": "dairyplus:butter-unsalted", "quantity": 1 }
+	],
+  "outputs": [
+	 { "type": "item", "code": "dairyplus:ghee", "litres": 0.4 }]
+},
+{
+  "code": "ghee",
+  "ProcessingTime" : 60,
+  "ingredients": [
+    { "type": "item", "code": "dairyplus:butter-salted", "quantity": 1 }
+	],
+  "outputs": [
+	 { "type": "item", "code": "dairyplus:ghee", "litres": 0.4 }]
+}]

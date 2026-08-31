@@ -9,10 +9,10 @@
 	"materialDensity": 900,
 	
 	"nutritionPropsByType": {
-		"*-uncooked" : {"saturation": 400, "foodcategory": "Dairy" },
-		"*-partcooked" : {"saturation": 425, "foodcategory": "Dairy" },
-		"*-cooked" : {"saturation": 450, "foodcategory": "Dairy" },
-		"*-burnt" : {"saturation": 380, "foodcategory": "Dairy" }
+		"*-uncooked" : {"satiety": 400, "foodcategory": "Dairy" },
+		"*-partcooked" : {"satiety": 425, "foodcategory": "Dairy" },
+		"*-cooked" : {"satiety": 450, "foodcategory": "Dairy" },
+		"*-burnt" : {"satiety": 380, "foodcategory": "Dairy" }
 		},	
 	"transitionablePropsByType": {
 		"*-burnt": [{
@@ -34,7 +34,7 @@
 			"transitionRatio": 0.5
 		}]
 	},
-		
+	
 	"attributes": {
 		"onDisplayTransform": {
 			"origin": { "x": 0.5, "y": 0, "z": 0.5 },
@@ -118,10 +118,10 @@
 		"scale": 0.6
 		},
 	"guiTransform": {
-		"translation": { "x": 0.5, "y": 2, "z": 0 },
+		"translation": { "x": 0, "y": 2, "z": 0 },
 		"rotation": { "x": -14, "y": 20, "z": -14 },
 		"origin": { "x": 0.62, "y": 0.19, "z": 0 },
-		"scale": 2.6
+		"scale": 2.2
 	},
 	"groundTransform": {
 		"translation": { "x": 0, "y": 0, "z": 0 },

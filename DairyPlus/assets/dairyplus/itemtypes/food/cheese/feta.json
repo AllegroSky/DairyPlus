@@ -1,0 +1,70 @@
+{
+	"code": "feta",
+	"creativeinventory": { "general": [ "*" ], "dairyplus": [ "*" ]},
+	"maxStackSize": 32,
+	"materialDensity": 900,
+	
+	"nutritionProps": {"satiety": 200, "foodcategory": "Dairy" },
+	"transitionableProps": [{
+			"type": "Perish",
+			"freshHours": { "avg": 168 },
+			"transitionHours": { "avg": 72 },
+			"transitionRatio": 1,
+			"transitionedStack": { "type": "item", "code": "game:rot" }
+			}
+		],
+		
+	"attributes": {
+		"inPieProperties": {
+			"texture": "game:block/food/pie/fill-potato",
+			"partType": "Filling",
+			"mixingCodes": ["potpie"]
+			},
+		"shelvable": true,
+		"onshelfTransform": {
+			"rotation": { "x": 0, "y": 92, "z": 0 },
+			"origin": { "x": 0.5, "y": 0, "z": 0.5 },
+			"scale": 0.65},
+		"onDisplayTransform": {
+			"origin": { "x": 0.5, "y": 0, "z": 0.5 },
+			"scale": 0.5},
+		"groundStorageTransform": {
+			"origin": { "x": 0.5, "y": 0, "z": 0.5 },
+			"scale": 0.65}
+		},
+		
+	"behaviors": [{
+		"name": "GroundStorable",
+		"properties": {
+			"layout": "Quadrants",
+			"collisionBox": { 
+				"x1": 0, "y1": 0, "z1": 0,
+				"x2": 1, "y2": 0.125, "z2": 1,
+				"scale" : 0.25
+				}
+		}
+	}],
+	
+	"drawtype": "json",
+	"shape": { "base": "dairyplus:item/cheese/feta" },
+	"texture": { "base": "dairyplus:item/cheese/feta" },
+	
+	"groundTransform": {
+		"translation": { "x": 0, "y": 0, "z": 0 },
+		"rotation": { "x": 3, "y": 1, "z": 0 },
+		"origin": { "x": 0.5, "y": 0, "z": 0.5 },
+		"scale": 2.5
+		},
+	"tpHandTransform": {
+		"translation": { "x": -0.3, "y": 0.1, "z": 0.3 },
+		"rotation": { "x": 0, "y": 20, "z": -71 },
+		"origin": { "x": 0.1, "y": 0.1, "z": 0.1 },
+		"scale": 0.4
+	},
+	"guiTransform": {
+		"translation": { "x": 0.9, "y": -1.2, "z": 0 },
+		"rotation": { "x": -37, "y": 13, "z": 180 },
+		"origin": { "x": 0.5, "y": 0.2, "z": 0.5 },
+		"scale": 1.89
+	}
+}

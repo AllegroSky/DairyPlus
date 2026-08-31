@@ -1,0 +1,98 @@
+[		
+	{
+	"op": "addeach",
+    "path": "/ingredients/7/validStacks/-",
+	"value": [
+		{ "type": "item", "code": "dairyplus:curd-*", "shapeElement": "bowl/cheese", "textureMapping": ["cheesebase", "cheese-cheddar-1slice"] },
+		{ "type": "item", "code": "dairyplus:feta",  "shapeElement": "bowl/cheese", "textureMapping": ["cheesebase", "cheese-cheddar-1slice"] },
+		{ "type": "item", "code": "dairyplus:mozzaball",  "shapeElement": "bowl/cheese", "textureMapping": ["cheesebase", "cheese-cheddar-1slice"] },
+		{ "type": "item", "code": "dairyplus:provaloneslice-*", "shapeElement": "bowl/cheese", "textureMapping": ["cheesebase", "cheese-cheddar-1slice"] },
+		{ "type": "item", "code": "dairyplus:ricotta",  "shapeElement": "bowl/cheese", "textureMapping": ["cheesebase", "cheese-cheddar-1slice"] },
+		],
+	"side": "server",
+    "file": "efmealsmodule:recipes/mixing/pastacold.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addeach",
+    "path": "/ingredients/8/validStacks/-",
+	"value": [
+		{ "type": "item", "code": "dairyplus:curd-*", "shapeElement": "bowl/cheese", "textureMapping": ["cheesebase", "cheese-cheddar-1slice"] },
+		{ "type": "item", "code": "dairyplus:feta",  "shapeElement": "bowl/cheese", "textureMapping": ["cheesebase", "cheese-cheddar-1slice"] },
+		{ "type": "item", "code": "dairyplus:mozzaball",  "shapeElement": "bowl/cheese", "textureMapping": ["cheesebase", "cheese-cheddar-1slice"] },
+		{ "type": "item", "code": "dairyplus:provaloneslice-*", "shapeElement": "bowl/cheese", "textureMapping": ["cheesebase", "cheese-cheddar-1slice"] },
+		{ "type": "item", "code": "dairyplus:ricotta",  "shapeElement": "bowl/cheese", "textureMapping": ["cheesebase", "cheese-cheddar-1slice"] },
+		],
+	"side": "server",
+    "file": "efmealsmodule:recipes/mixing/pastacold.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addmerge",
+    "path": "/ingredients/10/validStacks/-",
+	"value": { "type": "item", "code": "dairyplus:ghee", "shapeElement": "bowl/topping/*", "textureMapping": ["topping", "foodoil"] },
+	"side": "server",
+    "file": "efmealsmodule:recipes/mixing/pastacold.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addmerge",
+    "path": "/ingredients/6/validStacks/-",
+	"value": { "type": "item", "code": "dairyplus:tofu", "shapeElement": "bowl/meatnugget 1/*", "textureMapping": ["meatnugget", "poultry-raw"]  },
+	"side": "server",
+    "file": "efmealsmodule:recipes/mixing/salad.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addeach",
+    "path": "/ingredients/10/validStacks/-",
+	"value": [
+		{ "type": "item", "code": "dairyplus:curd-*",  "shapeElement": "bowl/cheese1/*", "textureMapping": ["cheesebase", "cheese-cheddar-1slice"] },
+		{ "type": "item", "code": "dairyplus:feta",   "shapeElement": "bowl/cheese1/*", "textureMapping": ["cheesebase", "cheese-cheddar-1slice"] },
+		{ "type": "item", "code": "dairyplus:mozzaball",   "shapeElement": "bowl/cheese1/*", "textureMapping": ["cheesebase", "cheese-cheddar-1slice"] },
+		],
+	"side": "server",
+    "file": "efmealsmodule:recipes/mixing/salad.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addeach",
+    "path": "/ingredients/11/validStacks/-",
+	"value": [
+		{ "type": "item", "code": "dairyplus:curd-*",  "shapeElement": "bowl/cheese2/*", "textureMapping": ["cheesebase", "cheese-cheddar-1slice"] },
+		{ "type": "item", "code": "dairyplus:feta",   "shapeElement": "bowl/cheese2/*", "textureMapping": ["cheesebase", "cheese-cheddar-1slice"] },
+		{ "type": "item", "code": "dairyplus:mozzaball",   "shapeElement": "bowl/cheese2/*", "textureMapping": ["cheesebase", "cheese-cheddar-1slice"] },
+		],
+	"side": "server",
+    "file": "efmealsmodule:recipes/mixing/salad.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addeach",
+    "path": "/ingredients/10/validStacks/-",
+	"value": [
+		{ "type": "item", "code": "dairyplus:curd-*",  "shapeElement": "bowl/cheese2/*", "textureMapping": ["cheesebase", "cheese-cheddar-1slice"] },
+		{ "type": "item", "code": "dairyplus:feta",   "shapeElement": "bowl/cheese2/*", "textureMapping": ["cheesebase", "cheese-cheddar-1slice"] },
+		{ "type": "item", "code": "dairyplus:mozzaball",   "shapeElement": "bowl/cheese2/*", "textureMapping": ["cheesebase", "cheese-cheddar-1slice"] },
+		],
+	"side": "server",
+    "file": "efmealsmodule:recipes/mixing/salad.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+
+	{
+	"op": "addmerge",
+    "path": "/ingredients/9/validStacks/-",
+	"value": { "type": "item", "code": "dairyplus:brunost",  "shapeElement": "bowl/topping/*", "textureMapping": ["topping", "maplesyrup"] },
+	"side": "server",
+    "file": "efmealsmodule:recipes/mixing/yogurtmeal.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+]

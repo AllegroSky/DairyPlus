@@ -1,5 +1,12 @@
 [
   {
+    "op": "addmerge",
+    "path": "/ingredients/0/validStacks/-",
+    "value": { "type": "item", "code": "dairyplus:whey"},
+    "side": "server",
+    "file": "game:recipes/cooking/soup.json"
+  },
+  {
     "op": "addeach",
     "path": "/ingredients/1/validStacks/-",
     "value": [
@@ -9,13 +16,12 @@
     "side": "server",
     "file": "game:recipes/cooking/soup.json"
   },  
-    {
+  {
     "op": "addeach",
     "path": "/ingredients/2/validStacks/-",
     "value": [
       { "type": "item", "code": "dairyplus:soybeans-shelled", "shapeElement": "bowl/vegetable base 2/*", "textureMapping": [ "vegetable", "group4" ] },
-	  { "type": "item", "code": "dairyplus:soybeans-soaked", "shapeElement": "bowl/vegetable base 2/*", "textureMapping": [ "vegetable", "group4" ] },
-	  { "type": "item", "code": "dairyplus:tofu", "shapeElement": "bowl/vegetable base 2/*", "textureMapping": [ "vegetable", "group4" ] }
+	  { "type": "item", "code": "dairyplus:soybeans-soaked", "shapeElement": "bowl/vegetable base 2/*", "textureMapping": [ "vegetable", "group4" ] }
 	  ],
     "side": "server",
     "file": "game:recipes/cooking/soup.json"
@@ -25,9 +31,56 @@
     "path": "/ingredients/3/validStacks/-",
     "value": [
       { "type": "item", "code": "dairyplus:soybeans-shelled", "shapeElement": "bowl/vegetable base 3/*", "textureMapping": [ "vegetable", "group4" ] },
-	  { "type": "item", "code": "dairyplus:soybeans-soaked", "shapeElement": "bowl/vegetable base 3/*", "textureMapping": [ "vegetable", "group4" ] },
-	  { "type": "item", "code": "dairyplus:tofu", "shapeElement": "bowl/vegetable base 3/*", "textureMapping": [ "vegetable", "group4" ] }
+	  { "type": "item", "code": "dairyplus:soybeans-soaked", "shapeElement": "bowl/vegetable base 3/*", "textureMapping": [ "vegetable", "group4" ] }
 	  ],
+    "side": "server",
+    "file": "game:recipes/cooking/soup.json"
+  },
+  {
+    "op": "addmerge",
+    "path": "/ingredients/4/validStacks/-",
+    "value": { "type": "item", "code": "dairyplus:tofu"},
+    "side": "server",
+    "file": "game:recipes/cooking/soup.json"
+  }, 
+  {
+    "op": "addmerge",
+    "path": "/ingredients/-",
+    "value": {
+      "code": "dpcheese",
+      "validStacks": [
+      { "type": "item", "code": "dairyplus:curd-*" },
+	  { "type": "item", "code": "dairyplus:ricotta" },
+	  { "type": "item", "code": "dairyplus:provaloneslice-*" },
+	  { "type": "item", "code": "dairyplus:mozzaball" },
+	  { "type": "item", "code": "dairyplus:driedcurds" },
+	  { "type": "item", "code": "dairyplus:feta" },
+	  { "type": "item", "code": "game:cheese-*-1slice" },
+	  { "type": "item", "code": "dairyplus:brunost" },
+	  ],
+      "minQuantity": 0,
+      "maxQuantity": 1,
+      "typeName": "cheese"
+    },
+    "side": "server",
+    "file": "game:recipes/cooking/soup.json",
+	"dependsOn": [ {"modid": "expandedfoods", "invert": true} ]
+  },
+  {
+    "op": "addmerge",
+    "path": "/ingredients/-",
+    "value": {
+      "code": "butter",
+      "validStacks": [
+      { "type": "item", "code": "dairyplus:butter-unsalted" },
+	  { "type": "item", "code": "dairyplus:butter-salted" },
+	  { "type": "item", "code": "dairyplus:butter-veggie" },
+	  { "type": "item", "code": "dairyplus:butter-saltedveggie" }
+	  ],
+      "minQuantity": 0,
+      "maxQuantity": 1,
+      "typeName": "butter"
+    },
     "side": "server",
     "file": "game:recipes/cooking/soup.json"
   }

@@ -24,8 +24,7 @@
     "path": "/ingredients/2/validStacks/-",
     "value": [
       { "type": "item", "code": "dairyplus:soybeans-shelled", "shapeElement": "bowl/vegetable 3/*", "textureMapping": [ "vegetable", "group4" ] },
-	  { "type": "item", "code": "dairyplus:soybeans-soaked", "shapeElement": "bowl/vegetable 3/*", "textureMapping": [ "vegetable", "group4" ] },
-	  { "type": "item", "code": "dairyplus:tofu", "shapeElement": "bowl/vegetable 3/*", "textureMapping": [ "vegetable", "group4" ] }
+	  { "type": "item", "code": "dairyplus:soybeans-soaked", "shapeElement": "bowl/vegetable 3/*", "textureMapping": [ "vegetable", "group4" ] }
 	  ],
     "side": "server",
     "file": "game:recipes/cooking/vegetablestew.json"
@@ -35,10 +34,50 @@
     "path": "/ingredients/3/validStacks/-",
     "value": [
       { "type": "item", "code": "dairyplus:soybeans-shelled", "shapeElement": "bowl/vegetable 4/*", "textureMapping": [ "vegetable", "group4" ] },
-	  { "type": "item", "code": "dairyplus:soybeans-soaked", "shapeElement": "bowl/vegetable 4/*", "textureMapping": [ "vegetable", "group4" ] },
-	  { "type": "item", "code": "dairyplus:tofu", "shapeElement": "bowl/vegetable 4/*", "textureMapping": [ "vegetable", "group4" ] }
-	  ],
+	  { "type": "item", "code": "dairyplus:soybeans-soaked", "shapeElement": "bowl/vegetable 4/*", "textureMapping": [ "vegetable", "group4" ] }],
     "side": "server",
     "file": "game:recipes/cooking/vegetablestew.json"
-  }
+  },
+  {
+    "op": "addmerge",
+    "path": "/ingredients/-",
+    "value": {
+      "code": "dpcheese",
+      "validStacks": [
+      { "type": "item", "code": "dairyplus:curd-*" },
+	  { "type": "item", "code": "dairyplus:provaloneslice-*" },
+	  { "type": "item", "code": "dairyplus:mozzaball" },
+	  { "type": "item", "code": "dairyplus:driedcurds" },
+	  { "type": "item", "code": "dairyplus:halloumi-uncooked" },
+	  { "type": "item", "code": "dairyplus:feta" },
+	  { "type": "item", "code": "dairyplus:ricotta" },
+	  { "type": "item", "code": "dairyplus:brunost" },
+	  { "type": "item", "code": "game:cheese-*-1slice" },
+	  { "type": "item", "code": "dairyplus:tofu" }
+	  ],
+      "minQuantity": 0,
+      "maxQuantity": 1,
+      "typeName": "cheese"
+    },
+    "side": "server",
+    "file": "game:recipes/cooking/vegetablestew.json"
+  }, 
+  {
+    "op": "addmerge",
+    "path": "/ingredients/-",
+    "value": {
+      "code": "butter",
+      "validStacks": [
+      { "type": "item", "code": "dairyplus:butter-unsalted" },
+	  { "type": "item", "code": "dairyplus:butter-salted" },
+	  { "type": "item", "code": "dairyplus:butter-veggie" },
+	  { "type": "item", "code": "dairyplus:butter-saltedveggie" }
+	  ],
+      "minQuantity": 0,
+      "maxQuantity": 1,
+      "typeName": "butter"
+    },
+    "side": "server",
+    "file": "game:recipes/cooking/vegetablestew.json"
+  }, 
 ]

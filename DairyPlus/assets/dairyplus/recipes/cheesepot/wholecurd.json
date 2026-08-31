@@ -1,19 +1,23 @@
-{
+[{
   "code": "wholecurd",
-  "ProcessingTime" : 20,
+  "ProcessingTime": 20,
   "ingredients": [
-    {
-      "type": "item",
-      "code": "game:milkportion",
-      "litres": 10
-    },
-	    {
-      "type": "item",
-      "code": "dairyplus:fruitvinegar",
-      "litres": 1
-    }
-  ],
-	"outputs": [
+    { "type": "item", "code": "game:milkportion", "litres": 10 },
+	{ "type": "item", "code": "dairyplus:fruitvinegar", "litres": 1 }
+    ],
+  "outputs": [
 	 { "type": "item", "code": "dairyplus:whey", "litres": 9 },
 	 { "type": "item", "code": "dairyplus:curd-whole", "quantity": 4 }]
-}
+},
+{
+  "code": "wholecurd",
+  "enabled": false,
+  "ProcessingTime": 20,
+  "ingredients": [
+    { "type": "item", "code": "game:milkportion", "litres": 10 },
+	{ "type": "item", "code": "game:vinegarportion", "litres": 1 }
+    ],
+  "outputs": [
+	 { "type": "item", "code": "dairyplus:whey", "litres": 9 },
+	 { "type": "item", "code": "dairyplus:curd-whole", "quantity": 4 }]
+}]

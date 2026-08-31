@@ -11,6 +11,8 @@
 		"slice": [8,8],
 		"fruit": [16,16]
 	},
+	"textures": {
+	},
 	"elements": [
 		{
 			"name": "bowl",
@@ -236,29 +238,13 @@
 								"west": { "texture": "#fruit", "uv": [ 4.0, 10.5, 4.5, 11.0 ] },
 								"up": { "texture": "#fruit", "uv": [ 2.5, 10.0, 3.0, 10.5 ] }
 							}
-						}
-					]
-				},
-				{
-					"name": "berry2",
-					"from": [ 2.7, 2.1, 2.81 ],
-					"to": [ 3.2, 2.6, 3.31 ],
-					"uv": [ 4.0, 13.0 ],
-					"rotationOrigin": [ 2.7, 3.1, 2.8 ],
-					"faces": {
-						"north": { "texture": "#fruit", "uv": [ 4.0, 13.5, 4.5, 14.0 ] },
-						"east": { "texture": "#fruit", "uv": [ 4.5, 13.5, 5.0, 14.0 ] },
-						"south": { "texture": "#fruit", "uv": [ 5.0, 13.5, 5.5, 14.0 ] },
-						"west": { "texture": "#fruit", "uv": [ 5.5, 13.5, 6.0, 14.0 ] },
-						"up": { "texture": "#fruit", "uv": [ 4.0, 13.0, 4.5, 13.5 ] }
-					},
-					"children": [
+						},
 						{
-							"name": "Fruitextra2",
-							"from": [ 0.3, -0.1, 0.2 ],
-							"to": [ 0.7, 0.4, 0.6 ],
+							"name": "Fruit 11",
+							"from": [ 3.4, -0.2, 3.31 ],
+							"to": [ 3.8, 0.3, 3.71 ],
 							"uv": [ 2.0, 11.5 ],
-							"rotationOrigin": [ 0.3, -0.1, 0.19 ],
+							"rotationOrigin": [ 3.4, -0.2, 3.3 ],
 							"faces": {
 								"north": { "texture": "#fruit", "uv": [ 2.0, 12.0, 2.5, 12.5 ] },
 								"east": { "texture": "#fruit", "uv": [ 2.5, 12.0, 3.0, 12.5 ] },
@@ -268,11 +254,11 @@
 							}
 						},
 						{
-							"name": "Fruitextra3",
-							"from": [ 0.29, -0.1, -0.6 ],
-							"to": [ 0.79, 0.4, -0.1 ],
+							"name": "Fruit 12",
+							"from": [ 3.39, -0.2, 2.51 ],
+							"to": [ 3.89, 0.3, 3.01 ],
 							"uv": [ 1.5, 14.5 ],
-							"rotationOrigin": [ 0.2, -0.1, -0.61 ],
+							"rotationOrigin": [ 3.3, -0.2, 2.5 ],
 							"faces": {
 								"north": { "texture": "#fruit", "uv": [ 1.5, 15.0, 2.0, 15.5 ] },
 								"east": { "texture": "#fruit", "uv": [ 2.0, 15.0, 2.5, 15.5 ] },
@@ -282,11 +268,11 @@
 							}
 						},
 						{
-							"name": "Fruitextra4",
-							"from": [ -1.7, -0.16, 0.1 ],
-							"to": [ -1.2, 0.34, 0.6 ],
+							"name": "Fruit 13",
+							"from": [ 1.4, -0.26, 3.21 ],
+							"to": [ 1.9, 0.24, 3.71 ],
 							"uv": [ 3.0, 12.5 ],
-							"rotationOrigin": [ -1.7, -0.2, 0.09 ],
+							"rotationOrigin": [ 1.4, -0.3, 3.2 ],
 							"faces": {
 								"north": { "texture": "#fruit", "uv": [ 3.0, 13.0, 3.5, 13.5 ] },
 								"east": { "texture": "#fruit", "uv": [ 3.5, 13.0, 4.0, 13.5 ] },
@@ -296,11 +282,11 @@
 							}
 						},
 						{
-							"name": "Fruitextra5",
-							"from": [ -0.7, -0.06, -3.2 ],
-							"to": [ -0.2, 0.44, -2.7 ],
+							"name": "Fruit 14",
+							"from": [ 2.4, -0.16, -0.09 ],
+							"to": [ 2.9, 0.34, 0.41 ],
 							"uv": [ 4.0, 12.0 ],
-							"rotationOrigin": [ -0.7, -0.1, -3.21 ],
+							"rotationOrigin": [ 2.4, -0.2, -0.1 ],
 							"faces": {
 								"north": { "texture": "#fruit", "uv": [ 4.0, 12.5, 4.5, 13.0 ] },
 								"east": { "texture": "#fruit", "uv": [ 4.5, 12.5, 5.0, 13.0 ] },
@@ -310,11 +296,11 @@
 							}
 						},
 						{
-							"name": "Fruitextra6",
-							"from": [ -0.61, -0.15, 0.1 ],
-							"to": [ -0.21, 0.35, 0.5 ],
+							"name": "Fruit 15",
+							"from": [ 2.49, -0.25, 3.21 ],
+							"to": [ 2.89, 0.25, 3.61 ],
 							"uv": [ 1.0, 12.5 ],
-							"rotationOrigin": [ -0.7, -0.2, 0.09 ],
+							"rotationOrigin": [ 2.4, -0.3, 3.2 ],
 							"faces": {
 								"north": { "texture": "#fruit", "uv": [ 1.0, 13.0, 1.5, 13.5 ] },
 								"east": { "texture": "#fruit", "uv": [ 1.5, 13.0, 2.0, 13.5 ] },
@@ -324,11 +310,11 @@
 							}
 						},
 						{
-							"name": "Fruitextra7",
-							"from": [ -0.41, -0.09, 0.18 ],
-							"to": [ 0.09, 0.41, 0.68 ],
+							"name": "Fruit 16",
+							"from": [ 2.69, -0.19, 3.29 ],
+							"to": [ 3.19, 0.31, 3.79 ],
 							"uv": [ 2.0, 12.5 ],
-							"rotationOrigin": [ -0.5, -0.1, 0.19 ],
+							"rotationOrigin": [ 2.6, -0.2, 3.3 ],
 							"faces": {
 								"north": { "texture": "#fruit", "uv": [ 2.0, 13.0, 2.5, 13.5 ] },
 								"east": { "texture": "#fruit", "uv": [ 2.5, 13.0, 3.0, 13.5 ] },
@@ -338,11 +324,11 @@
 							}
 						},
 						{
-							"name": "Fruitextra8",
-							"from": [ -0.11, -0.09, -1.32 ],
-							"to": [ 0.39, 0.41, -0.82 ],
+							"name": "Fruit 17",
+							"from": [ 2.99, -0.19, 1.79 ],
+							"to": [ 3.49, 0.31, 2.29 ],
 							"uv": [ 0.0, 15.0 ],
-							"rotationOrigin": [ -0.2, -0.1, -1.31 ],
+							"rotationOrigin": [ 2.9, -0.2, 1.8 ],
 							"faces": {
 								"north": { "texture": "#fruit", "uv": [ 0.0, 15.5, 0.5, 16.0 ] },
 								"east": { "texture": "#fruit", "uv": [ 0.5, 15.5, 1.0, 16.0 ] },
@@ -352,11 +338,11 @@
 							}
 						},
 						{
-							"name": "Fruitextra9",
-							"from": [ 0.29, 0.0, -1.6 ],
-							"to": [ 0.69, 0.5, -1.2 ],
+							"name": "Fruit 18",
+							"from": [ 3.39, -0.1, 1.51 ],
+							"to": [ 3.79, 0.4, 1.91 ],
 							"uv": [ 3.5, 15.0 ],
-							"rotationOrigin": [ 0.2, 0.0, -1.61 ],
+							"rotationOrigin": [ 3.3, -0.1, 1.5 ],
 							"faces": {
 								"north": { "texture": "#fruit", "uv": [ 3.5, 15.5, 4.0, 16.0 ] },
 								"east": { "texture": "#fruit", "uv": [ 4.0, 15.5, 4.5, 16.0 ] },
@@ -366,11 +352,11 @@
 							}
 						},
 						{
-							"name": "Fruitextra10",
-							"from": [ -0.31, 0.0, -0.5 ],
-							"to": [ 0.04, 0.44, -0.15 ],
+							"name": "Fruit 19",
+							"from": [ 2.79, -0.1, 2.61 ],
+							"to": [ 3.14, 0.34, 2.96 ],
 							"uv": [ 0.0, 13.5 ],
-							"rotationOrigin": [ -0.4, 0.0, -0.51 ],
+							"rotationOrigin": [ 2.7, -0.1, 2.6 ],
 							"faces": {
 								"north": { "texture": "#fruit", "uv": [ 0.0, 14.0, 0.5, 14.5 ] },
 								"east": { "texture": "#fruit", "uv": [ 0.5, 14.0, 1.0, 14.5 ] },
@@ -380,11 +366,11 @@
 							}
 						},
 						{
-							"name": "Fruitextra11",
-							"from": [ -2.31, -0.05, -1.1 ],
-							"to": [ -1.91, 0.45, -0.7 ],
+							"name": "Fruit 20",
+							"from": [ 0.79, -0.15, 2.01 ],
+							"to": [ 1.19, 0.35, 2.41 ],
 							"uv": [ 0.5, 11.5 ],
-							"rotationOrigin": [ -2.4, -0.1, -1.11 ],
+							"rotationOrigin": [ 0.7, -0.2, 2.0 ],
 							"faces": {
 								"north": { "texture": "#fruit", "uv": [ 0.5, 12.0, 1.0, 12.5 ] },
 								"east": { "texture": "#fruit", "uv": [ 1.0, 12.0, 1.5, 12.5 ] },
@@ -546,11 +532,11 @@
 					"autoUnwrap": false,
 					"uv": [ 0.0, 0.0 ],
 					"faces": {
-						"north": { "texture": "#topping", "uv": [ 0.0, 0.0, 0.25, 3.0 ], "rotation": 90 },
-						"east": { "texture": "#topping", "uv": [ 0.0, 0.0, 0.25, 3.0 ], "rotation": 90 },
-						"south": { "texture": "#topping", "uv": [ 0.0, 0.0, 0.25, 3.0 ], "rotation": 270 },
-						"west": { "texture": "#topping", "uv": [ 0.0, 0.0, 0.25, 3.0 ], "rotation": 90 },
-						"up": { "texture": "#topping", "uv": [ 2.5, 2.75, 5.5, 5.75 ], "rotation": 270 }
+						"north": { "texture": "#topping", "uv": [ 0.0, 0.0, 0.5, 3.0 ], "rotation": 90 },
+						"east": { "texture": "#topping", "uv": [ 0.0, 0.0, 0.5, 3.0 ], "rotation": 90 },
+						"south": { "texture": "#topping", "uv": [ 0.0, 0.0, 0.5, 3.0 ], "rotation": 270 },
+						"west": { "texture": "#topping", "uv": [ 0.0, 0.0, 0.5, 3.0 ], "rotation": 90 },
+						"up": { "texture": "#topping", "uv": [ 2.5, 3.0, 5.5, 6.0 ], "rotation": 270 }
 					}
 				},
 				{

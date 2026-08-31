@@ -22,7 +22,7 @@
 				}
 			},
 			"nutritionPropsPerLitre": {
-				"saturation": 400,
+				"satiety": 400,
 				"foodcategory": "Dairy"}
 		}
 	},
@@ -55,7 +55,7 @@
 	"transitionableProps": [
 		{
 			"type": "Perish",
-			"freshHours": { "avg": 648 },
+			"freshHours": { "avg": 672 },
 			"transitionHours": { "avg": 336 },
 			"transitionedStack": {
 				"type": "item",

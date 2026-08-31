@@ -2,16 +2,8 @@
   "code": "halloumi",
   "ProcessingTime" : 15,
   "ingredients": [
-    {
-      "type": "item",
-      "code": "dairyplus:curd-whole",
-      "quantity": 2
-    },
-	    {
-      "type": "item",
-      "code": "dairyplus:whey",
-      "litres": 4
-    }
+    { "type": "item",  "code": "dairyplus:curd-whole", "quantity": 2 },
+	{ "type": "item", "code": "dairyplus:whey",  "litres": 4  }
   ],
 	"outputs": [
 	 { "type": "item", "code": "dairyplus:halloumi-uncooked", "quantity": 1 }]

@@ -1,13 +1,17 @@
 {
-    // item names
+    // block names
     "game:tabname-dairyplus": "Dairy Plus",
 
     "dairyplus:block-barrelchurn": "Butter Churning Barrel",
     "dairyplus:block-plungerchurn": "Butter Churn",
     "dairyplus:block-creamscoop": "Cream Scoop",
+	"dairyplus:block-cheesekettle-east": "Cheese Kettle",
+	
+	"dairyplus:block-decorativecheesekettle-east" : "Decorative Cheese Kettle",
 	"dairyplus:block-butterdish-plain-north": "Wax Butterdish",
 	"dairyplus:block-butterdish-glass-north": "Wax Butterdish (Covered)",
 
+	// item names
     "dairyplus:item-butter-unsalted": "Unsalted Butter",
     "dairyplus:item-butter-salted": "Salted Butter",
     "dairyplus:item-butter-twicesalted": "Twice-Salted Butter",
@@ -21,11 +25,66 @@
     "dairyplus:item-plaincustard": "Plain Custard",
     "dairyplus:item-tofu": "Tofu",
 
-    "pie-single-dairyplus:tofu-raw": "Tofu pie (raw)",
+	"dairyplus:item-curd-whole": "Whole milk curds",
+	"dairyplus:item-curd-skim": "Skim milk curds",
+	"dairyplus:item-driedcurds": "Dried curds",
+	
+	"dairyplus:item-halloumi-uncooked": "Halloumi (fresh)",
+	"dairyplus:item-halloumi-partcooked": "Halloumi (lightly-grilled)",
+	"dairyplus:item-halloumi-cooked": "Halloumi (grilled)",
+	"dairyplus:item-halloumi-burnt": "Halloumi (charred)",
+	
+	"dairyplus:item-halloumiskewer-uncooked": "Halloumi (fresh)",
+	"dairyplus:item-halloumiskewer-partcooked": "Halloumi (lightly-grilled)",
+	"dairyplus:item-halloumiskewer-cooked": "Halloumi (grilled)",
+	"dairyplus:item-halloumiskewer-burnt": "Halloumi (charred)",
+	
+	"dairyplus:item-mozzaball": "Mozzarella",
+	"dairyplus:item-provalone-fresh": "Provolone",
+	"dairyplus:item-provalone-aged": "Aged provolone",
+	"dairyplus:item-provaloneslice-fresh": "Provolone slice",
+	"dairyplus:item-provaloneslice-aged": "Aged provolone slice",
+	"dairyplus:item-feta": "Feta",
+	"dairyplus:item-brunost": "Caramelized Whey",
+	"dairyplus:item-ricotta": "Ricotta",
+	
+	
+	//Pie
+	"pie-single-dairyplus:tofu-raw": "Tofu pie (raw)",
     "pie-single-dairyplus:tofu-partbaked": "Tofu pie (part-baked)",
     "pie-single-dairyplus:tofu-perfect": "Tofu pie",
     "pie-single-dairyplus:tofu-charred": "Tofu pie (charred)",
-
+	
+	"pie-single-dairyplus:mozzaball-raw": "Cheese pie (raw)",
+    "pie-single-dairyplus:mozzaball-partbaked": "Cheese pie (part-baked)",
+    "pie-single-dairyplus:mozzaball-perfect": "Cheese pie",
+    "pie-single-dairyplus:mozzaball-charred": "Cheese pie (charred)",
+	
+	"pie-single-dairyplus:feta-raw": "Cheese pie (raw)",
+    "pie-single-dairyplus:feta-partbaked": "Cheese pie (part-baked)",
+    "pie-single-dairyplus:feta-perfect": "Cheese pie",
+    "pie-single-dairyplus:feta-charred": "Cheese pie (charred)",
+	
+	"pie-single-dairyplus:curd-whole-raw": "Cheese pie (raw)",
+    "pie-single-dairyplus:curd-whole-partbaked": "Cheese pie (part-baked)",
+    "pie-single-dairyplus:curd-whole-perfect": "Cheese pie",
+    "pie-single-dairyplus:curd-whole-charred": "Cheese pie (charred)",
+	
+	"pie-single-dairyplus:curd-skim-raw": "Cheese pie (raw)",
+    "pie-single-dairyplus:curd-skim-partbaked": "Cheese pie (part-baked)",
+    "pie-single-dairyplus:curd-skim-perfect": "Cheese pie",
+    "pie-single-dairyplus:curd-skim-charred": "Cheese pie (charred)",
+	
+	"pie-single-dairyplus:provaloneslice-fresh-raw": "Cheese pie (raw)",
+    "pie-single-dairyplus:provaloneslice-fresh-partbaked": "Cheese pie (part-baked)",
+    "pie-single-dairyplus:provaloneslice-fresh-perfect": "Cheese pie",
+    "pie-single-dairyplus:provaloneslice-fresh-charred": "Cheese pie (charred)",
+	
+	"pie-single-dairyplus:provaloneslice-aged-raw": "Cheese pie (raw)",
+    "pie-single-dairyplus:provaloneslice-aged-partbaked": "Cheese pie (part-baked)",
+    "pie-single-dairyplus:provaloneslice-aged-perfect": "Cheese pie",
+    "pie-single-dairyplus:provaloneslice-aged-charred": "Cheese pie (charred)",
+	
 
     // liquid names
     "dairyplus:liquid-cream": "Cream",
@@ -36,6 +95,8 @@
 	"dairyplus:liquid-sauce-plain": "Creamy Sauce",
 	"dairyplus:liquid-sauce-cheese": "Cheesy Sauce",
 	"dairyplus:liquid-fruitvinegar": "Fruit Vinegar",
+	"dairyplus:liquid-whey": "Whey",
+	"dairyplus:liquid-ghee": "Clarified Butter",
 
     "dairyplus:incontainer-item-cream": "Cream",
     "dairyplus:incontainer-item-skimmilk": "Skim Milk",
@@ -45,6 +106,8 @@
 	"dairyplus:incontainer-item-sauce-plain": "Creamy Sauce",
 	"dairyplus:incontainer-item-sauce-cheese": "Cheesy Sauce",
 	"dairyplus:incontainer-item-fruitvinegar": "Fruit Vinegar",
+	"dairyplus:incontainer-item-whey": "Whey",
+	"dairyplus:incontainer-item-ghee": "Clarified Butter",
 
     "dairyplus:item-cream": "Cream",
     "dairyplus:item-skimmilk": "Skim Milk",
@@ -54,6 +117,8 @@
 	"dairyplus:item-sauce-plain": "Creamy Sauce",
 	"dairyplus:item-sauce-cheese": "Cheesy Sauce",
 	"dairyplus:item-fruitvinegar": "Fruit Vinegar",
+	"dairyplus:item-whey": "Whey",
+	"dairyplus:item-ghee": "Clarified Butter",
 
     //item desc.
     "itemdesc-butter-unsalted": "Fresh from the churn.",
@@ -65,6 +130,10 @@
     "itemdesc-soybeans-shelled": "Removed from their pods.",
     "itemdesc-soybeans-soaked": "Soaked and ready for processing.",
     "itemdesc-soypaste": "A wet paste from grinding. Needs to be heated before it's safe to eat.",
+	
+	"itemdesc-ghee": "Known as Ghee, has a rich nutty flavour.",
+	
+	
 
     //block desc.
     "blockdesc-plungerchurn": "Used to work cream into butter with a little bit of elbow grease.",
@@ -75,51 +144,96 @@
     //handbook enteries
     "item-handbooktitle-plungerchurn": "Uses",
     "item-handbooktext-plungerchurn": "Place cream in the top slot and interact with the handle to start churning.",
+	
+	"dairyplus:cheesekettle-craftedby": "Created in a Cheese Kettle",
     
-    //Meals
+    //Meal ingredients liquid
     "dairyplus:recipeingredient-item-condensedmilk-topping": "condensed milk",
 	"dairyplus:recipeingredient-item-cream-topping": "cream",
 	"dairyplus:recipeingredient-item-soymilk-topping": "soymilk",
 	"dairyplus:recipeingredient-item-sauce-cheese-topping": "cheesy sauce",
 	"dairyplus:recipeingredient-item-sauce-plain-topping": "cream sauce",
-	"dairyplus:recipeingredient-item-skimmilk-topping": "skimmilk",
+	"dairyplus:recipeingredient-item-skimmilk-topping": "skim milk",
+	"dairyplus:recipeingredient-item-whey-topping": "whey",
+	"game:recipeingredient-item-milkportion-topping": "milk",
+	"dairyplus:recipeingredient-item-ghee-topping": "clarified butter",
 	
 	"dairyplus:recipeingredient-item-condensedmilk-insturmentalcase": "condensed milk",
 	"dairyplus:recipeingredient-item-cream-insturmentalcase": "cream",
 	"dairyplus:recipeingredient-item-soymilk-insturmentalcase": "soymilk",
 	"dairyplus:recipeingredient-item-sauce-cheese-insturmentalcase": "cheesy sauce",
 	"dairyplus:recipeingredient-item-sauce-plain-insturmentalcase": "cream sauce",
-	"dairyplus:recipeingredient-item-skimmilk-insturmentalcase": "skimmilk",
+	"dairyplus:recipeingredient-item-skimmilk-insturmentalcase": "skim milk",
+	"dairyplus:recipeingredient-item-whey-insturmentalcase": "whey",
 	"game:recipeingredient-item-milkportion-insturmentalcase": "milk",
+	"dairyplus:recipeingredient-item-ghee-insturmentalcase": "clarified butter",
 	
+	"game:meal-ingredient-soup-secondary-whey": "whey",
+	
+	//Meal ingredients solid
 	"dairyplus:recipeingredient-item-soybeans-insturmentalcase": "soybeans",
 	"dairyplus:recipeingredient-item-butter-insturmentalcase": "butter",
+	"dairyplus:recipeingredient-item-curd-insturmentalcase": "cheese curds",
+	"dairyplus:recipeingredient-item-driedcurds-insturmentalcase": "cheese curds",
+	"dairyplus:recipeingredient-item-tofu-insturmentalcase": "tofu",
+	"dairyplus:recipeingredient-item-provaloneslice-insturmentalcase": "provolone",
+	"dairyplus:recipeingredient-item-mozzaball-insturmentalcase": "mozzarella",
+	"dairyplus:recipeingredient-item-feta-insturmentalcase": "feta",
+	"dairyplus:recipeingredient-item-ricotta-insturmentalcase": "ricotta",
+	"dairyplus:recipeingredient-item-brunost-insturmentalcase": "caramelized whey",
+	"dairyplus:recipeingredient-item-halloumi-insturmentalcase": "halloumi",
+	
+	"game:meal-ingredient-soup-primary-soybeans": "soybean",
+	"game:meal-ingredient-soup-primary-feta": "feta",
+	"game:meal-ingredient-soup-primary-provalone": "provolone",
+	"game:meal-ingredient-soup-primary-ricotta": "ricotta",
+	"game:meal-ingredient-soup-primary-curd": "cheese curds",
+	"game:meal-ingredient-soup-primary-mozzaball": "mozzarella",
+	"game:meal-ingredient-soup-primary-tofu": "tofu",
+	"game:meal-ingredient-soup-primary-cheese": "cheese",
+	"game:meal-ingredient-soup-primary-butter": "butter",
+	"game:meal-ingredient-soup-primary-brunost": "caramelized whey",
 	
 	"game:ingredient-stew-primary-soybeans": "soybean",
 	"game:meal-ingredient-stew-primary-soybeans": "soybean",
+	"game:-ingredient-stew-primary-curd": "cheese curd",
+	"game:meal-ingredient-stew-primary-curd": "cheese curd",
+	"game:-ingredient-stew-primary-brunost": "caramelized whey",
+	"game:meal-ingredient-stew-primary-brunost": "caramelized whey",
+	
 	"game:ingredient-stew-secondary-soybeans": "soybeans",
 	"game:meal-ingredient-stew-secondary-soybeans": "soybeans",
-	"game:meal-ingredient-soup-primary-soybeans": "soybean",
-	
+	"game:ingredient-stew-secondary-curd": "cheese curd",
+	"game:meal-ingredient-stew-secondary-curd": "cheese curd",
 	"game:ingredient-stew-secondary-tofu": "tofu",
 	"game:meal-ingredient-stew-secondary-tofu": "tofu",
-	"dairyplus:recipeingredient-item-tofu-insturmentalcase": "tofu",
+	
+
+	//Meals
 	
 	"game:meal-normal-custard": "sweet custard {1}",
 	"game:mealrecipe-name-custard": "Sweet Custard",
 	"game:mealrecipe-name-custard-in-container": "sweet custard",
+	
+	"dairyplus:recipe-none": "No matching recipe.",
+	"dairyplus:recipe-oneoutput": "Will make {0}.",
+	"dairyplus:recipe-twooutput": "Will make {0} and {1}.",
 	
 	"game:handbook-mealingredient-custard": "custard",
 	"game:handbook-mealingredient-other": "dipped wedges",
 	"game:handbook-mealingredient-smallbits": "small toppings",
 	"game:handbook-mealingredient-mediumbits": "medium toppings",
 	"game:handbook-mealingredient-butter": "butter",
+	"game:handbook-mealingredient-dairy": "cheese",
 
 	"creamguide-title": "Crafting Mechanic: Skimming Cream",
 	"creamguide-text": "<strong>Skimming Cream</strong><br>To start, you'll need some fresh milk. Any mutiple of 10L will do.<br>Milk will naturally seperate if left to settle; so go ahead and seal it in a barrel to let it rest undisturbed as you prepare for the next step. <br><br>Craft yourself a <a href=\"handbook://block-dairyplus:creamscoop\">Cream Scoop</a> and you'll be able to skim the cream from the <a href=\"handbook://item-dairyplus:separatingmilk\">Separating Milk</a> in the barrel once the milk fats have finished rising to the top. To do this, crouch with your scoop in hand and interract with the barrel. Be patient, this step is delicate and takes a few moments, else you'll simply mix the milk back together. <br><br>With a scoop full of <a href=\"handbook://item-dairyplus:cream\">Cream</a>, you'll be left some <a href=\"handbook://item-dairyplus:skimmilk\">Skim Milk</a> in the barrel. Though slightly less nutritious, and no longer capable of turning into cheddar cheese, this milk can still be used in all other places you'd find yourself adding a splash of dairy.<br><br>mod: DairyPlus", 
 
 	"butterguide-title": "Crafting Mechanic: Churning Butter",
 	"butterguide-text": "<strong>Churning Butter</strong><br><a href=\"handbook://item-dairyplus:cream\">Cream</a> has a number of culinary uses on it's own, however whipping it into <a href=\"handbook://item-dairyplus:butter-unsalted\">butter</a> will give you a world of new cooking options. <br><br>While it requires a bit of effort, a <a href=\"handbook://block-dairyplus:plungerchurn\">Butter Churn</a> will make it possible to do so. Clicking the bottom portion of the churn will open a window with a top slot for cream and a bottom slot for collecting the freshly made butter.<br>Pour the cream in, interact with the handle, and watch as the cream turns to butter before your eyes.<br><br>mod: DairyPlus",
+
+	"mozzaguide-title": "Crafting Mechanic: Stretching Cheese",
+	"mozzaguide-text": "<strong>Stretching Cheese Curds</strong><br>Some cheeses, such as <a href=\"handbook://item-dairyplus:mozzaball\">mozzarella</a> and <a href=\"handbook://item-dairyplus:provalone\">provolone</a>, require the curd to be stretched. This can be done at a table, by holding <a href=\"handbook://item-dairyplus:curd-skim\">skim milk curds</a> in your hand, and holding the right mouse button to work the curd.",
 
 	//compat 
 	"expandedfoods:recipeingredient-item-fruitsyrupportion-topping": "Syrup",

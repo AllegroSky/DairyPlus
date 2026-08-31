@@ -1,0 +1,226 @@
+[
+	{
+	"op": "addmerge",
+    "path": "/attributes/expandedNutritionProps",
+	"value": {
+		"dairyplus:condensedmilk" : { "saturation": 5, "foodcategory": "Dairy" },
+		"dairyplus:cream" : { "saturation": 2.5, "foodcategory": "Dairy" },
+		"dairyplus:skimmilk" : { "saturation": 1, "foodcategory": "Dairy" },
+		"dairyplus:soymilk" : { "saturation": 1.5, "foodcategory": "Dairy" },
+		"dairyplus:whey" : { "saturation": 0.5, "foodcategory": "Dairy" },
+		"dairyplus:ghee" : { "saturation": 5, "foodcategory": "Dairy" },
+		},
+	"side": "server",
+    "file": "game:itemtypes/food/dough.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+
+	{
+	"op": "addmerge",
+    "path": "/attributes/expandedNutritionPropsByType",
+	"value": {
+		"dairyplus:condensedmilk" : { "saturation": 5, "foodcategory": "Dairy" },
+		"dairyplus:cream" : { "saturation": 2.5, "foodcategory": "Dairy" },
+		"dairyplus:skimmilk" : { "saturation": 1, "foodcategory": "Dairy" },
+		"dairyplus:soymilk" : { "saturation": 1.5, "foodcategory": "Dairy" },
+		"dairyplus:whey" : { "saturation": 0.5, "foodcategory": "Dairy" },
+		"dairyplus:ghee" : { "saturation": 5, "foodcategory": "Dairy" },
+		},
+	"side": "server",
+    "file": "expandedfoods:itemtypes/food/mixing/plaindoughball.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+    {
+	"op": "addmerge",
+    "path": "/attributes/expandedNutritionPropsByType/*-raw",
+	"value": [
+		{ "dairyplus:curd-whole" : { "saturation": 225, "foodcategory": "Dairy" }},
+		{ "dairyplus:curd-skim" : { "saturation": 150, "foodcategory": "Dairy" }},
+		{ "dairyplus:feta" : { "saturation": 200, "foodcategory": "Dairy" }},
+		{ "dairyplus:mozzaball" : { "saturation": 150, "foodcategory": "Dairy" }},
+		{ "dairyplus:provaloneslice-fresh" : { "saturation": 100, "foodcategory": "Dairy" }},
+		{ "dairyplus:provaloneslice-aged" : { "saturation": 115, "foodcategory": "Dairy" }},
+		{ "dairyplus:ricotta" : { "saturation": 250, "foodcategory": "Dairy" }},
+		{ "dairyplus:tofu" : { "saturation": 230, "foodcategory": "Dairy" }}
+		],
+	"side": "server",
+    "file": "expandedfoods:itemtypes/food/mixing/dumpling.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addmerge",
+    "path": "/attributes/expandedNutritionProps",
+	"value": {
+		"dairyplus:whey" : { "saturation": 0.5, "foodcategory": "Dairy" },
+		"dairyplus:ghee" : { "saturation": 5, "foodcategory": "Dairy" },
+		},
+	"side": "server",
+    "file": "expandedfoods:itemtypes/food/mixing/breadedball.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addmerge",
+    "path": "/attributes/expandedNutritionProps",
+	"value": {
+		"dairyplus:whey" : { "saturation": 0.5, "foodcategory": "Dairy" },
+		"dairyplus:ghee" : { "saturation": 5, "foodcategory": "Dairy" },
+		},
+	"side": "server",
+    "file": "expandedfoods:itemtypes/food/mixing/breadedmeatnugget.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addmerge",
+    "path": "/attributes/expandedNutritionProps",
+	"value": {
+		"dairyplus:whey" : { "saturation": 0.5, "foodcategory": "Dairy" },
+		"dairyplus:ghee" : { "saturation": 5, "foodcategory": "Dairy" },
+		},
+	"side": "server",
+    "file": "expandedfoods:itemtypes/food/mixing/breadedfishnugget.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addmerge",
+    "path": "/attributes/expandedNutritionProps",
+	"value": {
+		"dairyplus:whey" : { "saturation": 0.5, "foodcategory": "Dairy" },
+		"dairyplus:ghee" : { "saturation": 5, "foodcategory": "Dairy" },
+		},
+	"side": "server",
+    "file": "expandedfoods:itemtypes/food/mixing/breadedmushroom.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addmerge",
+    "path": "/attributes/expandedNutritionProps",
+	"value": {
+		"dairyplus:whey" : { "saturation": 0.5, "foodcategory": "Dairy" },
+		"dairyplus:ghee" : { "saturation": 5, "foodcategory": "Dairy" },
+		},
+	"side": "server",
+    "file": "expandedfoods:itemtypes/food/mixing/breadedvegetable.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addmerge",
+    "path": "/attributes/expandedNutritionPropsByType/*-raw",
+	"value": [
+		{ "dairyplus:butter-unsalted" : { "saturation": 300, "foodcategory": "Dairy" }},
+		{ "dairyplus:butter-salted" : { "saturation": 300, "foodcategory": "Dairy" }},
+		{ "dairyplus:butter-veggie" : { "saturation": 250, "foodcategory": "Dairy" }},
+		{ "dairyplus:butter-saltedveggie" : { "saturation": 250, "foodcategory": "Dairy" }},
+		],
+	"side": "server",
+    "file": "expandedfoods:itemtypes/food/mixing/pemmican.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},	
+	
+	{
+	"op": "addmerge",
+    "path": "/attributes/expandedNutritionPropsByType/*-raw",
+	"value": [
+		{ "dairyplus:butter-unsalted" : { "saturation": 300, "foodcategory": "Dairy" }},
+		{ "dairyplus:butter-salted" : { "saturation": 300, "foodcategory": "Dairy" }},
+		{ "dairyplus:butter-veggie" : { "saturation": 250, "foodcategory": "Dairy" }},
+		{ "dairyplus:butter-saltedveggie" : { "saturation": 250, "foodcategory": "Dairy" }},
+		],
+	"side": "server",
+    "file": "expandedfoods:itemtypes/food/mixing/pemmicanfish.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+
+	{
+	"op": "addmerge",
+    "path": "/attributes/expandedNutritionProps",
+	"value": {"dairyplus:whey" : { "saturation": 0.5, "foodcategory": "Dairy" }},
+	"side": "server",
+    "file": "expandedfoods:itemtypes/food/mixing/hardtack.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addmerge",
+    "path": "/attributes/expandedNutritionPropsByType/@*-(raw|curing)",
+	"value": [
+		{ "dairyplus:ghee" : { "saturation": 5, "health":  0.2, "foodcategory": "Dairy" }},
+		{ "dairyplus:curd-whole" : { "saturation": 225, "foodcategory": "Dairy" }},
+		{ "dairyplus:curd-skim" : { "saturation": 150, "foodcategory": "Dairy" }},
+		{ "dairyplus:mozzaball" : { "saturation": 150, "foodcategory": "Dairy" }},
+		{ "dairyplus:provaloneslice-fresh" : { "saturation": 100, "foodcategory": "Dairy" }},
+		{ "dairyplus:provaloneslice-aged" : { "saturation": 115, "foodcategory": "Dairy" }},
+		],
+	"side": "server",
+    "file": "expandedfoods:itemtypes/food/mixing/sausage.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addmerge",
+    "path": "/attributes/expandedNutritionProps",
+	"value": [
+		{ "dairyplus:ghee" : { "saturation": 5, "health":  0.2, "foodcategory": "Dairy" }},
+		{ "dairyplus:curd-whole" : { "saturation": 225, "foodcategory": "Dairy" }},
+		{ "dairyplus:curd-skim" : { "saturation": 150, "foodcategory": "Dairy" }},
+		{ "dairyplus:mozzaball" : { "saturation": 150, "foodcategory": "Dairy" }},
+		{ "dairyplus:provaloneslice-fresh" : { "saturation": 100, "foodcategory": "Dairy" }},
+		{ "dairyplus:provaloneslice-aged" : { "saturation": 115, "foodcategory": "Dairy" }},
+		],
+	"side": "server",
+    "file": "expandedfoods:itemtypes/food/mixing/sausagefish.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addmerge",
+    "path": "/attributes/expandedNutritionProps",
+	"value": [
+		{ "dairyplus:curd-whole" : { "saturation": 225, "foodcategory": "Dairy" }},
+		{ "dairyplus:curd-skim" : { "saturation": 150, "foodcategory": "Dairy" }},
+		{ "dairyplus:feta" : { "saturation": 200, "foodcategory": "Dairy" }},
+		{ "dairyplus:mozzaball" : { "saturation": 150, "foodcategory": "Dairy" }},
+		{ "dairyplus:provaloneslice-fresh" : { "saturation": 100, "foodcategory": "Dairy" }},
+		{ "dairyplus:provaloneslice-aged" : { "saturation": 115, "foodcategory": "Dairy" }},
+		{ "dairyplus:ricotta" : { "saturation": 250, "foodcategory": "Dairy" }},
+		{ "dairyplus:tofu" : { "saturation": 230, "foodcategory": "Dairy" }},
+		{ "dairyplus:condensedmilk" : { "saturation": 5, "foodcategory": "Dairy" }},
+		{ "dairyplus:ghee" : { "saturation": 230, "foodcategory": "Dairy" }},
+		],
+	"side": "server",
+    "file": "expandedfoods:itemtypes/food/mixing/stuffedpepper.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addmerge",
+    "path": "/attributes/expandedNutritionProps",
+	"value": [
+		{ "dairyplus:driedcurds" : { "saturation": 225, "foodcategory": "Dairy" }},
+		{ "dairyplus:provaloneslice-fresh" : { "saturation": 100, "foodcategory": "Dairy" }},
+		{ "dairyplus:provaloneslice-aged" : { "saturation": 115, "foodcategory": "Dairy" }}
+		],
+	"side": "server",
+    "file": "expandedfoods:itemtypes/food/mixing/trailmix.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addmerge",
+    "path": "/attributes/expandedNutritionProps",
+	"value": [
+		{ "dairyplus:driedcurds" : { "saturation": 225, "foodcategory": "Dairy" }},
+		{ "dairyplus:provaloneslice-fresh" : { "saturation": 100, "foodcategory": "Dairy" }},
+		{ "dairyplus:provaloneslice-aged" : { "saturation": 115, "foodcategory": "Dairy" }}
+		],
+	"side": "server",
+    "file": "expandedfoods:itemtypes/food/mixing/trailmixvegetarian.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	}
+]

@@ -12,10 +12,9 @@
 		"transitionHours": { "avg": 108 },
 		"transitionRatio": 1,
 		"transitionedStack": { "type": "item", "code": "game:rot" }
-	}],
+		}],
 		
 	"attributes": {
-		"displaycaseable": true,
 		"shelvable": true,
 		"onshelfTransform": {
 			"rotation": { "x": 0, "y": 92, "z": 0 },
@@ -25,10 +24,6 @@
 		"groundStorageTransform": {
 			"origin": { "x": 0.5, "y": 0, "z": 0.5 },
 			"scale": 0.65
-		},
-		"nutritionPropsWhenInMeal": {
-			"satiety": 350, // 1.5 from base as in vanilla, with minor rounding 
-			"foodcategory": "Dairy"
 		},
 		"inPieProperties": {
 			"texture": "game:block/food/pie/fill-potato",

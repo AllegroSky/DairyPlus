@@ -1,0 +1,202 @@
+[
+	{
+	"Ingredients": [
+		{ "type": "item", "code": "dairyplus:ghee", "quantity": 10 },
+		{ "type": "item", "code": "expandedfoods:breadedball-*-raw", "quantity": 1, "name": "grain" }
+		],
+	"Simmering": {
+		"meltingPoint": 150,
+		"meltingDuration": 10,
+		"smeltedRatio": 1,
+		"smeltingType": "bake",
+		"smeltedStack": { "type": "item", "code": "expandedfoods:breadedball-{grain}-cooked" },
+		"requiresContainer": false
+		},
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+   
+   {
+	"Ingredients": [
+		{ "type": "item", "code": "dairyplus:ghee", "quantity": 10 },
+		{ "type": "item", "code": "expandedfoods:breadedfishnugget-*-smashed", "quantity": 1, "name": "grain" }
+	],
+	"Simmering": {
+		"meltingPoint": 150,
+		"meltingDuration": 10,
+		"smeltedRatio": 1,
+		"smeltingType": "bake",
+		"smeltedStack": { "type": "item", "code": "expandedfoods:breadedfishnugget-{grain}-tender" },
+		"requiresContainer": false
+		},
+	"dependsOn": [{ "modid": "expandedfoods" }]
+   },
+   
+	{
+	"Ingredients": [
+		{ "type": "item", "code": "dairyplus:ghee", "quantity": 10 },
+		{ "type": "item", "code": "expandedfoods:breadedmeatnugget-*-bushmeat-smashed", "quantity": 1, "name": "grain" }
+		],
+	"Simmering": {
+		"meltingPoint": 150,
+		"meltingDuration": 10,
+		"smeltedRatio": 1,
+		"smeltingType": "bake",
+		"smeltedStack": { "type": "item", "code": "expandedfoods:breadedmeatnugget-{grain}-bushmeat-tender" },
+		"requiresContainer": false
+		},
+	"dependsOn": [{ "modid": "expandedfoods" }]
+   },
+   
+   {
+	"Ingredients": [
+		{ "type": "item", "code": "dairyplus:ghee", "quantity": 10 },
+		{ "type": "item", "code": "expandedfoods:breadedmushroom-*-raw", "quantity": 1, "name": "grain" }
+		],
+	"Simmering": {
+		"meltingPoint": 150,
+		"meltingDuration": 10,
+		"smeltedRatio": 1,
+		"smeltingType": "bake",
+		"smeltedStack": { "type": "item", "code": "expandedfoods:breadedmushroom-{grain}-cooked" },
+		"requiresContainer": false
+		},
+	"dependsOn": [{ "modid": "expandedfoods" }]
+   },
+	
+   {
+	"Ingredients": [
+		{ "type": "item", "code": "dairyplus:ghee", "quantity": 10 },
+		{ "type": "item", "code": "expandedfoods:breadedmushroom-*-raw", "quantity": 1, "name": "grain" }
+		],
+	"Simmering": {
+		"meltingPoint": 150,
+		"meltingDuration": 10,
+		"smeltedRatio": 1,
+		"smeltingType": "bake",
+		"smeltedStack": { "type": "item", "code": "expandedfoods:breadedmushroom-{grain}-cooked" },
+		"requiresContainer": false
+		},
+	"dependsOn": [{ "modid": "expandedfoods" }]
+   },
+   
+   {
+	"Ingredients": [
+		{ "type": "item", "code": "dairyplus:ghee",	"quantity": 10 },
+		{ "type": "item", "code": "expandedfoods:breadedvegetable-flax-*-raw", "quantity": 1, "name": "vegetable" }
+	],
+	"Simmering": {
+		"meltingPoint": 150,
+		"meltingDuration": 10,
+		"smeltedRatio": 1,
+		"smeltingType": "bake",
+		"smeltedStack": { "type": "item", "code": "expandedfoods:breadedvegetable-flax-{vegetable}-cooked" },
+		"requiresContainer": false
+	},
+		"dependsOn": [{ "modid": "expandedfoods" }]
+},
+{
+	"Ingredients": [
+		{ "type": "item", "code": "dairyplus:ghee", "quantity": 10 },
+		{ "type": "item", "code": "expandedfoods:breadedvegetable-rice-*-raw", "quantity": 1, "name": "vegetable" }
+	],
+	"Simmering": {
+		"meltingPoint": 150,
+		"meltingDuration": 10,
+		"smeltedRatio": 1,
+		"smeltingType": "bake",
+		"smeltedStack": { "type": "item", "code": "expandedfoods:breadedvegetable-rice-{vegetable}-cooked" },
+		"requiresContainer": false
+	},
+		"dependsOn": [{ "modid": "expandedfoods" }]
+},
+{
+	"Ingredients": [
+		{ "type": "item", "code": "dairyplus:ghee", "quantity": 10 },
+		{ "type": "item", "code": "expandedfoods:breadedvegetable-rye-*-raw", "quantity": 1, "name": "vegetable" }
+	],
+	"Simmering": {
+		"meltingPoint": 150,
+		"meltingDuration": 10,
+		"smeltedRatio": 1,
+		"smeltingType": "bake",
+		"smeltedStack": { "type": "item", "code": "expandedfoods:breadedvegetable-rye-{vegetable}-cooked" },
+		"requiresContainer": false
+	},
+		"dependsOn": [{ "modid": "expandedfoods" }]
+},
+{
+	"Ingredients": [
+		{ "type": "item", "code": "dairyplus:ghee", "quantity": 10 },
+		{ "type": "item", "code": "expandedfoods:breadedvegetable-spelt-*-raw", "quantity": 1, "name": "vegetable" }
+	],
+	"Simmering": {
+		"meltingPoint": 150,
+		"meltingDuration": 10,
+		"smeltedRatio": 1,
+		"smeltingType": "bake",
+		"smeltedStack": { "type": "item", "code": "expandedfoods:breadedvegetable-spelt-{vegetable}-cooked" },
+		"requiresContainer": false
+	},
+		"dependsOn": [{ "modid": "expandedfoods" }]
+},
+{
+	"Ingredients": [
+		{ "type": "item", "code": "dairyplus:ghee", "quantity": 10 },
+		{ "type": "item", "code": "expandedfoods:breadedvegetable-cassava-*-raw", "quantity": 1, "name": "vegetable" }
+	],
+	"Simmering": {
+		"meltingPoint": 150,
+		"meltingDuration": 10,
+		"smeltedRatio": 1,
+		"smeltingType": "bake",
+		"smeltedStack": { "type": "item", "code": "expandedfoods:breadedvegetable-cassava-{vegetable}-cooked" },
+		"requiresContainer": false
+	},
+		"dependsOn": [{ "modid": "expandedfoods" }]
+},
+{
+	"Ingredients": [
+		{ "type": "item", "code": "dairyplus:ghee", "quantity": 10 },
+		{ "type": "item", "code": "expandedfoods:breadedvegetable-amaranth-*-raw", "quantity": 1, "name": "vegetable" }
+	],
+	"Simmering": {
+		"meltingPoint": 150,
+		"meltingDuration": 10,
+		"smeltedRatio": 1,
+		"smeltingType": "bake",
+		"smeltedStack": { "type": "item", "code": "expandedfoods:breadedvegetable-amaranth-{vegetable}-cooked" },
+		"requiresContainer": false
+	},
+		"dependsOn": [{ "modid": "expandedfoods" }]
+},
+{
+	"Ingredients": [
+		{ "type": "item", "code": "dairyplus:ghee", "quantity": 10 },
+		{ "type": "item", "code": "expandedfoods:breadedvegetable-sunflower-*-raw", "quantity": 1, "name": "vegetable" }
+	],
+	"Simmering": {
+		"meltingPoint": 150,
+		"meltingDuration": 10,
+		"smeltedRatio": 1,
+		"smeltingType": "bake",
+		"smeltedStack": { "type": "item", "code": "expandedfoods:breadedvegetable-sunflower-{vegetable}-cooked" },
+		"requiresContainer": false
+	},
+		"dependsOn": [{ "modid": "expandedfoods" }]
+},
+{
+	"Ingredients": [
+		{ "type": "item", "code": "dairyplus:ghee", "quantity": 10 },
+		{ "type": "item", "code": "expandedfoods:stuffedpepper-*-raw", "quantity": 1, "name": "grain" }
+	],
+	"Simmering": {
+		"meltingPoint": 150,
+		"meltingDuration": 10,
+		"smeltedRatio": 1,
+		"smeltingType": "bake",
+		"smeltedStack": { "type": "item", "code": "expandedfoods:stuffedpepper-{grain}-cooked" },
+		"requiresContainer": false
+	},
+		"dependsOn": [{ "modid": "expandedfoods" }]
+}
+]

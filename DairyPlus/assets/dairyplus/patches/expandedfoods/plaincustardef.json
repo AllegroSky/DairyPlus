@@ -32,8 +32,7 @@
 				"portionSizeLitres": 0.4,
 			}
 			],
-		"cooksInto": { "type": "item", "code": "dairyplus:plaincustard", "quantity": 2 },
-		"dependsOn": [{ "modid": "aculinaryartillery" }]
+		"cooksInto": { "type": "item", "code": "dairyplus:plaincustard", "quantity": 2 }
 	},
 	"side": "server",
     "file": "dairyplus:recipes/cooking/plaincustard.json",
@@ -73,16 +72,16 @@
 				"portionSizeLitres": 0.4,
 			}
 			],
-		"cooksInto": { "type": "item", "code": "dairyplus:plaincustard", "quantity": 2 },
-		"dependsOn": [{ "modid": "aculinaryartillery" }]
+		"cooksInto": { "type": "item", "code": "dairyplus:plaincustard", "quantity": 2 }
 		},
 	"side": "server",
     "file": "dairyplus:recipes/cooking/plaincustard.json",
 	"dependsOn": [{ "modid": "aculinaryartillery" }]
   },
+  
   {
     "op": "addmerge",
-    "path": "/2/ingredients/1/validStacks/-",
+    "path": "/2/ingredients/1/validStacks",
     "value": [
       { "type": "item", "code": "aculinaryartillery:eggyolkportion-pheasant" },
       { "type": "item", "code": "aculinaryartillery:eggyolkportion-goldenpheasant" },
@@ -99,7 +98,7 @@
   },
   {
     "op": "addmerge",
-    "path": "/3/ingredients/1/validStacks/-",
+    "path": "/3/ingredients/1/validStacks",
     "value": [
       { "type": "item", "code": "aculinaryartillery:eggyolkportion-pheasant" },
       { "type": "item", "code": "aculinaryartillery:eggyolkportion-goldenpheasant" },

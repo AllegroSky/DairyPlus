@@ -22,7 +22,7 @@
 				}
 			},
 			"nutritionPropsPerLitre": {
-				"saturation": 100,
+				"satiety": 100,
 				"foodcategory": "Fruit"
 			}
 		}

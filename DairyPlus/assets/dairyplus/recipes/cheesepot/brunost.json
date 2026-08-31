@@ -1,0 +1,9 @@
+{
+  "code": "brunost",
+  "ProcessingTime" : 120,
+  "ingredients": [
+    { "type": "item", "code": "dairyplus:whey", "litres": 7 }
+	],
+  "outputs": [
+	 { "type": "item", "code": "dairyplus:brunost", "quantity": 1 }]
+}

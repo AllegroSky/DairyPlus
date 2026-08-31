@@ -1,0 +1,46 @@
+[
+    {
+	"op": "addmerge",
+    "path": "/ingredients/0/validStacks",
+	"value": [{ "type": "item","code": "game:vinegarportion" }],
+	"side": "server",
+    "file": "dairyplus:recipes/cooking/tofu.json",
+	"dependsOn": [{ "modid": "aculinaryartillery" }]
+	},
+	
+	{
+	"op": "addmerge",
+    "path": "/0/ingredients/1/validStacks",
+	"value": [{ "type": "item","code": "game:vinegarportion" }],
+	"side": "server",
+    "file": "dairyplus:recipes/cooking/curds.json",
+	"dependsOn": [{ "modid": "aculinaryartillery" }]
+	},
+	
+	{
+	"op": "addmerge",
+    "path": "/1/ingredients/1/validStacks",
+	"value": [{ "type": "item","code": "game:vinegarportion" }],
+	"side": "server",
+    "file": "dairyplus:recipes/cooking/curds.json",
+	"dependsOn": [{ "modid": "aculinaryartillery" }]
+	},
+	
+	{
+	"op": "replace",
+    "path": "/1/enabled",
+	"value": true,
+	"side": "server",
+    "file": "dairyplus:recipes/cheesepot/wholecurd.json",
+	"dependsOn": [{ "modid": "aculinaryartillery" }]
+	},
+	
+	{
+	"op": "replace",
+    "path": "/1/enabled",
+	"value": true,
+	"side": "server",
+    "file": "dairyplus:recipes/cheesepot/skimcurd.json",
+	"dependsOn": [{ "modid": "aculinaryartillery" }]
+	}	
+]

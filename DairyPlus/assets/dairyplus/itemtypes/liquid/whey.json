@@ -22,7 +22,7 @@
 				}
 			},
 			"nutritionPropsPerLitre": {
-				"saturation": 40,
+				"satiety": 40,
 				"foodcategory": "Dairy"
 			}
 		}

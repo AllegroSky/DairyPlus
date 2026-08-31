@@ -1,0 +1,170 @@
+[
+    {
+        "file": "dairyplus:itemtypes/liquid/condensedmilk",
+        "dependsOn": [{ "modId": "hydrateordiedrate" }],
+        "op": "addmerge",
+        "path": "/attributes",
+        "value": { "hydration": 80 }
+    },
+    {
+        "file": "dairyplus:itemtypes/liquid/cream",
+        "dependsOn": [{ "modId": "hydrateordiedrate" }],
+        "op": "addmerge",
+        "path": "/attributes",
+        "value": { "hydration": 400 }
+    },
+    {
+        "file": "dairyplus:itemtypes/liquid/fruitvinegar",
+        "dependsOn": [{ "modId": "hydrateordiedrate" }],
+        "op": "addmerge",
+        "path": "/attributes",
+        "value": { "hydration": -50 }
+    },
+    {
+        "file": "dairyplus:itemtypes/liquid/sauce",
+        "dependsOn": [{ "modId": "hydrateordiedrate" }],
+        "op": "addmerge",
+        "path": "/attributes",
+        "value": { "hydration": 20 } 
+    },
+    {
+        "file": "dairyplus:itemtypes/liquid/skimmilk",
+        "dependsOn": [{ "modId": "hydrateordiedrate" }],
+        "op": "addmerge",
+        "path": "/attributes",
+        "value": { "hydration": 850 }
+    },
+    {
+        "file": "dairyplus:itemtypes/liquid/soymilk",
+        "dependsOn": [{ "modId": "hydrateordiedrate" }],
+        "op": "addmerge",
+        "path": "/attributes",
+        "value": { "hydration": 800 }
+    },
+    {
+        "file": "dairyplus:itemtypes/liquid/whey",
+        "dependsOn": [{ "modId": "hydrateordiedrate" }],
+        "op": "addmerge",
+        "path": "/attributes",
+        "value": { "hydration": 850 }
+    },
+    {
+        "file": "dairyplus:itemtypes/food/butter",
+        "dependsOn": [{ "modId": "hydrateordiedrate" }],
+        "op": "addmerge",
+        "path": "/attributes",
+        "value": { 
+            "hydrationByType": {
+                "*-unsalted" : -80,
+				"*-salted" : -100,
+				"*-veggie" : -80,
+				"*-saltedveggie" : -100
+				
+            } 
+        }
+    },
+	{
+        "file": "dairyplus:itemtypes/food/plaincustard",
+        "dependsOn": [{ "modId": "hydrateordiedrate" }],
+        "op": "addmerge",
+        "path": "/attributes",
+        "value": { "hydration": 40 }
+    },
+	    {
+        "file": "dairyplus:itemtypes/food/soybeans",
+        "dependsOn": [{ "modId": "hydrateordiedrate" }],
+        "op": "addmerge",
+        "path": "/attributes",
+        "value": { 
+            "hydrationByType": {
+                "*-shelled" : -30,
+				"*-soaked" : 10
+            } 
+        }
+    },
+	{
+        "file": "dairyplus:itemtypes/food/tofu",
+        "dependsOn": [{ "modId": "hydrateordiedrate" }],
+        "op": "addmerge",
+        "path": "/attributes",
+        "value": { "hydration": 50 }
+    },
+	{
+        "file": "dairyplus:itemtypes/food/cheese/brunost",
+        "dependsOn": [{ "modId": "hydrateordiedrate" }],
+        "op": "addmerge",
+        "path": "/attributes",
+        "value": { "hydration": 10 }
+    },
+	{
+        "file": "dairyplus:itemtypes/food/cheese/cheesecurd",
+        "dependsOn": [{ "modId": "hydrateordiedrate" }],
+        "op": "addmerge",
+        "path": "/attributes",
+        "value": { "hydration": 20 }
+    },
+	{
+        "file": "dairyplus:itemtypes/food/cheese/driedcurd",
+        "dependsOn": [{ "modId": "hydrateordiedrate" }],
+        "op": "addmerge",
+        "path": "/attributes",
+        "value": { "hydration": -40 }
+    },
+	{
+        "file": "dairyplus:itemtypes/food/cheese/feta",
+        "dependsOn": [{ "modId": "hydrateordiedrate" }],
+        "op": "addmerge",
+        "path": "/attributes",
+        "value": { "hydration": -80 }
+    },
+	{
+        "file": "dairyplus:itemtypes/food/cheese/halloumi",
+        "dependsOn": [{ "modId": "hydrateordiedrate" }],
+        "op": "addmerge",
+        "path": "/attributes",
+        "value": { 
+            "hydrationByType": {
+                "*-burnt" : -35,
+				"*" : -30
+            }
+		}
+    },
+	{
+        "file": "dairyplus:itemtypes/food/cheese/halloumiskewer",
+        "dependsOn": [{ "modId": "hydrateordiedrate" }],
+        "op": "addmerge",
+        "path": "/attributes",
+        "value": { 
+            "hydrationByType": {
+                "*-burnt" : -25,
+				"*" : -20
+            }
+		}
+    },
+	{
+        "file": "dairyplus:itemtypes/food/cheese/mozza",
+        "dependsOn": [{ "modId": "hydrateordiedrate" }],
+        "op": "addmerge",
+        "path": "/attributes",
+        "value": { "hydration": -5 }
+    },
+	{
+        "file": "dairyplus:itemtypes/food/cheese/provslice",
+        "dependsOn": [{ "modId": "hydrateordiedrate" }],
+        "op": "addmerge",
+        "path": "/attributes",
+        "value": { 
+            "hydrationByType": {
+                "*-fresh" : -10,
+				"*-aged" : -15
+            }
+		}
+    },
+	{
+        "file": "dairyplus:itemtypes/food/cheese/ricotta",
+        "dependsOn": [{ "modId": "hydrateordiedrate" }],
+        "op": "addmerge",
+        "path": "/attributes",
+        "value": { "hydration": 40 }
+    }
+]

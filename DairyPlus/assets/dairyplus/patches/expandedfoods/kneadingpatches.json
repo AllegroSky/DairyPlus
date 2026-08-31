@@ -1,0 +1,733 @@
+[
+			//breaded
+    {
+	"op": "addmerge",
+    "path": "/0/ingredients/0/inputs/-",
+	"value": { "type": "item", "code": "dairyplus:whey",  "quantity": 10 },
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/breadedball.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addmerge",
+    "path": "/0/ingredients/0/inputs/-",
+	"value": { "type": "item", "code": "dairyplus:whey",  "quantity": 10 },
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/breadedmeatnugget.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addmerge",
+    "path": "/0/ingredients/0/inputs/-",
+	"value": { "type": "item", "code": "dairyplus:whey",  "quantity": 10 },
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/breadedfishnugget.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addmerge",
+    "path": "/0/ingredients/0/inputs/-",
+	"value": { "type": "item", "code": "dairyplus:whey",  "quantity": 10 },
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/breadedmushroom.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addmerge",
+    "path": "/0/ingredients/0/inputs/-",
+	"value": { "type": "item", "code": "dairyplus:whey",  "quantity": 10 },
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/breadedvegetable.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+			//oiled
+	
+	{
+	"op": "addmerge",
+    "path": "/0/ingredients/0/inputs/-",
+	"value": { "type": "item", "code": "dairyplus:ghee",  "quantity": 10 },
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/breadedballoiled.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addmerge",
+    "path": "/0/ingredients/0/inputs/-",
+	"value": { "type": "item", "code": "dairyplus:ghee",  "quantity": 10 },
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/breadedfishnuggetoiled.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addmerge",
+    "path": "/0/ingredients/0/inputs/-",
+	"value": { "type": "item", "code": "dairyplus:ghee",  "quantity": 10 },
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/breadedmeatnuggetoiled.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addmerge",
+    "path": "/1/ingredients/0/inputs/-",
+	"value": { "type": "item", "code": "dairyplus:ghee",  "quantity": 10 },
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/breadedmeatnuggetoiled.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addmerge",
+    "path": "/2/ingredients/0/inputs/-",
+	"value": { "type": "item", "code": "dairyplus:ghee",  "quantity": 10 },
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/breadedmeatnuggetoiled.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addmerge",
+    "path": "/0/ingredients/0/inputs/-",
+	"value": { "type": "item", "code": "dairyplus:ghee",  "quantity": 10 },
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/breadedmushroomoiled.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addmerge",
+    "path": "/0/ingredients/0/inputs/-",
+	"value": { "type": "item", "code": "dairyplus:ghee",  "quantity": 10 },
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/breadedvegetableoiled.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addmerge",
+    "path": "/1/ingredients/0/inputs/-",
+	"value": { "type": "item", "code": "dairyplus:ghee",  "quantity": 10 },
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/breadedvegetableoiled.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addmerge",
+    "path": "/2/ingredients/0/inputs/-",
+	"value": { "type": "item", "code": "dairyplus:ghee",  "quantity": 10 },
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/breadedvegetableoiled.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addmerge",
+    "path": "/3/ingredients/0/inputs/-",
+	"value": { "type": "item", "code": "dairyplus:ghee",  "quantity": 10 },
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/breadedvegetableoiled.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addmerge",
+    "path": "/4/ingredients/0/inputs/-",
+	"value": { "type": "item", "code": "dairyplus:ghee",  "quantity": 10 },
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/breadedvegetableoiled.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addmerge",
+    "path": "/5/ingredients/0/inputs/-",
+	"value": { "type": "item", "code": "dairyplus:ghee",  "quantity": 10 },
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/breadedvegetableoiled.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addmerge",
+    "path": "/6/ingredients/0/inputs/-",
+	"value": { "type": "item", "code": "dairyplus:ghee",  "quantity": 10 },
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/breadedvegetableoiled.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+			//dough
+	
+	{
+	"op": "addeach",
+    "path": "/0/ingredients/0/inputs/-",
+	"value": [ 
+		{ "type": "item", "code": "dairyplus:whey",  "quantity": 10 },
+		{ "type": "item", "code": "dairyplus:soymilk", "quantity": 10 },
+		{ "type": "item", "code": "dairyplus:skimmilk", "quantity": 10 }
+		],
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/doughball.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},	
+	
+	{
+	"op": "addeach",
+    "path": "/1/ingredients/0/inputs/-",
+	"value": [ 
+		{ "type": "item", "code": "dairyplus:whey",  "quantity": 10 },
+		{ "type": "item", "code": "dairyplus:soymilk", "quantity": 10 },
+		{ "type": "item", "code": "dairyplus:skimmilk", "quantity": 10 }
+		],
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/doughball.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},	
+	
+	{
+	"op": "addeach",
+    "path": "/2/ingredients/0/inputs/-",
+	"value": [ 
+		{ "type": "item", "code": "dairyplus:whey",  "quantity": 10 },
+		{ "type": "item", "code": "dairyplus:soymilk", "quantity": 10 },
+		{ "type": "item", "code": "dairyplus:skimmilk", "quantity": 10 }
+		],
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/doughball.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addeach",
+    "path": "/3/ingredients/0/inputs/-",
+	"value": [ 
+		{ "type": "item", "code": "dairyplus:whey",  "quantity": 10 },
+		{ "type": "item", "code": "dairyplus:soymilk", "quantity": 10 },
+		{ "type": "item", "code": "dairyplus:skimmilk", "quantity": 10 }
+		],
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/doughball.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addmerge",
+    "path": "/2/ingredients/3/inputs/-",
+	"value": { "type": "item", "code": "dairyplus:ghee",  "quantity": 10 },
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/doughball.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addmerge",
+    "path": "/3/ingredients/4/inputs/-",
+	"value": { "type": "item", "code": "dairyplus:ghee",  "quantity": 10 },
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/doughball.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},	
+
+			//dumpling
+	{
+	"op": "addeach",
+    "path": "/1/ingredients/1/inputs/-",
+	"value": [ 
+		{ "type": "item", "code": "dairyplus:curd-*",  "quantity": 1 },
+		{ "type": "item", "code": "dairyplus:feta", "quantity": 1 },
+		{ "type": "item", "code": "dairyplus:mozzaball", "quantity": 1 },
+		{ "type": "item", "code": "dairyplus:provaloneslice-*", "quantity": 1 },
+		{ "type": "item", "code": "dairyplus:ricotta", "quantity": 1 },
+		{ "type": "item", "code": "dairyplus:tofu", "quantity": 1 },
+		],
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/dumpling.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addeach",
+    "path": "/3/ingredients/1/inputs/-",
+	"value": [ 
+		{ "type": "item", "code": "dairyplus:curd-*",  "quantity": 1 },
+		{ "type": "item", "code": "dairyplus:feta", "quantity": 1 },
+		{ "type": "item", "code": "dairyplus:mozzaball", "quantity": 1 },
+		{ "type": "item", "code": "dairyplus:provaloneslice-*", "quantity": 1 },
+		{ "type": "item", "code": "dairyplus:ricotta", "quantity": 1 },
+		{ "type": "item", "code": "dairyplus:tofu", "quantity": 1 },
+		],
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/dumpling.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+			//pemmican
+			
+	{
+	"op": "addeach",
+    "path": "/1/ingredients/0/inputs/-",
+	"value": [
+		{ "type": "item", "code": "dairyplus:butter-unsalted",  "quantity": 1 },
+		{ "type": "item", "code": "dairyplus:butter-veggie", "quantity": 1 },		
+		],
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/pemmican.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addeach",
+    "path": "/0/ingredients/0/inputs/-",
+	"value": [ 
+		{ "type": "item", "code": "dairyplus:butter-salted", "quantity": 1 },
+		{ "type": "item", "code": "dairyplus:butter-saltedveggie", "quantity": 1 }
+		],
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/pemmican.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+		{
+	"op": "addeach",
+    "path": "/1/ingredients/0/inputs/-",
+	"value": [
+		{ "type": "item", "code": "dairyplus:butter-unsalted",  "quantity": 1 },
+		{ "type": "item", "code": "dairyplus:butter-veggie", "quantity": 1 },		
+		],
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/fishpemmican.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addeach",
+    "path": "/0/ingredients/0/inputs/-",
+	"value": [ 
+		{ "type": "item", "code": "dairyplus:butter-salted", "quantity": 1 },
+		{ "type": "item", "code": "dairyplus:butter-saltedveggie", "quantity": 1 }
+		],
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/fishpemmican.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+			//Hardtack
+	
+	{
+	"op": "addmerge",
+    "path": "/0/ingredients/0/inputs/-",
+	"value": { "type": "item", "code": "dairyplus:whey",  "quantity": 10 },
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/hardtack.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addmerge",
+    "path": "/1/ingredients/0/inputs/-",
+	"value": { "type": "item", "code": "dairyplus:whey",  "quantity": 10 },
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/hardtack.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+			//sausage
+			
+	{
+	"op": "addmerge",
+    "path": "/0/ingredients/0/inputs/-",
+	"value": { "type": "item", "code": "dairyplus:ghee",  "quantity": 10 },
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/sausage.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addmerge",
+    "path": "/1/ingredients/0/inputs/-",
+	"value": { "type": "item", "code": "dairyplus:ghee",  "quantity": 10 },
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/sausage.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addmerge",
+    "path": "/2/ingredients/0/inputs/-",
+	"value": { "type": "item", "code": "dairyplus:ghee",  "quantity": 10 },
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/sausage.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addmerge",
+    "path": "/3/ingredients/0/inputs/-",
+	"value": { "type": "item", "code": "dairyplus:ghee",  "quantity": 10 },
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/sausage.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addeach",
+    "path": "/2/ingredients/2/inputs/-",
+	"value": [
+		{ "type": "item", "code": "dairyplus:curd-*",  "quantity": 1 },
+		{ "type": "item", "code": "dairyplus:mozzaball",  "quantity": 1 },
+		{ "type": "item", "code": "dairyplus:provaloneslice-*",  "quantity": 1 },
+		],
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/sausage.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addeach",
+    "path": "/3/ingredients/2/inputs/-",
+	"value": [
+		{ "type": "item", "code": "dairyplus:curd-*",  "quantity": 1 },
+		{ "type": "item", "code": "dairyplus:mozzaball",  "quantity": 1 },
+		{ "type": "item", "code": "dairyplus:provaloneslice-*",  "quantity": 1 },
+		],
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/sausage.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+		{
+	"op": "addmerge",
+    "path": "/0/ingredients/0/inputs/-",
+	"value": { "type": "item", "code": "dairyplus:ghee",  "quantity": 10 },
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/sausagefish.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addmerge",
+    "path": "/1/ingredients/0/inputs/-",
+	"value": { "type": "item", "code": "dairyplus:ghee",  "quantity": 10 },
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/sausagefish.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addmerge",
+    "path": "/2/ingredients/0/inputs/-",
+	"value": { "type": "item", "code": "dairyplus:ghee",  "quantity": 10 },
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/sausagefish.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addmerge",
+    "path": "/3/ingredients/0/inputs/-",
+	"value": { "type": "item", "code": "dairyplus:ghee",  "quantity": 10 },
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/sausagefish.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addeach",
+    "path": "/2/ingredients/2/inputs/-",
+	"value": [
+		{ "type": "item", "code": "dairyplus:curd-*",  "quantity": 1 },
+		{ "type": "item", "code": "dairyplus:mozzaball",  "quantity": 1 },
+		{ "type": "item", "code": "dairyplus:provaloneslice-*",  "quantity": 1 },
+		],
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/sausagefish.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addeach",
+    "path": "/3/ingredients/2/inputs/-",
+	"value": [
+		{ "type": "item", "code": "dairyplus:curd-*",  "quantity": 1 },
+		{ "type": "item", "code": "dairyplus:mozzaball",  "quantity": 1 },
+		{ "type": "item", "code": "dairyplus:provaloneslice-*",  "quantity": 1 },
+		],
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/sausagefish.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+			//trail mix
+			
+	{
+	"op": "addeach",
+    "path": "/0/ingredients/3/inputs/-",
+	"value": [
+		{ "type": "item", "code": "dairyplus:driedcurds",  "quantity": 1 },
+		{ "type": "item", "code": "dairyplus:provaloneslice-*",  "quantity": 1 },
+		],
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/trailmix.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},	
+	
+	{
+	"op": "addeach",
+    "path": "/0/ingredients/4/inputs/-",
+	"value": [
+		{ "type": "item", "code": "dairyplus:driedcurds",  "quantity": 1 },
+		{ "type": "item", "code": "dairyplus:provaloneslice-*",  "quantity": 1 },
+		],
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/trailmix.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addeach",
+    "path": "/0/ingredients/5/inputs/-",
+	"value": [
+		{ "type": "item", "code": "dairyplus:driedcurds",  "quantity": 1 },
+		{ "type": "item", "code": "dairyplus:provaloneslice-*",  "quantity": 1 },
+		],
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/trailmix.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addeach",
+    "path": "/1/ingredients/3/inputs/-",
+	"value": [
+		{ "type": "item", "code": "dairyplus:driedcurds",  "quantity": 1 },
+		{ "type": "item", "code": "dairyplus:provaloneslice-*",  "quantity": 1 },
+		],
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/trailmix.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},	
+	
+	{
+	"op": "addeach",
+    "path": "/1/ingredients/4/inputs/-",
+	"value": [
+		{ "type": "item", "code": "dairyplus:driedcurds",  "quantity": 1 },
+		{ "type": "item", "code": "dairyplus:provaloneslice-*",  "quantity": 1 },
+		],
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/trailmix.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addeach",
+    "path": "/2/ingredients/3/inputs/-",
+	"value": [
+		{ "type": "item", "code": "dairyplus:driedcurds",  "quantity": 1 },
+		{ "type": "item", "code": "dairyplus:provaloneslice-*",  "quantity": 1 },
+		],
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/trailmix.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},	
+	
+	{
+	"op": "addeach",
+    "path": "/3/ingredients/3/inputs/-",
+	"value": [
+		{ "type": "item", "code": "dairyplus:driedcurds",  "quantity": 1 },
+		{ "type": "item", "code": "dairyplus:provaloneslice-*",  "quantity": 1 },
+		],
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/trailmix.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},	
+	
+	{
+	"op": "addeach",
+    "path": "/4/ingredients/3/inputs/-",
+	"value": [
+		{ "type": "item", "code": "dairyplus:driedcurds",  "quantity": 1 },
+		{ "type": "item", "code": "dairyplus:provaloneslice-*",  "quantity": 1 },
+		],
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/trailmix.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},	
+	
+	{
+	"op": "addeach",
+    "path": "/5/ingredients/3/inputs/-",
+	"value": [
+		{ "type": "item", "code": "dairyplus:driedcurds",  "quantity": 1 },
+		{ "type": "item", "code": "dairyplus:provaloneslice-*",  "quantity": 1 },
+		],
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/trailmix.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},	
+	
+	{
+	"op": "addeach",
+    "path": "/6/ingredients/3/inputs/-",
+	"value": [
+		{ "type": "item", "code": "dairyplus:driedcurds",  "quantity": 1 },
+		{ "type": "item", "code": "dairyplus:provaloneslice-*",  "quantity": 1 },
+		],
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/trailmix.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},	
+	
+	{
+	"op": "addeach",
+    "path": "/7/ingredients/3/inputs/-",
+	"value": [
+		{ "type": "item", "code": "dairyplus:driedcurds",  "quantity": 1 },
+		{ "type": "item", "code": "dairyplus:provaloneslice-*",  "quantity": 1 },
+		],
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/trailmix.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},	
+		
+	{
+	"op": "addeach",
+    "path": "/0/ingredients/3/inputs/-",
+	"value": [
+		{ "type": "item", "code": "dairyplus:driedcurds",  "quantity": 1 },
+		{ "type": "item", "code": "dairyplus:provaloneslice-*",  "quantity": 1 },
+		],
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/trailmixvegetarian.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},	
+	
+	{
+	"op": "addeach",
+    "path": "/0/ingredients/4/inputs/-",
+	"value": [
+		{ "type": "item", "code": "dairyplus:driedcurds",  "quantity": 1 },
+		{ "type": "item", "code": "dairyplus:provaloneslice-*",  "quantity": 1 },
+		],
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/trailmixvegetarian.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addeach",
+    "path": "/0/ingredients/5/inputs/-",
+	"value": [
+		{ "type": "item", "code": "dairyplus:driedcurds",  "quantity": 1 },
+		{ "type": "item", "code": "dairyplus:provaloneslice-*",  "quantity": 1 },
+		],
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/trailmixvegetarian.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addeach",
+    "path": "/1/ingredients/3/inputs/-",
+	"value": [
+		{ "type": "item", "code": "dairyplus:driedcurds",  "quantity": 1 },
+		{ "type": "item", "code": "dairyplus:provaloneslice-*",  "quantity": 1 },
+		],
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/trailmixvegetarian.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},	
+	
+	{
+	"op": "addeach",
+    "path": "/1/ingredients/4/inputs/-",
+	"value": [
+		{ "type": "item", "code": "dairyplus:driedcurds",  "quantity": 1 },
+		{ "type": "item", "code": "dairyplus:provaloneslice-*",  "quantity": 1 },
+		],
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/trailmixvegetarian.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addeach",
+    "path": "/2/ingredients/3/inputs/-",
+	"value": [
+		{ "type": "item", "code": "dairyplus:driedcurds",  "quantity": 1 },
+		{ "type": "item", "code": "dairyplus:provaloneslice-*",  "quantity": 1 },
+		],
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/trailmixvegetarian.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},	
+	
+	{
+	"op": "addeach",
+    "path": "/3/ingredients/3/inputs/-",
+	"value": [
+		{ "type": "item", "code": "dairyplus:driedcurds",  "quantity": 1 },
+		{ "type": "item", "code": "dairyplus:provaloneslice-*",  "quantity": 1 },
+		],
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/trailmixvegetarian.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},	
+	
+	{
+	"op": "addeach",
+    "path": "/4/ingredients/3/inputs/-",
+	"value": [
+		{ "type": "item", "code": "dairyplus:driedcurds",  "quantity": 1 },
+		{ "type": "item", "code": "dairyplus:provaloneslice-*",  "quantity": 1 },
+		],
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/trailmixvegetarian.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},	
+	
+	{
+	"op": "addeach",
+    "path": "/5/ingredients/3/inputs/-",
+	"value": [
+		{ "type": "item", "code": "dairyplus:driedcurds",  "quantity": 1 },
+		{ "type": "item", "code": "dairyplus:provaloneslice-*",  "quantity": 1 },
+		],
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/trailmixvegetarian.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},	
+	
+	{
+	"op": "addeach",
+    "path": "/6/ingredients/3/inputs/-",
+	"value": [
+		{ "type": "item", "code": "dairyplus:driedcurds",  "quantity": 1 },
+		{ "type": "item", "code": "dairyplus:provaloneslice-*",  "quantity": 1 },
+		],
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/trailmixvegetarian.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},	
+	
+	{
+	"op": "addeach",
+    "path": "/7/ingredients/3/inputs/-",
+	"value": [
+		{ "type": "item", "code": "dairyplus:driedcurds",  "quantity": 1 },
+		{ "type": "item", "code": "dairyplus:provaloneslice-*",  "quantity": 1 },
+		],
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/trailmixvegetarian.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	}
+]

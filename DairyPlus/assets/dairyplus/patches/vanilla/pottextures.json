@@ -48,11 +48,25 @@
     "side": "server",
     "file": "game:blocktypes/clay/fired/pot.json"
   },
-      {
+  {
     "op": "addmerge",
     "path": "/textures/saucecheese",
     "value": { "base": "dairyplus:liquid/saucecheese" },
     "side": "server",
     "file": "game:blocktypes/clay/fired/pot.json"
   },
+  {
+    "op": "addmerge",
+    "path": "/textures/whitecheese",
+    "value": { "base": "dairyplus:item/cheese/halloumifresh" },
+    "side": "server",
+    "file": "game:blocktypes/clay/fired/pot.json"
+  },
+  {
+    "op": "addmerge",
+    "path": "/textures/yellowcheese",
+    "value": { "base": "dairyplus:block/meal/yellowcheese" },
+    "side": "server",
+    "file": "game:blocktypes/clay/fired/pot.json"
+  }
 ]

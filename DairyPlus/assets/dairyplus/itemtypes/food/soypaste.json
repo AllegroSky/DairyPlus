@@ -1,20 +1,14 @@
 {
 	"code": "soypaste",
-	"creativeinventory": {
-		"general": [ "*" ],
-		"dairyplus": [ "*" ],
-		"items": [ "*" ]
-	},
-
+	"creativeinventory": { 
+		"general": [ "*" ], "dairyplus": [ "*" ], "items": [ "*" ]
+		},
 	"maxStackSize": 32,
 	"materialDensity": 900,
 
 	"drawtype": "json",
-	"shape" : 
-		{ "base": "game:item/resource/crushed/normal" },
-	"texture":
-		{ "base" : "dairyplus:item/soy/soypaste" },
-		
+	"shape" : { "base": "game:item/resource/crushed/normal" },
+	"texture": { "base" : "dairyplus:item/soy/soypaste" },
 		
 	"transitionableProps": [
 		{
@@ -28,7 +22,6 @@
 		}
 	],
 		
-		
 	"behaviors": [{
 		"name": "GroundStorable",
 		"properties": {
@@ -39,12 +32,7 @@
 			}
 		}
 	}],
-
-	"attributes": {
-		"displaycaseable": true,
-		"shelvable": true
-		},
-
+	
 	"guiTransform": {
 		"translation": { "x": 0, "y": 0, "z": -25 },
 		"rotation": { "x": 171, "y": 73, "z": -40 },
