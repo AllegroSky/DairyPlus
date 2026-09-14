@@ -92,29 +92,8 @@ namespace DairyPlus.GUI
         {
             BECheesePot beCh = capi.World.BlockAccessor.GetBlockEntity(BlockEntityPosition) as BECheesePot;
 
-            if (beCh.currentRecipe == null)
-            {
-                return Lang.Get("dairyplus:recipe-none");
-            }
-
-            var outputs = beCh.currentRecipe.Outputs;
-
-            if (outputs.Length == 1)
-            {
-                return Lang.Get(
-                    "dairyplus:recipe-oneoutput",
-                    outputs[0].ResolvedItemStack.GetName()
-                );
-            }
-
-            return Lang.Get(
-                "dairyplus:recipe-twooutput",
-                outputs[0].ResolvedItemStack.GetName(),
-                outputs[1].ResolvedItemStack.GetName()
-            );
+            return beCh?.CurrentRecipeText ?? Lang.Get("dairyplus:recipe-none");
         }
-
-
 
         public void Update(float processing, float maxProcessing, float potTemperature, float fuelBurnTime, float MaxFuelBurnTime)
         {
@@ -126,6 +105,7 @@ namespace DairyPlus.GUI
 
             if (!IsOpened()) return;
 
+            string recipeText = GetRecipeText();
             string tempText;
             tempText = $"{potTemperature:0}°C";
 
@@ -133,13 +113,18 @@ namespace DairyPlus.GUI
                 .GetDynamicText("temperature")
                 ?.SetNewText(tempText);
 
+            SingleComposer?
+                .GetDynamicText("recipeText")
+                ?.SetNewText(GetRecipeText());
+
             if (capi.ElapsedMilliseconds - lastRedrawMs > 500)
             {
                 {
                     if (SingleComposer != null)
                     {
+                        SingleComposer.GetDynamicText("recipeText").SetNewText(GetRecipeText());
                         SingleComposer.GetCustomDraw("progressBar").Redraw();
-                        SingleComposer?.GetCustomDraw("fuelBar").Redraw();
+                        SingleComposer.GetCustomDraw("fuelBar").Redraw();
                     }
 
                     lastRedrawMs = capi.ElapsedMilliseconds;

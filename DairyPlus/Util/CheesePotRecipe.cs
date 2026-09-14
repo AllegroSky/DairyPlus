@@ -94,31 +94,97 @@ namespace DairyPlus.Util
                 craftedStacks.Add(stack);
             }
 
-            int emptySlots = 0;
+            List<ItemStack?> simulatedSlots = outputSlot.Select(s => s.Itemstack?.Clone()).ToList();
 
-            foreach (var slot in outputSlot)
+            foreach (ItemStack stack in craftedStacks)
             {
-                if (slot.Empty) emptySlots++;
-            }
+                bool canPlace = false;
 
-            if (emptySlots < craftedStacks.Count)
-            {
-                return false; 
+                // try merge first
+                for (int i = 0; i < simulatedSlots.Count; i++)
+                {
+                    ItemStack existing = simulatedSlots[i];
+
+                    if (existing == null) continue;
+
+                    int mergeable = existing.Collectible.GetMergableQuantity(
+                        existing,
+                        stack,
+                        EnumMergePriority.AutoMerge
+                    );
+
+                    if (mergeable >= stack.StackSize)
+                    {
+                        existing.StackSize += stack.StackSize;
+                        canPlace = true;
+                        break;
+                    }
+                }
+
+                // then empty slot
+                if (!canPlace)
+                {
+                    for (int i = 0; i < simulatedSlots.Count; i++)
+                    {
+                        if (simulatedSlots[i] == null)
+                        {
+                            simulatedSlots[i] = stack.Clone();
+                            canPlace = true;
+                            break;
+                        }
+                    }
+                }
+
+                if (!canPlace)
+                {
+                    return false;
+                }
             }
 
             foreach (ItemStack stack in craftedStacks)
             {
+                bool placed = false;
+
+                // try merge
                 foreach (var slot in outputSlot)
                 {
-                    if (slot.Empty)
+                    if (slot.Empty) continue;
+
+                    int mergeable = slot.Itemstack.Collectible.GetMergableQuantity(
+                        slot.Itemstack,
+                        stack,
+                        EnumMergePriority.AutoMerge
+                    );
+
+                    if (mergeable >= stack.StackSize)
                     {
-                        slot.Itemstack = stack;
+                        slot.Itemstack.StackSize += stack.StackSize;
                         slot.MarkDirty();
+                        placed = true;
                         break;
                     }
                 }
-            }
 
+                // no merge
+                if (!placed)
+                {
+                    foreach (var slot in outputSlot)
+                    {
+                        if (slot.Empty)
+                        {
+                            slot.Itemstack = stack;
+                            slot.MarkDirty();
+                            placed = true;
+                            break;
+                        }
+                    }
+                }
+                if (!placed)
+                {
+                    api.Logger.Error("CheesePot output placement failed unexpectedly");
+                    return false;
+                }
+            }
 
             foreach ((ItemSlot slot, CheesePotIngredient ingredient) in matched)
             {

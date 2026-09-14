@@ -1,19 +1,18 @@
-﻿using Vintagestory.API.Client;
-using Vintagestory.API.Server;
-using Vintagestory.API.Config;
-using Vintagestory.API.Common;
+﻿using DairyPlus.BlockEntity;
 using DairyPlus.Blocks;
-using DairyPlus.BlockEntity;
 using DairyPlus.Items;
 using DairyPlus.Util;
+using Vintagestory.API.Client;
+using Vintagestory.API.Common;
+using Vintagestory.API.Config;
+using Vintagestory.API.Server;
+using HarmonyLib;
 
 namespace DairyPlus;
 
 public class DairyPlusModSystem : ModSystem
 {
-
-    // Called on server and client
-    // Useful for registering block/entity classes on both sides
+    
     public override void Start(ICoreAPI api)
     {
         api.RegisterItemClass(Mod.Info.ModID + ".skimcurd", typeof(ItemSkimCurd));
@@ -33,9 +32,16 @@ public class DairyPlusModSystem : ModSystem
         Mod.Logger.Notification("Hello from template mod server side: " + Lang.Get("dairyplus:hello"));
     }
 
+    private Harmony harmony;
+    private static bool patched;
     public override void StartClientSide(ICoreClientAPI api)
     {
-        Mod.Logger.Notification("Hello from template mod client side: " + Lang.Get("dairyplus:hello"));
+        if (patched) return;
+        patched = true;
+
+        harmony ??= new Harmony("dairyplus");
+        harmony.PatchAll();
+
     }
 
 }

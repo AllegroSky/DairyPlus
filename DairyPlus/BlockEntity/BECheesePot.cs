@@ -21,6 +21,7 @@ namespace DairyPlus.BlockEntity
         private float progress = 0f;
         private float maxProgress = 1f;
         public CheesePotRecipe currentRecipe;
+        public string CurrentRecipeText = "";
 
         public float prevTemperature = 20;
         public float potTemperature = 20;
@@ -117,16 +118,18 @@ namespace DairyPlus.BlockEntity
 
             progress = tree.GetFloat("progress");
             maxProgress = tree.GetFloat("maxProgress");
-            if (Api?.Side == EnumAppSide.Client && clientDialog != null)
-            {
-                clientDialog.Update(progress, maxProgress, potTemperature, fuelBurnTime, maxFuelBurnTime);
-            }
-
             potTemperature = tree.GetFloat("temperature", 20);
             maxTemperature = tree.GetInt("maxTemperature");
             fuelBurnTime = tree.GetFloat("fuelBurnTime");
             maxFuelBurnTime = tree.GetFloat("maxFuelBurnTime");
             CanIgniteFuel = tree.GetBool("canIgniteFuel");
+            CurrentRecipeText = tree.GetString("recipeText", Lang.Get("dairyplus:recipe-none")
+);
+
+            if (Api?.Side == EnumAppSide.Client && clientDialog != null)
+            {
+                clientDialog.Update(progress, maxProgress, potTemperature, fuelBurnTime, maxFuelBurnTime);
+            }
         }
         public override void ToTreeAttributes(ITreeAttribute tree)
         {
@@ -143,6 +146,8 @@ namespace DairyPlus.BlockEntity
             tree.SetFloat("fuelBurnTime", fuelBurnTime);
             tree.SetFloat("maxFuelBurnTime", maxFuelBurnTime);
             tree.SetBool("canIgniteFuel", CanIgniteFuel);
+
+            tree.SetString("recipeText", CurrentRecipeText);
         }
 
         public override void OnBlockRemoved()
@@ -368,6 +373,27 @@ namespace DairyPlus.BlockEntity
             if (currentRecipe != null)
             {
                 maxProgress = (float)currentRecipe.ProcessingTime;
+                var outputs = currentRecipe.Outputs;
+
+                if (outputs.Length == 1)
+                {
+                    CurrentRecipeText = Lang.Get(
+                        "dairyplus:recipe-oneoutput",
+                        outputs[0].ResolvedItemStack.GetName()
+                    );
+                }
+                else
+                {
+                    CurrentRecipeText = Lang.Get(
+                        "dairyplus:recipe-twooutput",
+                        outputs[0].ResolvedItemStack.GetName(),
+                        outputs[1].ResolvedItemStack.GetName()
+                    );
+                }
+            }
+            else
+            {
+                CurrentRecipeText = Lang.Get("dairyplus:recipe-none");
             }
         }
         private bool ValidateRecipe()
@@ -396,12 +422,15 @@ namespace DairyPlus.BlockEntity
             }
 
             if (progress < maxProgress) return;
-            currentRecipe.TryCraftNow(Api, currentRecipe.ProcessingTime, InputSlots, OutputSlots);
+            bool crafted = currentRecipe.TryCraftNow(Api, currentRecipe.ProcessingTime, InputSlots, OutputSlots);
 
             //cleanup
-            progress = 0;
-            currentRecipe = null;
-            MarkDirty(true);
+            if (crafted)
+            {
+                progress = 0;
+                currentRecipe = null;
+                MarkDirty(true);
+            }
         }
 
 

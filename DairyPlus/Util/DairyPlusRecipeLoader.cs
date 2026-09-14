@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using Vintagestory.API.Common;
 using Vintagestory.API.Config;
@@ -15,7 +16,40 @@ namespace DairyPlus.Util
         public List<CheesePotRecipe> CheesePotRecipes = new();
         public override double ExecuteOrder() => 1;
 
-        public override bool ShouldLoad(EnumAppSide forSide) => forSide == EnumAppSide.Server;
+        private ICoreAPI? api;
+
+        public List<CheesePotRecipe> GetRecipesForOutput(ItemStack stack)
+        {
+            return CheesePotRecipes.FindAll(recipe =>
+                recipe.Outputs != null &&
+                recipe.Outputs.Any(output =>
+                    output.ResolvedItemStack?.Equals(api.World, stack, GlobalConstants.IgnoredStackAttributes ) == true
+                )
+            );
+        }
+        public List<CheesePotRecipe> GetRecipesUsing(ItemStack stack)
+        {
+            return CheesePotRecipes.FindAll(recipe =>
+                recipe.Ingredients != null &&
+                recipe.Ingredients.Any(ingredient =>
+                    ingredient.SatisfiesAsIngredient(stack))
+            );
+        }
+
+        public override void Start(ICoreAPI api)
+        {
+            this.api = api;
+
+            CheesePotRecipes =
+                api.RegisterRecipeRegistry<
+                    RecipeRegistryGeneric<CheesePotRecipe>
+                >("cheesepotrecipes").Recipes;
+        }
+
+        public override bool ShouldLoad(EnumAppSide forSide)
+            {
+            return true;
+            }
 
         public override void AssetsLoaded(ICoreAPI api)
         {
