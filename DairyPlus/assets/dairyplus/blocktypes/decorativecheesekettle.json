@@ -18,10 +18,10 @@
 
 	"drawtype": "json",
 	"shapeByType": {
-		"*-north": { "base": "dairyplus:block/cheesekettle", "rotateY": 90 },
-		"*-east": { "base": "dairyplus:block/cheesekettle", "rotateY": 0 },
-		"*-south": { "base": "dairyplus:block/cheesekettle", "rotateY":270 },
-		"*-west": { "base": "dairyplus:block/cheesekettle", "rotateY": 180 },
+		"*-north": { "base": "dairyplus:block/cheesekettle/cheesekettle", "rotateY": 90 },
+		"*-east": { "base": "dairyplus:block/cheesekettle/cheesekettle", "rotateY": 0 },
+		"*-south": { "base": "dairyplus:block/cheesekettle/cheesekettle", "rotateY":270 },
+		"*-west": { "base": "dairyplus:block/cheesekettle/cheesekettle", "rotateY": 180 },
 		},
 	"texture": { "base": "dairyplus:block/other/cheesekettle" },
 	"sideopaque": { "all": "false" },

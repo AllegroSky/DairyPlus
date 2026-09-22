@@ -1,4 +1,5 @@
-﻿using DairyPlus.GUI;
+﻿using DairyPlus.Blocks;
+using DairyPlus.GUI;
 using DairyPlus.Inventory;
 using DairyPlus.Util;
 using System;
@@ -8,6 +9,7 @@ using Vintagestory.API.Client;
 using Vintagestory.API.Common;
 using Vintagestory.API.Config;
 using Vintagestory.API.Datastructures;
+using Vintagestory.API.MathTools;
 using Vintagestory.API.Server;
 using Vintagestory.GameContent;
 
@@ -23,6 +25,8 @@ namespace DairyPlus.BlockEntity
         public CheesePotRecipe currentRecipe;
         public string CurrentRecipeText = "";
 
+        public string syncedContentsState = "empty";
+
         public float prevTemperature = 20;
         public float potTemperature = 20;
 
@@ -32,7 +36,26 @@ namespace DairyPlus.BlockEntity
 
         public bool CanIgniteFuel;
         public bool IsBurning => fuelBurnTime > 0;
-
+        public string BurnState
+        {
+            get
+            {
+                if (IsBurning) return "lit";
+                if (FuelSlot.Empty) return "nofuel";
+                return "unlit";
+            }
+        }
+        public string ContentsState
+        {
+            get
+            {
+                if (currentRecipe != null && progress > 0) { return "boiling"; }
+                if (!OutputSlots[0].Empty || !OutputSlots[1].Empty) { return "finished"; }
+                if (currentRecipe != null) { return "filled"; }
+                return "empty";
+            }
+        }
+        
         public const float RecipeMinTemp = 60f;
         public const float MaxPotTemp = 130f;
 
@@ -123,8 +146,15 @@ namespace DairyPlus.BlockEntity
             fuelBurnTime = tree.GetFloat("fuelBurnTime");
             maxFuelBurnTime = tree.GetFloat("maxFuelBurnTime");
             CanIgniteFuel = tree.GetBool("canIgniteFuel");
-            CurrentRecipeText = tree.GetString("recipeText", Lang.Get("dairyplus:recipe-none")
-);
+            CurrentRecipeText = tree.GetString("recipeText", Lang.Get("dairyplus:recipe-none"));
+
+            string oldContentsState = syncedContentsState;
+            syncedContentsState = tree.GetString("contentsState", "empty");
+
+            if (Api?.Side == EnumAppSide.Client && oldContentsState != syncedContentsState)
+            {
+                Api.World.BlockAccessor.MarkBlockDirty(Pos);
+            }
 
             if (Api?.Side == EnumAppSide.Client && clientDialog != null)
             {
@@ -148,6 +178,7 @@ namespace DairyPlus.BlockEntity
             tree.SetBool("canIgniteFuel", CanIgniteFuel);
 
             tree.SetString("recipeText", CurrentRecipeText);
+            tree.SetString("contentsState", ContentsState);
         }
 
         public override void OnBlockRemoved()
@@ -318,6 +349,10 @@ namespace DairyPlus.BlockEntity
                 {
                     fuelBurnTime = 0;
                     maxFuelBurnTime = 0;
+
+                    if (!CanBurnFuel())
+                    { Api.World.BlockAccessor.RemoveBlockLight(BlockCheesePot.CheesePotLight, Pos); }
+
                 }
 
                 potTemperature =
@@ -464,6 +499,63 @@ namespace DairyPlus.BlockEntity
                 slot.Itemstack?.Collectible.OnLoadCollectibleMappings(worldForResolve, slot, oldBlockIdMapping, oldItemIdMapping, resolveImports);
             }
         }
+        public override bool OnTesselation(ITerrainMeshPool mesher, ITesselatorAPI tesselator)
+        {
+            // for fuel mesh
+            string burnState = BurnState;
 
+            MeshData meshdata = getOrCreateMesh(burnState, tesselator);
+
+            if (meshdata != null)
+            {
+                mesher.AddMeshData(meshdata);
+            }
+                // for fill mesh
+            string contentsState = syncedContentsState;
+
+            if (contentsState != "empty")
+            {
+                MeshData contentsMesh =
+                    getOrCreateContentsMesh(contentsState, tesselator);
+
+                if (contentsMesh != null)
+                {
+                    mesher.AddMeshData(contentsMesh);
+                }
+            }
+            return false;
+        }
+        private MeshData getOrCreateMesh(string burnState, ITesselatorAPI tesselator)
+        {
+            string shapePath = "dairyplus:shapes/block/cheesekettle/" + burnState + ".json";
+
+            Shape shape = Shape.TryGet(Api, shapePath);
+
+            if (shape == null)
+            {
+                return null;
+            }
+
+            ShapeTextureSource textureSource = new ShapeTextureSource((ICoreClientAPI)Api, shape, shapePath);
+
+            tesselator.TesselateShape( "dairyplus:cheesekettle", shape, out MeshData meshdata, textureSource );
+            return meshdata;
+        }
+        private MeshData getOrCreateContentsMesh(string contentsState, ITesselatorAPI tesselator)
+        { 
+            string shapePath = "dairyplus:shapes/block/cheesekettle/" + contentsState + ".json";
+
+            Shape shape = Shape.TryGet(Api, shapePath);
+
+            if (shape == null)
+            {
+                return null;
+            }
+
+            ShapeTextureSource textureSource = new ShapeTextureSource((ICoreClientAPI)Api, shape, shapePath);
+
+            tesselator.TesselateShape("dairyplus:cheesekettle-contents", shape, out MeshData meshdata, textureSource);
+            return meshdata;
+        }
     }   
 }

@@ -1,0 +1,23 @@
+{
+	"editor": {
+		"allAngles": false,
+		"entityTextureMode": false
+	},
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {
+	},
+	"textures": {
+		"fill": "dairyplus:liquid/soy"
+	},
+	"elements": [
+		{
+			"name": "fill",
+			"from": [ 2.6, 11.0, 2.7 ],
+			"to": [ 13.1, 11.0, 13.2 ],
+			"rotationOrigin": [ 2.6, 11.0, 2.7 ],
+			"faces": {
+				"up": { "texture": "#fill", "uv": [ 2.6667, 2.6667, 12.6667, 12.6667 ] }
+			}
+		}
+	]}
