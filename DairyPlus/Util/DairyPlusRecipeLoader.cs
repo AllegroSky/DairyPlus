@@ -32,7 +32,7 @@ namespace DairyPlus.Util
             return CheesePotRecipes.FindAll(recipe =>
                 recipe.Ingredients != null &&
                 recipe.Ingredients.Any(ingredient =>
-                    ingredient.SatisfiesAsIngredient(stack))
+                    ingredient.ResolvedItemStack?.Equals( api.World, stack, GlobalConstants.IgnoredStackAttributes ) == true )
             );
         }
 

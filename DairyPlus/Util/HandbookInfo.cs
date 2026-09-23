@@ -30,7 +30,10 @@ namespace DairyPlus.Util
                 {
                     if (output?.ResolvedItemStack == null) continue;
 
-                    outputStacks.Add(output.ResolvedItemStack);
+                    if (!outputStacks.Any(existing => existing.Equals( capi.World, output.ResolvedItemStack, GlobalConstants.IgnoredStackAttributes )))
+                    {
+                        outputStacks.Add(output.ResolvedItemStack);
+                    }
                 }
             }
 

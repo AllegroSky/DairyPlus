@@ -23,19 +23,11 @@ namespace DairyPlus.Util
 
             if (newComponents.Count == 0) return;
 
-            if (!components.Any(comp =>
-                (comp as RichTextComponent)?.DisplayText == Lang.Get("Ingredient for") + "\n"))
-            {
-                CollectibleBehaviorHandbookTextAndExtraInfo.AddHeading(components, capi, "Ingredient for", ref __result);
+             CollectibleBehaviorHandbookTextAndExtraInfo.AddHeading(components, capi, "dairyplus:cheesekettle-ingredientfor", ref __result);
 
                 components.Add(new ClearFloatTextComponent(capi, 2));
                 components.AddRange(newComponents);
                 components.Add(new ClearFloatTextComponent(capi, 3));
-            }
-            else
-            {
-                components.AddRange(newComponents);
-            }
         }
     }
     
