@@ -31,7 +31,6 @@
     "file": "expandedfoods:recipes/kneading/stuffedpepper.json",
 	"dependsOn": [{ "modid": "expandedfoods" }]
 	},
-	
 	{
 	"op": "addeach",
     "path": "/1/ingredients/2/inputs/-",
@@ -63,7 +62,6 @@
     "file": "expandedfoods:recipes/kneading/stuffedpepper.json",
 	"dependsOn": [{ "modid": "expandedfoods" }]
 	},
-	
 	{
 	"op": "addeach",
     "path": "/2/ingredients/2/inputs/-",
@@ -79,7 +77,6 @@
     "file": "expandedfoods:recipes/kneading/stuffedpepper.json",
 	"dependsOn": [{ "modid": "expandedfoods" }]
 	},
-	
 	{
 	"op": "addeach",
     "path": "/2/ingredients/3/inputs/-",
@@ -97,7 +94,6 @@
 	},
 			
 			//breaded
-			
 	{
 	"op": "addeach",
     "path": "/3/ingredients/1/inputs/-",
@@ -113,14 +109,10 @@
     "file": "expandedfoods:recipes/kneading/stuffedpepper.json",
 	"dependsOn": [{ "modid": "expandedfoods" }]
 	},
-	
 	{
-	"op": "addeach",
+	"op": "addmerge",
     "path": "/3/ingredients/2/inputs/-",
-	"value": [ 
-		{ "type": "item", "code": "dairyplus:ghee",  "quantity": 10 },
-		{ "type": "item", "code": "dairyplus:condensedmilk", "quantity": 10 }
-		],
+	"value": { "type": "item", "code": "dairyplus:whey",  "quantity": 10 },
 	"side": "server",
     "file": "expandedfoods:recipes/kneading/stuffedpepper.json",
 	"dependsOn": [{ "modid": "expandedfoods" }]
@@ -141,7 +133,6 @@
     "file": "expandedfoods:recipes/kneading/stuffedpepper.json",
 	"dependsOn": [{ "modid": "expandedfoods" }]
 	},
-	
 	{
 	"op": "addeach",
     "path": "/4/ingredients/2/inputs/-",
@@ -157,21 +148,16 @@
     "file": "expandedfoods:recipes/kneading/stuffedpepper.json",
 	"dependsOn": [{ "modid": "expandedfoods" }]
 	},
-	
 	{
-	"op": "addeach",
+	"op": "addmerge",
     "path": "/4/ingredients/3/inputs/-",
-	"value": [ 
-		{ "type": "item", "code": "dairyplus:ghee",  "quantity": 10 },
-		{ "type": "item", "code": "dairyplus:condensedmilk", "quantity": 10 }
-		],
+	"value": { "type": "item", "code": "dairyplus:whey",  "quantity": 10 },
 	"side": "server",
     "file": "expandedfoods:recipes/kneading/stuffedpepper.json",
 	"dependsOn": [{ "modid": "expandedfoods" }]
 	},
 	
 			//salt
-			
 	{
 	"op": "addeach",
     "path": "/5/ingredients/1/inputs/-",
@@ -203,7 +189,6 @@
     "file": "expandedfoods:recipes/kneading/stuffedpepper.json",
 	"dependsOn": [{ "modid": "expandedfoods" }]
 	},
-	
 	{
 	"op": "addeach",
     "path": "/6/ingredients/2/inputs/-",
@@ -235,7 +220,6 @@
     "file": "expandedfoods:recipes/kneading/stuffedpepper.json",
 	"dependsOn": [{ "modid": "expandedfoods" }]
 	},
-	
 	{
 	"op": "addeach",
     "path": "/7/ingredients/2/inputs/-",
@@ -251,7 +235,6 @@
     "file": "expandedfoods:recipes/kneading/stuffedpepper.json",
 	"dependsOn": [{ "modid": "expandedfoods" }]
 	},
-	
 	{
 	"op": "addeach",
     "path": "/7/ingredients/3/inputs/-",
@@ -284,16 +267,29 @@
     "file": "expandedfoods:recipes/kneading/stuffedpepper.json",
 	"dependsOn": [{ "modid": "expandedfoods" }]
 	},
-	
 	{
-	"op": "addeach",
+	"op": "addmerge",
     "path": "/8/ingredients/2/inputs/-",
-	"value": [ 
-		{ "type": "item", "code": "dairyplus:ghee",  "quantity": 10 },
-		{ "type": "item", "code": "dairyplus:condensedmilk", "quantity": 10 }
-		],
+	"value": { "type": "item", "code": "dairyplus:whey",  "quantity": 10 },
 	"side": "server",
     "file": "expandedfoods:recipes/kneading/stuffedpepper.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+		//oiled
+	{
+	"op": "addmerge",
+    "path": "/0/ingredients/0/inputs/-",
+	"value": { "type": "item", "code": "dairyplus:ghee", "quantity": 10 },
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/stuffedpepperoiled",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	{
+	"op": "addmerge",
+    "path": "/1/ingredients/0/inputs/-",
+	"value": { "type": "item", "code": "dairyplus:ghee", "quantity": 10 },
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/stuffedpepperoiled.json",
 	"dependsOn": [{ "modid": "expandedfoods" }]
 	}
 ]

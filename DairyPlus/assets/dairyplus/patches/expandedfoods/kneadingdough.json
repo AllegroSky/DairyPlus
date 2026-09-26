@@ -93,6 +93,19 @@
 	
 	{
 	"op": "addeach",
+    "path": "/7/ingredients/0/inputs/-",
+	"value": [ 
+		{ "type": "item", "code": "dairyplus:whey",  "quantity": 10 },
+		{ "type": "item", "code": "dairyplus:soymilk", "quantity": 10 },
+		{ "type": "item", "code": "dairyplus:skimmilk", "quantity": 10 }
+		],
+	"side": "server",
+    "file": "expandedfoods:recipes/kneading/dough.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addeach",
     "path": "/8/ingredients/0/inputs/-",
 	"value": [ 
 		{ "type": "item", "code": "dairyplus:whey",  "quantity": 10 },
@@ -351,8 +364,7 @@
 	"dependsOn": [{ "modid": "expandedfoods" }]
 	},
 	
-			//oils
-			
+			//oils	
 	{
 	"op": "addmerge",
     "path": "/14/ingredients/1/inputs/-",

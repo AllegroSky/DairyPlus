@@ -3,8 +3,6 @@
 	"op": "addmerge",
     "path": "/attributes/expandedNutritionProps",
 	"value": {
-		"dairyplus:condensedmilk" : { "saturation": 5, "foodcategory": "Dairy" },
-		"dairyplus:cream" : { "saturation": 2.5, "foodcategory": "Dairy" },
 		"dairyplus:skimmilk" : { "saturation": 1, "foodcategory": "Dairy" },
 		"dairyplus:soymilk" : { "saturation": 1.5, "foodcategory": "Dairy" },
 		"dairyplus:whey" : { "saturation": 0.5, "foodcategory": "Dairy" },
@@ -19,8 +17,6 @@
 	"op": "addmerge",
     "path": "/attributes/expandedNutritionPropsByType",
 	"value": {
-		"dairyplus:condensedmilk" : { "saturation": 5, "foodcategory": "Dairy" },
-		"dairyplus:cream" : { "saturation": 2.5, "foodcategory": "Dairy" },
 		"dairyplus:skimmilk" : { "saturation": 1, "foodcategory": "Dairy" },
 		"dairyplus:soymilk" : { "saturation": 1.5, "foodcategory": "Dairy" },
 		"dairyplus:whey" : { "saturation": 0.5, "foodcategory": "Dairy" },
@@ -42,7 +38,11 @@
 		{ "dairyplus:provaloneslice-fresh" : { "saturation": 100, "foodcategory": "Dairy" }},
 		{ "dairyplus:provaloneslice-aged" : { "saturation": 115, "foodcategory": "Dairy" }},
 		{ "dairyplus:ricotta" : { "saturation": 250, "foodcategory": "Dairy" }},
-		{ "dairyplus:tofu" : { "saturation": 230, "foodcategory": "Dairy" }}
+		{ "dairyplus:tofu" : { "saturation": 230, "foodcategory": "Dairy" }},
+		{ "dairyplus:skimmilk" : { "saturation": 1, "foodcategory": "Dairy" }},
+		{ "dairyplus:soymilk" : { "saturation": 1.5, "foodcategory": "Dairy" }},
+		{ "dairyplus:whey" : { "saturation": 0.5, "foodcategory": "Dairy" }},
+		{ "dairyplus:ghee" : { "saturation": 5, "foodcategory": "Dairy" }},
 		],
 	"side": "server",
     "file": "expandedfoods:itemtypes/food/mixing/dumpling.json",
@@ -117,6 +117,7 @@
 		{ "dairyplus:butter-salted" : { "saturation": 300, "foodcategory": "Dairy" }},
 		{ "dairyplus:butter-veggie" : { "saturation": 250, "foodcategory": "Dairy" }},
 		{ "dairyplus:butter-saltedveggie" : { "saturation": 250, "foodcategory": "Dairy" }},
+		{ "dairyplus:ghee" : { "saturation": 5, "foodcategory": "Dairy" }},
 		],
 	"side": "server",
     "file": "expandedfoods:itemtypes/food/mixing/pemmican.json",
@@ -131,6 +132,7 @@
 		{ "dairyplus:butter-salted" : { "saturation": 300, "foodcategory": "Dairy" }},
 		{ "dairyplus:butter-veggie" : { "saturation": 250, "foodcategory": "Dairy" }},
 		{ "dairyplus:butter-saltedveggie" : { "saturation": 250, "foodcategory": "Dairy" }},
+		{ "dairyplus:ghee" : { "saturation": 5, "foodcategory": "Dairy" }},
 		],
 	"side": "server",
     "file": "expandedfoods:itemtypes/food/mixing/pemmicanfish.json",
@@ -156,6 +158,8 @@
 		{ "dairyplus:mozzaball" : { "saturation": 150, "foodcategory": "Dairy" }},
 		{ "dairyplus:provaloneslice-fresh" : { "saturation": 100, "foodcategory": "Dairy" }},
 		{ "dairyplus:provaloneslice-aged" : { "saturation": 115, "foodcategory": "Dairy" }},
+		{ "dairyplus:ricotta" : { "saturation": 250, "foodcategory": "Dairy" }},
+		{ "dairyplus:tofu" : { "saturation": 230, "foodcategory": "Dairy" }},
 		],
 	"side": "server",
     "file": "expandedfoods:itemtypes/food/mixing/sausage.json",
@@ -172,6 +176,8 @@
 		{ "dairyplus:mozzaball" : { "saturation": 150, "foodcategory": "Dairy" }},
 		{ "dairyplus:provaloneslice-fresh" : { "saturation": 100, "foodcategory": "Dairy" }},
 		{ "dairyplus:provaloneslice-aged" : { "saturation": 115, "foodcategory": "Dairy" }},
+		{ "dairyplus:ricotta" : { "saturation": 250, "foodcategory": "Dairy" }},
+		{ "dairyplus:tofu" : { "saturation": 230, "foodcategory": "Dairy" }},
 		],
 	"side": "server",
     "file": "expandedfoods:itemtypes/food/mixing/sausagefish.json",
@@ -190,8 +196,8 @@
 		{ "dairyplus:provaloneslice-aged" : { "saturation": 115, "foodcategory": "Dairy" }},
 		{ "dairyplus:ricotta" : { "saturation": 250, "foodcategory": "Dairy" }},
 		{ "dairyplus:tofu" : { "saturation": 230, "foodcategory": "Dairy" }},
-		{ "dairyplus:condensedmilk" : { "saturation": 5, "foodcategory": "Dairy" }},
-		{ "dairyplus:ghee" : { "saturation": 230, "foodcategory": "Dairy" }},
+		{ "dairyplus:ghee" : { "saturation": 5, "foodcategory": "Dairy" }},
+		{ "dairyplus:whey" : { "saturation": 0.5, "foodcategory": "Dairy" }},
 		],
 	"side": "server",
     "file": "expandedfoods:itemtypes/food/mixing/stuffedpepper.json",
@@ -221,6 +227,15 @@
 		],
 	"side": "server",
     "file": "expandedfoods:itemtypes/food/mixing/trailmixvegetarian.json",
+	"dependsOn": [{ "modid": "expandedfoods" }]
+	},
+	
+	{
+	"op": "addmerge",
+    "path": "/attributes/expandedNutritionPropsByType/*",
+	"value": [ {"dairyplus:condensedmilk" : { "saturation": 5, "foodcategory": "Dairy" }} ],
+	"side": "server",
+    "file": "expandedfoods:itemtypes/food/mixing/fruitbar.json",
 	"dependsOn": [{ "modid": "expandedfoods" }]
 	}
 ]

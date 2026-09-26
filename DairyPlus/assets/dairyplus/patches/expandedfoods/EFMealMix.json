@@ -11,7 +11,7 @@
 		],
 	"side": "server",
     "file": "efmealsmodule:recipes/mixing/pastacold.json",
-	"dependsOn": [{ "modid": "expandedfoods" }]
+	"dependsOn": [{ "modid": "efmealsmodule" }]
 	},
 	
 	{
@@ -26,7 +26,7 @@
 		],
 	"side": "server",
     "file": "efmealsmodule:recipes/mixing/pastacold.json",
-	"dependsOn": [{ "modid": "expandedfoods" }]
+	"dependsOn": [{ "modid": "efmealsmodule" }]
 	},
 	
 	{
@@ -35,7 +35,7 @@
 	"value": { "type": "item", "code": "dairyplus:ghee", "shapeElement": "bowl/topping/*", "textureMapping": ["topping", "foodoil"] },
 	"side": "server",
     "file": "efmealsmodule:recipes/mixing/pastacold.json",
-	"dependsOn": [{ "modid": "expandedfoods" }]
+	"dependsOn": [{ "modid": "efmealsmodule" }]
 	},
 	
 	{
@@ -44,7 +44,7 @@
 	"value": { "type": "item", "code": "dairyplus:tofu", "shapeElement": "bowl/meatnugget 1/*", "textureMapping": ["meatnugget", "poultry-raw"]  },
 	"side": "server",
     "file": "efmealsmodule:recipes/mixing/salad.json",
-	"dependsOn": [{ "modid": "expandedfoods" }]
+	"dependsOn": [{ "modid": "efmealsmodule" }]
 	},
 	
 	{
@@ -57,7 +57,7 @@
 		],
 	"side": "server",
     "file": "efmealsmodule:recipes/mixing/salad.json",
-	"dependsOn": [{ "modid": "expandedfoods" }]
+	"dependsOn": [{ "modid": "efmealsmodule" }]
 	},
 	
 	{
@@ -70,7 +70,7 @@
 		],
 	"side": "server",
     "file": "efmealsmodule:recipes/mixing/salad.json",
-	"dependsOn": [{ "modid": "expandedfoods" }]
+	"dependsOn": [{ "modid": "efmealsmodule" }]
 	},
 	
 	{
@@ -83,7 +83,7 @@
 		],
 	"side": "server",
     "file": "efmealsmodule:recipes/mixing/salad.json",
-	"dependsOn": [{ "modid": "expandedfoods" }]
+	"dependsOn": [{ "modid": "efmealsmodule" }]
 	},
 
 	{
@@ -92,7 +92,7 @@
 	"value": { "type": "item", "code": "dairyplus:brunost",  "shapeElement": "bowl/topping/*", "textureMapping": ["topping", "maplesyrup"] },
 	"side": "server",
     "file": "efmealsmodule:recipes/mixing/yogurtmeal.json",
-	"dependsOn": [{ "modid": "expandedfoods" }]
+	"dependsOn": [{ "modid": "efmealsmodule" }]
 	},
 	
 ]
