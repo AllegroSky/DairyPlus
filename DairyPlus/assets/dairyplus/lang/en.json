@@ -132,8 +132,6 @@
     "itemdesc-soypaste": "A wet paste from grinding. Needs to be heated before it's safe to eat.",
 	
 	"itemdesc-ghee": "Known as Ghee, has a rich nutty flavour.",
-	
-	
 
     //block desc.
     "blockdesc-plungerchurn": "Used to work cream into butter with a little bit of elbow grease.",
@@ -146,6 +144,7 @@
     "item-handbooktext-plungerchurn": "Place cream in the top slot and interact with the handle to start churning.",
 	
 	"dairyplus:cheesekettle-craftedby": "Created in a Cheese Kettle",
+	"dairyplus:cheesekettle-ingredientfor": "Cheese Kettle ingredient for",
     
     //Meal ingredients liquid
     "dairyplus:recipeingredient-item-condensedmilk-topping": "condensed milk",
@@ -239,4 +238,44 @@
 	"expandedfoods:recipeingredient-item-fruitsyrupportion-topping": "Syrup",
 	"expandedfoods:recipeingredient-item-treesyrupportion-topping": "Syrup",
 
+	"game:recipeingredient-item-butter-salted": "butter",
+    "recipeingredient-item-butter-salted": "butter",
+	"game:recipeingredient-item-butter-unsalted": "butter",
+    "recipeingredient-item-butter-unsalted": "butter",
+	"game:recipeingredient-item-butter-veggie": "soy butter",
+    "recipeingredient-item-butter-veggie": "soy butter",
+	"game:recipeingredient-item-butter-saltedveggie": "soy butter",
+    "recipeingredient-item-butter-saltedveggie": "soy butter",
+	
+	"game:recipeingredient-item-curd-whole": "cheese curds",
+    "recipeingredient-item-curd-whole": "cheese curds",
+	"game:recipeingredient-item-curd-whole": "cheese curds",
+    "recipeingredient-item-curd-whole": "cheese curds",
+	"game:recipeingredient-item-feta": "feta",
+    "recipeingredient-item-feta": "feta",
+	"game:recipeingredient-item-mozzaball": "mozzarella",
+    "recipeingredient-item-mozzaball": "mozzarella",
+	"game:recipeingredient-item-provaloneslice-fresh": "provolone",
+    "recipeingredient-item-provaloneslice-fresh": "provolone",
+	"game:recipeingredient-item-provaloneslice-aged": "aged provolone",
+    "recipeingredient-item-provaloneslice-aged": "aged provolone",
+	"game:recipeingredient-item-ricotta": "ricotta",
+    "recipeingredient-item-ricotta": "ricotta",
+	"game:recipeingredient-item-tofu": "tofu",
+    "recipeingredient-item-tofu": "tofu",
+	"game:recipeingredient-item-driedcurds": "dried curds",
+    "recipeingredient-item-driedcurds": "dried curds",
+
+	"game:recipeingredient-item-ghee": "clarified butter",
+    "recipeingredient-item-ghee": "clarified butter",
+	"game:recipeingredient-item-whey": "whey",
+    "recipeingredient-item-whey": "whey",
+	"game:recipeingredient-item-soymilk": "soymilk",
+    "recipeingredient-item-soymilk": "soymilk",
+	"game:recipeingredient-item-skimmilk": "skimmilk",
+    "recipeingredient-item-skimmilk": "skimmilk",
+	"game:recipeingredient-item-cream": "cream",
+    "recipeingredient-item-cream": "cream",
+	"game:recipeingredient-item-condensedmilk": "condensedmilk",
+    "recipeingredient-item-condensedmilk": "condensedmilk",
 }

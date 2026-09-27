@@ -15,7 +15,7 @@
 
 	{
 	"op": "addmerge",
-    "path": "/attributes/expandedNutritionPropsByType",
+    "path": "/attributes/expandedNutritionPropsByType/*-dough",
 	"value": {
 		"dairyplus:skimmilk" : { "saturation": 1, "foodcategory": "Dairy" },
 		"dairyplus:soymilk" : { "saturation": 1.5, "foodcategory": "Dairy" },
@@ -39,10 +39,6 @@
 		{ "dairyplus:provaloneslice-aged" : { "saturation": 115, "foodcategory": "Dairy" }},
 		{ "dairyplus:ricotta" : { "saturation": 250, "foodcategory": "Dairy" }},
 		{ "dairyplus:tofu" : { "saturation": 230, "foodcategory": "Dairy" }},
-		{ "dairyplus:skimmilk" : { "saturation": 1, "foodcategory": "Dairy" }},
-		{ "dairyplus:soymilk" : { "saturation": 1.5, "foodcategory": "Dairy" }},
-		{ "dairyplus:whey" : { "saturation": 0.5, "foodcategory": "Dairy" }},
-		{ "dairyplus:ghee" : { "saturation": 5, "foodcategory": "Dairy" }},
 		],
 	"side": "server",
     "file": "expandedfoods:itemtypes/food/mixing/dumpling.json",
