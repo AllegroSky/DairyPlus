@@ -1,0 +1,234 @@
+{
+    // block names
+    "game:tabname-dairyplus": "Dairy Plus",
+
+    "dairyplus:block-barrelchurn": "Baratte à beurre mécanique",
+    "dairyplus:block-plungerchurn": "Baratte à beurre",
+    "dairyplus:block-creamscoop": "Écrémoir",
+    "dairyplus:block-cheesekettle-east": "Chaudière à fromage",
+
+  	"dairyplus:block-decorativecheesekettle-east": "Chaudière à fromage décorative",
+  	"dairyplus:block-butterdish-plain-north": "Beurrier en cire",
+  	"dairyplus:block-butterdish-glass-north": "Beurrier en cire (couvert)",
+
+  	// item names
+    "dairyplus:item-butter-unsalted": "Beurre doux",
+    "dairyplus:item-butter-salted": "Beurre salé",
+    "dairyplus:item-butter-twicesalted": "Beurre très salé",
+    "dairyplus:item-butter-veggie": "Beurre végétal",
+    "dairyplus:item-butter-saltedveggie": "Beurre végétal salé",
+
+    "dairyplus:item-soybeans-shelled": "Graines de soja décortiquées",
+    "dairyplus:item-soybeans-soaked": "Graines de soja trempées",
+    "dairyplus:item-soypaste": "Pâte de soja",
+    "dairyplus:item-plaincustard": "Crème pâtissière nature",
+    "dairyplus:item-tofu": "Tofu",
+	  "dairyplus:item-curd-whole": "Caillé de lait entier",
+	  "dairyplus:item-curd-skim": "Caillé de lait écrémé",
+	  "dairyplus:item-driedcurds": "Caillé séché",
+
+  	"dairyplus:item-halloumi-uncooked": "Halloumi (frais)",
+  	"dairyplus:item-halloumi-partcooked": "Halloumi (légèrement grillé)",
+	  "dairyplus:item-halloumi-cooked": "Halloumi (grillé)",
+	  "dairyplus:item-halloumi-burnt": "Halloumi (brûlé)",
+
+  	"dairyplus:item-halloumiskewer-uncooked": "Halloumi (frais)",
+  	"dairyplus:item-halloumiskewer-partcooked": "Halloumi (légèrement grillé)",
+  	"dairyplus:item-halloumiskewer-cooked": "Halloumi (grillé)",
+  	"dairyplus:item-halloumiskewer-burnt": "Halloumi (brûlé)",
+
+	  "dairyplus:item-mozzaball": "Mozzarella",
+	  "dairyplus:item-provalone-fresh": "Provolone",
+	  "dairyplus:item-provalone-aged": "Provolone affiné",
+	  "dairyplus:item-provaloneslice-fresh": "Tranche de provolone",
+	  "dairyplus:item-provaloneslice-aged": "Tranche de provolone affiné",
+	  "dairyplus:item-feta": "Feta",
+	  "dairyplus:item-brunost": "Petit-lait caramélisé",
+	  "dairyplus:item-ricotta": "Ricotta",
+
+
+	  //Pie
+	  "pie-single-dairyplus:tofu-raw": "Tourte au tofu (crue)",
+    "pie-single-dairyplus:tofu-partbaked": "Tourte au tofu (partiellement cuite)",
+    "pie-single-dairyplus:tofu-perfect": "Tourte au tofu",
+    "pie-single-dairyplus:tofu-charred": "Tourte au tofu (brûlée)",
+
+	  "pie-single-dairyplus:mozzaball-raw": "Tourte au fromage (crue)",
+    "pie-single-dairyplus:mozzaball-partbaked": "Tourte au fromage (partiellement cuite)",
+    "pie-single-dairyplus:mozzaball-perfect": "Tourte au fromage",
+    "pie-single-dairyplus:mozzaball-charred": "Tourte au fromage (brûlée)",
+
+	  "pie-single-dairyplus:feta-raw": "Tourte au fromage (crue)",
+    "pie-single-dairyplus:feta-partbaked": "Tourte au fromage (partiellement cuite)",
+    "pie-single-dairyplus:feta-perfect": "Tourte au fromage",
+    "pie-single-dairyplus:feta-charred": "Tourte au fromage (brûlée)",
+
+	  "pie-single-dairyplus:curd-whole-raw": "Tourte au fromage (crue)",
+    "pie-single-dairyplus:curd-whole-partbaked": "Tourte au fromage (partiellement cuite)",
+    "pie-single-dairyplus:curd-whole-perfect": "Tourte au fromage",
+    "pie-single-dairyplus:curd-whole-charred": "Tourte au fromage (brûlée)",
+
+	  "pie-single-dairyplus:curd-skim-raw": "Tourte au fromage (crue)",
+    "pie-single-dairyplus:curd-skim-partbaked": "Tourte au fromage (partiellement cuite)",
+    "pie-single-dairyplus:curd-skim-perfect": "Tourte au fromage",
+    "pie-single-dairyplus:curd-skim-charred": "Tourte au fromage (brûlée)",
+	  "pie-single-dairyplus:provaloneslice-fresh-raw": "Tourte au fromage (crue)",
+    "pie-single-dairyplus:provaloneslice-fresh-partbaked": "Tourte au fromage (partiellement cuite)",
+    "pie-single-dairyplus:provaloneslice-fresh-perfect": "Tourte au fromage",
+    "pie-single-dairyplus:provaloneslice-fresh-charred": "Tourte au fromage (brûlée)",
+
+	  "pie-single-dairyplus:provaloneslice-aged-raw": "Tourte au fromage (crue)",
+    "pie-single-dairyplus:provaloneslice-aged-partbaked": "Tourte au fromage (partiellement cuite)",
+    "pie-single-dairyplus:provaloneslice-aged-perfect": "Tourte au fromage",
+    "pie-single-dairyplus:provaloneslice-aged-charred": "Tourte au fromage (brûlée)",
+
+     // liquid names
+    "dairyplus:liquid-cream": "Crème",
+    "dairyplus:liquid-skimmilk": "Lait écrémé",
+    "dairyplus:liquid-condensedmilk": "Lait concentré",
+    "dairyplus:liquid-soymilk": "Lait de soja",
+	  "dairyplus:liquid-separatingmilk": "Lait en cours d'écrémage",
+	  "dairyplus:liquid-sauce-plain": "Sauce crémeuse",
+	  "dairyplus:liquid-sauce-cheese": "Sauce au fromage",
+	  "dairyplus:liquid-fruitvinegar": "Vinaigre de fruits",
+	  "dairyplus:liquid-whey": "Petit-lait",
+	  "dairyplus:liquid-ghee": "Beurre clarifié",
+    "dairyplus:incontainer-item-cream": "Crème",
+    "dairyplus:incontainer-item-skimmilk": "Lait écrémé",
+    "dairyplus:incontainer-item-condensedmilk": "Lait concentré",
+    "dairyplus:incontainer-item-soymilk": "Lait de soja",
+	  "dairyplus:incontainer-item-separatingmilk": "Lait en cours d'écrémage",
+	  "dairyplus:incontainer-item-sauce-plain": "Sauce crémeuse",
+	  "dairyplus:incontainer-item-sauce-cheese": "Sauce au fromage",
+	  "dairyplus:incontainer-item-fruitvinegar": "Vinaigre de fruits",
+	  "dairyplus:incontainer-item-whey": "Petit-lait",
+	  "dairyplus:incontainer-item-ghee": "Beurre clarifié",
+    "dairyplus:item-cream": "Crème",
+    "dairyplus:item-skimmilk": "Lait écrémé",
+    "dairyplus:item-condensedmilk": "Lait concentré",
+    "dairyplus:item-soymilk": "Lait de soja",
+	  "dairyplus:item-separatingmilk": "Lait en cours d'écrémage",
+	  "dairyplus:item-sauce-plain": "Sauce crémeuse",
+	  "dairyplus:item-sauce-cheese": "Sauce au fromage",
+	  "dairyplus:item-fruitvinegar": "Vinaigre de fruits",
+	  "dairyplus:item-whey": "Petit-lait",
+	  "dairyplus:item-ghee": "Beurre clarifié",
+
+     //item desc.
+    "itemdesc-butter-unsalted": "Tout juste sorti de la baratte.",
+    "itemdesc-butter-salted": "Légèrement salé pour sa conservation et son goût.",
+    "itemdesc-butter-twicesalted": "Trop salé pour sa conservation. Doit être lavé avant de pouvoir être consommé à nouveau.",
+    "itemdesc-butter-veggie": "Une alternative végétale pour cuisiner.",
+    "itemdesc-butter-saltedveggie": "Légèrement salé pour sa conservation et son goût.",
+    "itemdesc-soybeans-shelled": "Retirées de leurs gousses.",
+    "itemdesc-soybeans-soaked": "Trempées et prêtes à être transformées.",
+    "itemdesc-soypaste": "Une pâte obtenue par broyage. Doit être chauffée avant de pouvoir être consommée sans danger.",
+
+	  "itemdesc-ghee": "Aussi appelé ghee, ce beurre clarifié possède une riche saveur de noisette.",
+
+    //block desc.
+    "blockdesc-plungerchurn": "Permet de transformer la crème en beurre à la force des bras.",
+    "blockdesc-barrelchurn": "Une baratte plus grande, conçue pour contenir davantage de crème et fonctionner mécaniquement.",
+    "blockdesc-creamscoop": "Un outil simple permettant d'écrémer le lait.",
+   	"blockdesc-butterdish-*": "Une reproduction en cire du beurre qui ne pourrira pas. Purement décorative.",
+
+    //handbook enteries
+    "item-handbooktitle-plungerchurn": "Utilisation",
+    "item-handbooktext-plungerchurn": "Placez de la crème dans l'emplacement supérieur et actionnez la poignée pour commencer le barattage.",
+
+	  "dairyplus:cheesekettle-craftedby": "Fabriqué dans une chaudière à fromage",
+
+    //Meal ingredients liquid
+    "dairyplus:recipeingredient-item-condensedmilk-topping": "lait concentré",
+	  "dairyplus:recipeingredient-item-cream-topping": "crème",
+	  "dairyplus:recipeingredient-item-soymilk-topping": "lait de soja",
+	  "dairyplus:recipeingredient-item-sauce-cheese-topping": "sauce au fromage",
+	  "dairyplus:recipeingredient-item-sauce-plain-topping": "sauce crémeuse",
+	  "dairyplus:recipeingredient-item-skimmilk-topping": "lait écrémé",
+	  "dairyplus:recipeingredient-item-whey-topping": "petit-lait",
+	  "game:recipeingredient-item-milkportion-topping": "lait",
+	  "dairyplus:recipeingredient-item-ghee-topping": "beurre clarifié",
+
+	  "dairyplus:recipeingredient-item-condensedmilk-insturmentalcase": "lait concentré",
+	  "dairyplus:recipeingredient-item-cream-insturmentalcase": "crème",
+	  "dairyplus:recipeingredient-item-soymilk-insturmentalcase": "lait de soja",
+	  "dairyplus:recipeingredient-item-sauce-cheese-insturmentalcase": "sauce au fromage",
+	  "dairyplus:recipeingredient-item-sauce-plain-insturmentalcase": "sauce crémeuse",
+	  "dairyplus:recipeingredient-item-skimmilk-insturmentalcase": "lait écrémé",
+	  "dairyplus:recipeingredient-item-whey-insturmentalcase": "petit-lait",
+	  "game:recipeingredient-item-milkportion-insturmentalcase": "lait",
+	  "dairyplus:recipeingredient-item-ghee-insturmentalcase": "beurre clarifié",
+
+	  "game:meal-ingredient-soup-secondary-whey": "petit-lait",
+
+	  //Meal ingredients solid
+	  "dairyplus:recipeingredient-item-soybeans-insturmentalcase": "graines de soja",
+	  "dairyplus:recipeingredient-item-butter-insturmentalcase": "beurre",
+	  "dairyplus:recipeingredient-item-curd-insturmentalcase": "caillé de fromage",
+	  "dairyplus:recipeingredient-item-driedcurds-insturmentalcase": "caillé de fromage",
+	  "dairyplus:recipeingredient-item-tofu-insturmentalcase": "tofu",
+	  "dairyplus:recipeingredient-item-provaloneslice-insturmentalcase": "provolone",
+	  "dairyplus:recipeingredient-item-mozzaball-insturmentalcase": "mozzarella",
+	  "dairyplus:recipeingredient-item-feta-insturmentalcase": "feta",
+	  "dairyplus:recipeingredient-item-ricotta-insturmentalcase": "ricotta",
+	  "dairyplus:recipeingredient-item-brunost-insturmentalcase": "petit-lait caramélisé",
+	  "dairyplus:recipeingredient-item-halloumi-insturmentalcase": "halloumi",
+
+	  "game:meal-ingredient-soup-primary-soybeans": "soja",
+	  "game:meal-ingredient-soup-primary-feta": "feta",
+	  "game:meal-ingredient-soup-primary-provalone": "provolone",
+	  "game:meal-ingredient-soup-primary-ricotta": "ricotta",
+	  "game:meal-ingredient-soup-primary-curd": "caillé de fromage",
+	  "game:meal-ingredient-soup-primary-mozzaball": "mozzarella",
+	  "game:meal-ingredient-soup-primary-tofu": "tofu",
+	  "game:meal-ingredient-soup-primary-cheese": "fromage",
+	  "game:meal-ingredient-soup-primary-butter": "beurre",
+	  "game:meal-ingredient-soup-primary-brunost": "petit-lait caramélisé",
+
+	  "game:ingredient-stew-primary-soybeans": "soja",
+	  "game:meal-ingredient-stew-primary-soybeans": "soja",
+	  "game:-ingredient-stew-primary-curd": "caillé de fromage",
+	  "game:meal-ingredient-stew-primary-curd": "caillé de fromage",
+	  "game:-ingredient-stew-primary-brunost": "petit-lait caramélisé",
+	  "game:meal-ingredient-stew-primary-brunost": "petit-lait caramélisé",
+
+	  "game:ingredient-stew-secondary-soybeans": "graines de soja",
+	  "game:meal-ingredient-stew-secondary-soybeans": "graines de soja",
+	  "game:ingredient-stew-secondary-curd": "caillé de fromage",
+	  "game:meal-ingredient-stew-secondary-curd": "caillé de fromage",
+	  "game:ingredient-stew-secondary-tofu": "tofu",
+	  "game:meal-ingredient-stew-secondary-tofu": "tofu",
+
+	  //Meals
+	  "game:meal-normal-custard": "crème pâtissière sucrée {1}",
+	  "game:mealrecipe-name-custard": "Crème pâtissière sucrée",
+	  "game:mealrecipe-name-custard-in-container": "crème pâtissière sucrée",
+
+	  "dairyplus:recipe-none": "Aucune recette correspondante.",
+	  "dairyplus:recipe-oneoutput": "Produira {0}.",
+	  "dairyplus:recipe-twooutput": "Produira {0} et {1}.",
+
+	  "game:handbook-mealingredient-custard": "crème pâtissière",
+	  "game:handbook-mealingredient-other": "quartiers à tremper",
+	  "game:handbook-mealingredient-smallbits": "petites garnitures",
+	  "game:handbook-mealingredient-mediumbits": "garnitures moyennes",
+	  "game:handbook-mealingredient-butter": "beurre",
+	  "game:handbook-mealingredient-dairy": "fromage",
+
+	  "creamguide-title": "Mécanique de fabrication : écrémage de la crème",
+	  "creamguide-text": "<strong>Écrémage de la crème</strong><br>Pour commencer, vous aurez besoin de lait frais. N'importe quel multiple de 10 L fera l'affaire.<br>Le lait se sépare naturellement lorsqu'on le laisse reposer ; versez-le donc dans un tonneau et fermez celui-ci pour le laisser reposer sans être dérangé pendant que vous préparez l'étape suivante.
+<br><br>Fabriquez un <a href=\"handbook://block-dairyplus:creamscoop\">écrémoir</a> pour pouvoir récupérer la crème du <a href=\"handbook://item-dairyplus:separatingmilk\">lait en cours d'écrémage</a> dans le tonneau, une fois que les matières grasses du lait auront fini de remonter à la surface. Pour ce faire, accroupissez-vous avec l'écrémoir en main et interagissez avec le tonneau. Soyez patient : cette étape est délicate et prend quelques instants, sans quoi vous risquez simplement de mélanger à nouveau le lait.
+<br><br>Une fois l'écrémoir rempli de <a href=\"handbook://item-dairyplus:cream\">crème</a>, il restera du <a href=\"handbook://item-dairyplus:skimmilk\">lait écrémé</a> dans le tonneau. Bien que légèrement moins nutritif et ne pouvant plus servir à fabriquer du cheddar, ce lait peut toujours être utilisé partout où vous auriez besoin d'ajouter un peu de produit laitier.<br><br>mod : DairyPlus",
+
+	  "butterguide-title": "Mécanique de fabrication : barattage du beurre",
+	  "butterguide-text": "<strong>Barattage du beurre</strong><br>La <a href=\"handbook://item-dairyplus:cream\">crème</a> a de nombreuses utilisations culinaires, mais la transformer en <a href=\"handbook://item-dairyplus:butter-unsalted\">beurre</a> vous ouvrira tout un monde de nouvelles possibilités en cuisine. <br><br>Bien que cela demande un peu d'effort, une <a href=\"handbook://block-dairyplus:plungerchurn\">baratte à beurre</a> vous permettra de le faire.
+Cliquez sur la partie inférieure de la baratte pour ouvrir une fenêtre contenant un emplacement supérieur pour la crème et un emplacement inférieur pour récupérer le beurre fraîchement produit.<br>Versez la crème, actionnez la poignée et regardez-la se transformer en beurre sous vos yeux.<br><br>mod : DairyPlus",
+
+	  "mozzaguide-title": "Mécanique de fabrication : filage du fromage",
+	  "mozzaguide-text": "<strong>Filage du caillé</strong><br>Certains fromages, comme la <a href=\"handbook://item-dairyplus:mozzaball\">mozzarella</a> et le <a href=\"handbook://item-dairyplus:provalone\">provolone</a>, nécessitent de filer le caillé. Cela peut être fait sur une table en tenant du <a href=\"handbook://item-dairyplus:curd-skim\">caillé de lait écrémé</a> dans votre main et en maintenant le bouton droit de la souris pour travailler le caillé.",
+
+	  //compat 
+	  "expandedfoods:recipeingredient-item-fruitsyrupportion-topping": "sirop",
+	  "expandedfoods:recipeingredient-item-treesyrupportion-topping": "sirop",
+
+}
