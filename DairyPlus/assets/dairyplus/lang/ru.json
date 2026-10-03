@@ -1,0 +1,281 @@
+{
+	// item names
+	"game:tabname-dairyplus": "Dairy Plus",
+
+	"dairyplus:block-barrelchurn": "Бочковая маслобойка",
+	"dairyplus:block-plungerchurn": "Ручная маслобойка",
+	"dairyplus:block-creamscoop": "Черпак для сливок",
+	"dairyplus:block-cheesekettle-east": "Сыроваренный котёл",
+
+	"dairyplus:block-decorativecheesekettle-east": "Декоративный сыроваренный котёл",
+	"dairyplus:block-butterdish-plain-north": "Восковая фигурка масла",
+	"dairyplus:block-butterdish-glass-north": "Восковая фигурка масла (накрытая)",
+
+	// item names
+	"dairyplus:item-butter-unsalted": "Несолёное масло",
+	"dairyplus:item-butter-salted": "Солёное масло",
+	"dairyplus:item-butter-twicesalted": "Сильносолёное масло",
+	"dairyplus:item-butter-veggie": "Твёрдое растительное масло",
+	"dairyplus:item-butter-saltedveggie": "Солёное растительное масло",
+
+	"dairyplus:item-soybeans-shelled": "Очищенные соевые бобы",
+	"dairyplus:item-soybeans-soaked": "Замоченные соевые бобы",
+	"dairyplus:item-soypaste": "Соевая паста",
+
+	"dairyplus:item-plaincustard": "Заварной крем",
+	"dairyplus:item-tofu": "Тофу",
+
+	"dairyplus:item-curd-whole": "Сырное зерно из цельного молока",
+	"dairyplus:item-curd-skim": "Сырное зерно из обезжиренного молока",
+	"dairyplus:item-driedcurds": "Курт",
+
+	"dairyplus:item-halloumi-uncooked": "Свежий халуми",
+	"dairyplus:item-halloumi-partcooked": "Слегка обжаренный халуми",
+	"dairyplus:item-halloumi-cooked": "Обжаренный халуми",
+	"dairyplus:item-halloumi-burnt": "Обугленный халуми",
+
+	"dairyplus:item-halloumiskewer-uncooked": "Свежий халуми",
+	"dairyplus:item-halloumiskewer-partcooked": "Слегка обжаренный халуми",
+	"dairyplus:item-halloumiskewer-cooked": "Обжаренный халуми",
+	"dairyplus:item-halloumiskewer-burnt": "Обугленный халуми",
+
+	"dairyplus:item-mozzaball": "Моцарелла",
+	"dairyplus:item-provalone-fresh": "Проволоне",
+	"dairyplus:item-provalone-aged": "Выдержанный проволоне",
+	"dairyplus:item-provaloneslice-fresh": "Ломтик проволоне",
+	"dairyplus:item-provaloneslice-aged": "Ломтик выдержанного проволоне",
+	"dairyplus:item-feta": "Фета",
+	"dairyplus:item-brunost": "Брюност",
+	"dairyplus:item-ricotta": "Рикотта",
+
+
+	//Pie
+	"pie-single-dairyplus:tofu-raw": "Сырой пирог с тофу",
+	"pie-single-dairyplus:tofu-partbaked": "Недопечённый пирог с тофу",
+	"pie-single-dairyplus:tofu-perfect": "Пирог с тофу",
+	"pie-single-dairyplus:tofu-charred": "Подгоревший пирог с тофу",
+
+	"pie-single-dairyplus:mozzaball-raw": "Сырой пирог с моцареллой",
+	"pie-single-dairyplus:mozzaball-partbaked": "Недопечённый пирог с моцареллой",
+	"pie-single-dairyplus:mozzaball-perfect": "Пирог с моцареллой",
+	"pie-single-dairyplus:mozzaball-charred": "Подгоревший пирог с моцареллой",
+
+	"pie-single-dairyplus:feta-raw": "Сырой пирог с фетой",
+	"pie-single-dairyplus:feta-partbaked": "Недопечённый пирог с фетой",
+	"pie-single-dairyplus:feta-perfect": "Пирог с фетой",
+	"pie-single-dairyplus:feta-charred": "Подгоревший пирог с фетой",
+
+	"pie-single-dairyplus:curd-whole-raw": "Сырой пирог с сыром",
+	"pie-single-dairyplus:curd-whole-partbaked": "Недопечённый пирог с сыром",
+	"pie-single-dairyplus:curd-whole-perfect": "Пирог с сыром",
+	"pie-single-dairyplus:curd-whole-charred": "Подгоревший пирог с сыром",
+
+	"pie-single-dairyplus:curd-skim-raw": "Сырой пирог с сыром",
+	"pie-single-dairyplus:curd-skim-partbaked": "Недопечённый пирог с сыром",
+	"pie-single-dairyplus:curd-skim-perfect": "Пирог с сыром",
+	"pie-single-dairyplus:curd-skim-charred": "Подгоревший пирог с сыром",
+
+	"pie-single-dairyplus:provaloneslice-fresh-raw": "Сырой пирог с проволоне",
+	"pie-single-dairyplus:provaloneslice-fresh-partbaked": "Недопечённый пирог с проволоне",
+	"pie-single-dairyplus:provaloneslice-fresh-perfect": "Пирог с проволоне",
+	"pie-single-dairyplus:provaloneslice-fresh-charred": "Подгоревший пирог с проволоне",
+
+	"pie-single-dairyplus:provaloneslice-aged-raw": "Сырой пирог с проволоне",
+	"pie-single-dairyplus:provaloneslice-aged-partbaked": "Пирог с проволоне",
+	"pie-single-dairyplus:provaloneslice-aged-perfect": "Пирог с проволоне",
+	"pie-single-dairyplus:provaloneslice-aged-charred": "Подгоревший пирог с проволоне",
+
+
+	// liquid names
+	"dairyplus:liquid-cream": "Сливки",
+	"dairyplus:liquid-skimmilk": "Обезжиренное молоко",
+	"dairyplus:liquid-condensedmilk": "Сгущённое молоко",
+	"dairyplus:liquid-soymilk": "Соевое молоко",
+	"dairyplus:liquid-separatingmilk": "Разделяющееся молоко",
+	"dairyplus:liquid-sauce-plain": "Сливочный соус",
+	"dairyplus:liquid-sauce-cheese": "Сырный соус",
+	"dairyplus:liquid-fruitvinegar": "Фруктовый уксус",
+	"dairyplus:liquid-whey": "Сыворотка",
+	"dairyplus:liquid-ghee": "Топлёное масло",
+
+	"dairyplus:incontainer-item-cream": "Сливки",
+	"dairyplus:incontainer-item-skimmilk": "Обезжиренное молоко",
+	"dairyplus:incontainer-item-condensedmilk": "Сгущённое молоко",
+	"dairyplus:incontainer-item-soymilk": "Соевое молоко",
+	"dairyplus:incontainer-item-separatingmilk": "Разделяющееся молоко",
+	"dairyplus:incontainer-item-sauce-plain": "Сливочный соус",
+	"dairyplus:incontainer-item-sauce-cheese": "Сырный соус",
+	"dairyplus:incontainer-item-fruitvinegar": "Фруктовый уксус",
+	"dairyplus:incontainer-item-whey": "Сыворотка",
+	"dairyplus:incontainer-item-ghee": "Топлёное масло",
+
+	"dairyplus:item-cream": "Сливки",
+	"dairyplus:item-skimmilk": "Обезжиренное молоко",
+	"dairyplus:item-condensedmilk": "Сгущённое молоко",
+	"dairyplus:item-soymilk": "Соевое молоко",
+	"dairyplus:item-separatingmilk": "Разделяющееся молоко",
+	"dairyplus:item-sauce-plain": "Сливочный соус",
+	"dairyplus:item-sauce-cheese": "Сырный соус",
+	"dairyplus:item-fruitvinegar": "Фруктовый уксус",
+	"dairyplus:item-whey": "Сыворотка",
+	"dairyplus:item-ghee": "Топлёное масло",
+
+	//item desc.
+	"itemdesc-butter-unsalted": "Свежее, прямо из маслобойки.",
+	"itemdesc-butter-salted": "Слегка подсолено для вкуса и долгого хранения.",
+	"itemdesc-butter-twicesalted": "Пересолено для консервации. Необходимо промыть перед употреблением в пищу.",
+	"itemdesc-butter-veggie": "Растительный вариант.",
+	"itemdesc-butter-saltedveggie": "Слегка подсолено для вкуса и долгого хранения.",
+
+	"itemdesc-soybeans-shelled": "Извлечены из стручков.",
+	"itemdesc-soybeans-soaked": "Вымочены и готовы к переработке.",
+	"itemdesc-soypaste": "Влажная паста после измельчения. Требует термической обработки перед употреблением.",
+
+	"itemdesc-ghee": "Топлёное масло, также известное как гхи, обладает насыщенным ореховым вкусом.",
+
+	//block desc.
+	"blockdesc-plungerchurn": "Используется для взбивания сливок в масло с помощью силы ваших локтей.",
+	"blockdesc-barrelchurn": "Маслобойка побольше, вмещает больше сливок и может работать от механической энергии.",
+	"blockdesc-creamscoop": "Простой инструмент для снятия сливок с молока.",
+	"blockdesc-butterdish-*": "Восковая копия масла, которая не портится. Чисто декоративный предмет.",
+
+	//handbook enteries
+	"item-handbooktitle-plungerchurn": "Использование",
+	"item-handbooktext-plungerchurn": "Поместите сливки в верхний слот и нажимайте на ручку, чтобы начать процесс взбивания.",
+
+	"dairyplus:cheesekettle-craftedby": "Изготовлено в сыроваренном котле",
+	"dairyplus:cheesekettle-ingredientfor": "Ингредиент для сыроваренного котла",
+
+	//Meal ingredients liquid
+	"dairyplus:recipeingredient-item-condensedmilk-topping": "сгущённое молоко",
+	"dairyplus:recipeingredient-item-cream-topping": "сливки",
+	"dairyplus:recipeingredient-item-soymilk-topping": "соевое молоко",
+	"dairyplus:recipeingredient-item-sauce-cheese-topping": "сырный соус",
+	"dairyplus:recipeingredient-item-sauce-plain-topping": "сливочный соус",
+	"dairyplus:recipeingredient-item-skimmilk-topping": "обезжиренное молоко",
+	"dairyplus:recipeingredient-item-whey-topping": "сыворотка",
+	"game:recipeingredient-item-milkportion-topping": "молоко",
+	"dairyplus:recipeingredient-item-ghee-topping": "топлёное масло",
+
+	"dairyplus:recipeingredient-item-condensedmilk-insturmentalcase": "сгущённого молока",
+	"dairyplus:recipeingredient-item-cream-insturmentalcase": "сливок",
+	"dairyplus:recipeingredient-item-soymilk-insturmentalcase": "соевого молока",
+	"dairyplus:recipeingredient-item-sauce-cheese-insturmentalcase": "сырного соуса",
+	"dairyplus:recipeingredient-item-sauce-plain-insturmentalcase": "сливочного соуса",
+	"dairyplus:recipeingredient-item-skimmilk-insturmentalcase": "обезжиренного молока",
+	"dairyplus:recipeingredient-item-whey-insturmentalcase": "сыворотки",
+	"game:recipeingredient-item-milkportion-insturmentalcase": "молока",
+	"dairyplus:recipeingredient-item-ghee-insturmentalcase": "топлённого масла",
+
+	"game:meal-ingredient-soup-secondary-whey": "сыворотка",
+
+	//Meal ingredients solid
+	"dairyplus:recipeingredient-item-soybeans-insturmentalcase": "соевых бобов",
+	"dairyplus:recipeingredient-item-butter-insturmentalcase": "масла",
+	"dairyplus:recipeingredient-item-curd-insturmentalcase": "сырным зерном",
+	"dairyplus:recipeingredient-item-driedcurds-insturmentalcase": "куртом",
+	"dairyplus:recipeingredient-item-tofu-insturmentalcase": "тофу",
+	"dairyplus:recipeingredient-item-provaloneslice-insturmentalcase": "проволоне",
+	"dairyplus:recipeingredient-item-mozzaball-insturmentalcase": "моцареллой",
+	"dairyplus:recipeingredient-item-feta-insturmentalcase": "фетой",
+	"dairyplus:recipeingredient-item-ricotta-insturmentalcase": "рикоттой",
+	"dairyplus:recipeingredient-item-brunost-insturmentalcase": "брюностом",
+	"dairyplus:recipeingredient-item-halloumi-insturmentalcase": "халуми",
+
+	"game:meal-ingredient-soup-primary-soybeans": "соевые бобы",
+	"game:meal-ingredient-soup-primary-feta": "фета",
+	"game:meal-ingredient-soup-primary-provalone": "проволоне",
+	"game:meal-ingredient-soup-primary-ricotta": "рикотта",
+	"game:meal-ingredient-soup-primary-curd": "мырные зёрна",
+	"game:meal-ingredient-soup-primary-mozzaball": "моцарелла",
+	"game:meal-ingredient-soup-primary-tofu": "тофу",
+	"game:meal-ingredient-soup-primary-cheese": "сыр",
+	"game:meal-ingredient-soup-primary-butter": "масло",
+	"game:meal-ingredient-soup-primary-brunost": "брюност",
+
+	"game:ingredient-stew-primary-soybeans": "соевые бобы",
+	"game:meal-ingredient-stew-primary-soybeans": "соевые бобы",
+	"game:-ingredient-stew-primary-curd": "сырное зерно",
+	"game:meal-ingredient-stew-primary-curd": "сырное зерно",
+	"game:-ingredient-stew-primary-brunost": "брюност",
+	"game:meal-ingredient-stew-primary-brunost": "брюност",
+
+	"game:ingredient-stew-secondary-soybeans": "соевые бобы",
+	"game:meal-ingredient-stew-secondary-soybeans": "соевые бобы",
+	"game:ingredient-stew-secondary-curd": "сырное зерно",
+	"game:meal-ingredient-stew-secondary-curd": "сырное зерно",
+	"game:ingredient-stew-secondary-tofu": "тофу",
+	"game:meal-ingredient-stew-secondary-tofu": "тофу",
+
+
+	//Meals
+
+	"game:meal-normal-custard": "сладкий заварной крем {1}",
+	"game:mealrecipe-name-custard": "Сладкий заварной крем",
+	"game:mealrecipe-name-custard-in-container": "сладкий заварной крем",
+
+	"dairyplus:recipe-none": "Нет подходящего рецепта.",
+	"dairyplus:recipe-oneoutput": "Получится: {0}.",
+	"dairyplus:recipe-twooutput": "Получится: {0} и {1}.",
+
+	"game:handbook-mealingredient-custard": "заварной крем",
+	"game:handbook-mealingredient-other": "ломтики для макания",
+	"game:handbook-mealingredient-smallbits": "мелкая посыпка",
+	"game:handbook-mealingredient-mediumbits": "средняя посыпка",
+	"game:handbook-mealingredient-butter": "масло",
+	"game:handbook-mealingredient-dairy": "сыр",
+
+	"creamguide-title": "Ремесленная механика: Снятие сливок",
+	"creamguide-text": "<strong>Снятие сливок</strong><br>Для начала вам понадобится свежее молоко. Подойдет любое количество, кратное 10 л.<br>Молоко естественным образом разделяется, если дать ему постоять; поэтому залейте его в бочку и запечатайте, пока вы готовитесь к следующему шагу. <br><br>Создайте <a href=\"handbook://block-dairyplus:creamscoop\">черпак для сливок</a>, и вы сможете снять сливки с <a href=\"handbook://item-dairyplus:separatingmilk\">разделяющегося молока</a> в бочке, как только молочные жиры поднимутся на поверхность. Чтобы сделать это, присядьте (Shift) с черпаком в руке и нажмите на бочку. Будьте терпеливы: этот процесс деликатен и занимает некоторое время, иначе вы просто снова смешаете молоко. <br><br>Когда вы соберете полный черпак <a href=\"handbook://item-dairyplus:cream\">сливок</a>, в бочке останется <a href=\"handbook://item-dairyplus:skimmilk\">обезжиренное молоко</a>. Хотя оно чуть менее питательно и больше не подходит для создания чеддера, его всё еще можно использовать в любых рецептах, где требуется молоко.<br><br>mod: DairyPlus",
+
+	"butterguide-title": "Ремесленная механика: Взбивание масла",
+	"butterguide-text": "<strong>Взбивание масла</strong><br><a href=\"handbook://item-dairyplus:cream\">Сливки</a> сами по себе хороши в кулинарии, однако взбивание их в <a href=\"handbook://item-dairyplus:butter-unsalted\">масло</a> откроет вам мир новых рецептов. <br><br>Это потребует некоторых усилий, но <a href=\"handbook://block-dairyplus:plungerchurn\">маслобойка</a> поможет вам в этом. Нажатие на нижнюю часть маслобойки откроет окно с верхним слотом для сливок и нижним слотом для сбора готового масла.<br>Залейте сливки, потяните за ручку и наблюдайте, как сливки превращаются в масло прямо на ваших глазах.<br><br>mod: DairyPlus",
+
+	"mozzaguide-title": "Механика создания: вытягивание сыра",
+	"mozzaguide-text": "<strong>Вытягивание сырного зерна</strong><br>Некоторые сыры, такие как <a href=\"handbook://item-dairyplus:mozzaball\">моцарелла</a> и <a href=\"handbook://item-dairyplus:provalone\">проволоне</a>, требуют вытягивания сырного зерна. Это можно сделать за столом: возьмите в руку <a href=\"handbook://item-dairyplus:curd-skim\">сырное зерно из обезжиренного молока</a> и удерживайте правую кнопку мыши, чтобы обработать массу.",
+
+	//compat
+	"expandedfoods:recipeingredient-item-fruitsyrupportion-topping": "Сироп",
+	"expandedfoods:recipeingredient-item-treesyrupportion-topping": "Сироп",
+
+	"game:recipeingredient-item-butter-salted": "сливочное масло",
+	"recipeingredient-item-butter-salted": "сливочное масло",
+	"game:recipeingredient-item-butter-unsalted": "сливочное масло",
+	"recipeingredient-item-butter-unsalted": "сливочное масло",
+	"game:recipeingredient-item-butter-veggie": "растительное масло",
+	"recipeingredient-item-butter-veggie": "растительное масло",
+	"game:recipeingredient-item-butter-saltedveggie": "растительное масло",
+	"recipeingredient-item-butter-saltedveggie": "растительное масло",
+
+	"game:recipeingredient-item-curd-whole": "сырное зерно",
+	"recipeingredient-item-curd-whole": "сырное зерно",
+	"game:recipeingredient-item-curd-whole": "сырное зерно",
+	"recipeingredient-item-curd-whole": "сырное зерно",
+	"game:recipeingredient-item-feta": "фета",
+	"recipeingredient-item-feta": "фета",
+	"game:recipeingredient-item-mozzaball": "моцарелла",
+	"recipeingredient-item-mozzaball": "моцарелла",
+	"game:recipeingredient-item-provaloneslice-fresh": "проволоне",
+	"recipeingredient-item-provaloneslice-fresh": "проволоне",
+	"game:recipeingredient-item-provaloneslice-aged": "выдержанный проволоне",
+	"recipeingredient-item-provaloneslice-aged": "выдержанный проволоне",
+	"game:recipeingredient-item-ricotta": "рикотта",
+	"recipeingredient-item-ricotta": "рикотта",
+	"game:recipeingredient-item-tofu": "тофу",
+	"recipeingredient-item-tofu": "тофу",
+	"game:recipeingredient-item-driedcurds": "курт",
+	"recipeingredient-item-driedcurds": "курт",
+
+	"game:recipeingredient-item-ghee": "топлёное масло",
+	"recipeingredient-item-ghee": "топлёное масло",
+	"game:recipeingredient-item-whey": "сыворотка",
+	"recipeingredient-item-whey": "сыворотка",
+	"game:recipeingredient-item-soymilk": "соевое молоко",
+	"recipeingredient-item-soymilk": "соевое молоко",
+	"game:recipeingredient-item-skimmilk": "обезжиренное молоко",
+	"recipeingredient-item-skimmilk": "обезжиренное молоко",
+	"game:recipeingredient-item-cream": "сливки",
+	"recipeingredient-item-cream": "сливки",
+	"game:recipeingredient-item-condensedmilk": "сгущённое молоко",
+	"recipeingredient-item-condensedmilk": "сгущённое молоко"
+}
